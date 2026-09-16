@@ -15,6 +15,7 @@ form {
 
     border: 1px solid #b356bb;
     border-radius: 10px;
+    
 
 }
 
@@ -26,6 +27,7 @@ input{
     width: 95%;
     padding: 10px;
     margin-bottom: 15px;
+    border-bottom: 7px;
 
 }
 
@@ -33,5 +35,6 @@ button{
     color: #dbc715;
     background-color: #b356bb;
     margin-bottom: auto;
+    border-bottom: 2px;
     
 }
