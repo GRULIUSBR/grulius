@@ -22,9 +22,11 @@ label {
     font-weight: bold;
 }
 input{
-    width: 75%;
+    background-color: #82288b;
+    width: 95%;
     padding: 10px;
     margin-bottom: 15px;
+
 }
 
 button{
