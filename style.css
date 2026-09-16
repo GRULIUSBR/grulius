@@ -1,3 +1,27 @@
 body {
+    
     background-color: #604363;
+    font-family: monospace;
+    
+}
+
+form {
+    width: 400px;
+    background-color: #f5ce1f;
+
+    padding: 20px;
+    margin: 50px auto;
+
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+
+}
+
+label {
+    font-weight: bold;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
 }
