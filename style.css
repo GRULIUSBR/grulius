@@ -1,12 +1,12 @@
 body {
-    color: aliceblue;
+    color: #dbc715;
     background-color: #82288b;
     font-family: monospace;
     
 }
 
 form {
-    color: aliceblue;
+    color: #dbc715;
     width: 400px;
     background-color: #4d1952;
 
@@ -28,5 +28,6 @@ input{
 }
 
 button{
-    color: aqua;
+    color: #dbc715
+    background-color #b356bb;
 }
