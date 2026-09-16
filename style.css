@@ -1,18 +1,18 @@
 body {
     
-    background-color: #604363;
+    background-color: #82288b;
     font-family: monospace;
     
 }
 
 form {
     width: 400px;
-    background-color: #f5ce1f;
+    background-color: #4d1952;
 
     padding: 20px;
     margin: 50px auto;
 
-    border: 1px solid #cccccc;
+    border: 1px solid #b356bb;
     border-radius: 10px;
 
 }
@@ -24,4 +24,8 @@ input{
     width: 50%;
     padding: 10px;
     margin-bottom: 15px;
+}
+
+button{
+    color: aqua;
 }
