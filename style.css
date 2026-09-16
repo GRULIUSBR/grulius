@@ -28,6 +28,8 @@ input{
 }
 
 button{
-    color: #dbc715
-    background-color #b356bb;
+    color: #dbc715;
+    background-color: #b356bb;
+    margin-bottom: auto;
+    
 }
