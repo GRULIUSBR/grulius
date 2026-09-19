@@ -1,0 +1,36 @@
+body{
+    margin-top: 35px;
+    margin-left: 45px;
+    background-color: #04081d;
+    color: rgb(83, 216, 90);
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+form{
+    margin-top: 35px;
+    margin-left: 45px;
+    background-color: #04081d;
+    color: rgb(19, 176, 187);
+    text-align: left;
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+  
+}
+
+button{
+    
+    background-color: rgb(67, 199, 223);
+    color: white;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+input{
+    width: 150px;
+    height: 18px;
+    padding: 5PX;
+}
+
