@@ -1,0 +1,20 @@
+h1 - h6 = TITULOS
+<p> paragrafo
+<br> pular linha
+<hr> hacer una linea en la pantalla
+<strong> informacion importante
+<b> negrito
+<em> enfase em uma informacion 
+<i> italico
+<small> hacer el texto menor (para texto secundario)
+
+<div> -> agrupar elementos em um bloco
+<header> -> cabeçalho
+<nav> navbar -> principales listas de navegacion/busqueda
+<>
+<>
+<>
+<>
+<>
+<>
+<>

@@ -8,12 +8,10 @@ body{
 }
 
 form{
-    margin-top: 35px;
     margin-left: 45px;
     background-color: #04081d;
     color: rgb(19, 176, 187);
     text-align: left;
-    
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
   
@@ -32,5 +30,43 @@ input{
     width: 150px;
     height: 18px;
     padding: 5PX;
+    border-radius: 7px;
 }
+
+textarea[name=descricao]{
+    border-radius: 7px;
+    width: 500px;
+    height: 80px;
+    line-height: 1.2;
+    padding-top: 5px;
+    padding-left: 8px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.container-formulario{ 
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.item{
+    
+    padding:  1em;
+    text-align: left;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.boton{
+    margin-top: 25px;
+    border: none;
+}
+
 
