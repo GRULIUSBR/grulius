@@ -70,4 +70,81 @@ color: rgb(255, 0, 119);;
 
 .inicio{
 min-height: calc(100vh - 80px); /*desafio pra casa (view port)*/
+padding: 80px 10%;
+display: flex;
+align-items: center;
+background-color: #0f0f14;
+}
+
+.inicio-conteudo{
+    max-width: 750px;
+}
+
+.apresentacao{
+    font-size: 70px;
+    line-height: 1.1;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color:rgb(255, 0, 119)
+}
+
+.inicio h1{
+    font-size: 70px;
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+
+.inicio h2{
+    font-size: 32px;
+    color: #a9a9b8;
+    margin-bottom: 25px;
+}
+
+.descricao{
+    max-width: 600px;
+    color: #9c9cab;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+/*===================*/
+/*      BOTOES       */
+/*===================*/
+
+.botoes{
+    display: flex;
+    gap: 15px;
+}
+
+.botao{
+    display: inline-block;
+    background-color: rgb(255, 0, 119);
+    color: #fff;
+    padding: 13px 25px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.botao:hover{
+    background-color: rgb(255, 50, 146) ;
+    transform: translateY(-3px);
+}
+
+.botao-secundario{
+    background-color: transparent;
+    border: 1px solid rgb(255, 0, 119);
+    color: rgb(255, 0, 119);
+}
+
+.botao-secundario:hover{
+    background-color: rgb(255, 50, 146);
+    color: #fff;
+}
+
+/*============*/
+/*   SEÇOES   */
+/*============*/
+
+section{
+
 }
