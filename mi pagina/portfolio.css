@@ -326,9 +326,108 @@ footer{
     font-size: 13px;
 }
 
-
 /*================*/
 /* RESPONSIVIDADE */
 /*================*/
+
+@media (max-width: 800px){
+
+header{
+    height: auto;
+    padding: 20px 5%;
+    flex-direction: column;
+    gap: 15px;
+}
+
+nav{
+    gap: 15px;
+    flex-wrap: wrap;
+        justify-content: center;
+}
+
+.inicio{
+    min-height: auto;
+    padding: 70px 5%;
+}
+
+.inicio h1{
+    font-size: 48px;
+}
+
+.inicio h2{
+    font-size: 24px;
+}
+
+.apresentacao{
+    font-size: 24px;
+}
+
+.descricao{
+    font-size: 16px;
+}
+
+/*================*/
+/*ALL THE SECTIONS*/
+/*================*/
+
+section{
+    padding: 70px 5%; /*espaçamento interno*/
+
+}
+
+/*SOBRE*/
+
+.sobre-conteudo{
+    flex-direction: column;
+    align-items: stretch;
+}
+
+/*PROJETOS*/
+
+.projetos{
+    flex-direction: column;
+}
+
+.botoes{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/*CONTATO*/
+
+.contato-links{
+    flex-wrap: wrap;
+}
+
+/*RODAPE*/
+
+footer{
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
 
 
