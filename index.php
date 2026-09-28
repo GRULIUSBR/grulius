@@ -30,8 +30,7 @@ else{
     <!--COMENTARIO-->
     <header>
     <div class="logo">
-        <!--<h2>José <span>Oropesa</span></h2>-->
-        <h2> <?= $resultado ?> </h2>
+        <h2>José <span>Oropesa</span></h2>
     </div>
     <nav>
         <a href="#inicio">Inicio</a>
@@ -134,7 +133,7 @@ else{
                     <div class="numero-projeto">
                         03
                     </div>
-                    <h3>Sistema de Cadastro</h3>
+                    <h3>ativ idade</h3>
                     <p>
                         Descriçao do sistema de Cadastro
                     </p>
@@ -143,7 +142,7 @@ else{
                         <span>CSS</span>
                         <!--span>PHP</span-->
                     </div>
-                    <a href="cadastro.html">Ver Projeto</a>
+                    <a href="idade.php">Ver Projeto</a>
                 </div>
             </div>
         </section>
