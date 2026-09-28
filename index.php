@@ -1,12 +1,22 @@
+<?php
+$nome = "Jose";
+$idade = 19;
+$altura = 1.73;
+$matricula_ativa = true;
+$resultado = "";
+if ($idade >= 18){
+    $resultado = "sim";
+}
+else{
+    $resultado = "nao";
+}
 
 
 
 
 
 
-
-
-
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +30,8 @@
     <!--COMENTARIO-->
     <header>
     <div class="logo">
-        <h2>José <span>Oropesa</span></h2>
+        <!--<h2>José <span>Oropesa</span></h2>-->
+        <h2> <?= $resultado ?> </h2>
     </div>
     <nav>
         <a href="#inicio">Inicio</a>
