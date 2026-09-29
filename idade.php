@@ -22,11 +22,11 @@ else{
 <header>
     <div class="logo">
         <h2>Jose <span>Oropesa</span> </h2>
-        <hr>
     </div>
     <nav>
     <a href="index.php">BACK TO MAIN</a>
     </nav>
+    <hr>
 </header>
 
     <body>

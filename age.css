@@ -3,6 +3,10 @@ header{
     color: aliceblue;
 }
 
+body{
+    background-color: #222121;
+}
+
 .formulario{
     background-color: #1b1b1b;
     color: aliceblue;
@@ -11,4 +15,8 @@ header{
 .exit{
     background-color: #222121;
     color: aliceblue;
+}
+
+.logo h2 span{
+    color: rgb(255, 0, 119)
 }
