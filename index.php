@@ -82,7 +82,7 @@
                     <div class="numero-projeto">
                         01
                     </div>
-                    <h3>Sistema de Cadastro</h3>
+                    <h3>atividade 01</h3>
                     <p>
                         Descriçao do sistema de Cadastro
                     </p>
@@ -91,7 +91,7 @@
                         <span>CSS</span>
                         <!--span>PHP</span-->
                     </div>
-                    <a href="calculadora.html">Ver Projeto</a>
+                    <a href="/activities/01.html">Ver Projeto</a>
                 </div>
                 <!-- PROJETO 2 -->
                 <div class="card">
@@ -114,7 +114,7 @@
                     <div class="numero-projeto">
                         03
                     </div>
-                    <h3>ativ idade</h3>
+                    <h3>REGISTER</h3>
                     <p>
                         Descriçao do sistema de Cadastro
                     </p>
