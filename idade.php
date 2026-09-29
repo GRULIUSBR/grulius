@@ -16,7 +16,7 @@ else{
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="age.css">
-    <title>Idade</title>
+    <title>AGE AND NAME</title>
 </head>
 
 <header>
@@ -24,10 +24,7 @@ else{
         <h2>Jose <span>Oropesa</span> </h2>
     </div>
     <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#projeto">Projeto</a>
-        <a href="#contato">Contato</a>
+    <a href="index.php">BACK</a>
     </nav>
 </header>
 
@@ -41,10 +38,10 @@ else{
     <label>AGE:</label>
     <input type="number" class="age" id="age" name="age">
     <br> <br>
-    <h2> AGE <?= $age ?> </h2>
-    <h3> SITUATION <?= $situation ?> </h3>
+    <h2> AGE:<?= $age ?> </h2>
+    <h3> SITUATION: <?= $situation ?> </h3>
     <br>
-    <button type="submit">CADASTRAR</button>
+    <button type="submit">REGISTER</button>
 </form>
             </section>
         </main>  
