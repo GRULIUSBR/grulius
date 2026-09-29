@@ -32,16 +32,21 @@ nav a{
     color: aliceblue;
 }
 
-.form-cont{
+.form-geral{
     height: 600px;
     width: 600px;
+    border-color: rgb(255, 0, 119);
+}
+
+.form-cont{
+
     margin-top: 20px;
     font-size: 1.6;
     background-color: #0f0f0f;
     color: aliceblue;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    border-color: rgb(255, 0, 119);
+   
 }
 
 .boton{
