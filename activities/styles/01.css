@@ -6,7 +6,7 @@
 /*cabeçalho*/
 
 .logo{
-    background-color: rgb(139, 40, 37);
+    background-color: #032f3b;
     color: rgb(253, 187, 6);
     display: flex;
     flex-direction: column;
@@ -24,19 +24,19 @@
 }
 
 .area-usuario{
-    background-color: rgb(139, 40, 37);
+    background-color: #094854;
     gap: 10px;
 }
 
 .botao-login{
-    background-color: rgb(139, 40, 37);
+    background-color: #094854;
     border-radius: 14px;
     color: rgb(253, 187, 6);
     width: 100px;
 }
 
 .botao-cadastro{
-    border-color: rgb(139, 40, 37);
+    border-color: #094854;
     border-radius: 14px;
     color: rgb(253, 187, 6);
     width: 100px;
@@ -45,19 +45,19 @@
 /*menu de nav*/
 
 .menu-principal{
-background-color: rgb(139, 40, 37);
+background-color: #094854;
 }
 
 .container{
-background-color: rgb(139, 40, 37);
+background-color: #094854;
 }
 
 .menu-lista{
-background-color: rgb(139, 40, 37);
+background-color: #094854;
 }
 
 .menu-item{
-background-color: rgb(139, 40, 37);
+background-color: #094854;
 }
 
 /*a href - menu item*/
