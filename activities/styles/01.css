@@ -5,12 +5,9 @@
 
 /*cabeçalho*/
 
-.cabecalho{
+.container cabecalho-container{
     background-color: rgb(139, 40, 37);
-}
-
-.cabecalho h1{
-    color: aqua;
+    color: rgb(253, 187, 6);
 }
 
 .logo{
