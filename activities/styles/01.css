@@ -10,6 +10,7 @@
     color: rgb(253, 187, 6);
     display: flex;
     flex-direction: column;
+    padding: 5px;
 }
 
 .logo h1{
@@ -24,19 +25,21 @@
 
 .area-usuario{
     background-color: rgb(139, 40, 37);
-
+    gap: 10px;
 }
 
 .botao-login{
     background-color: rgb(139, 40, 37);
     border-radius: 14px;
     color: rgb(253, 187, 6);
+    width: 100px;
 }
 
 .botao-cadastro{
     border-color: rgb(139, 40, 37);
     border-radius: 14px;
     color: rgb(253, 187, 6);
+    width: 100px;
 }
 
 /*menu de nav*/
