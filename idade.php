@@ -34,7 +34,7 @@ else{
             <section class="form-geral">
                 <div class="form-cont">
                     <div class="form-titulo">
-                        <h1>REGISTER</h1>
+                        <h1>REGISER</h1>
                     </div>
                 <form method="POST">
     <label>NAME:</label>
