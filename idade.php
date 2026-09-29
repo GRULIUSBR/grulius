@@ -19,10 +19,23 @@ else{
     <link rel="stylesheet" href="age.css">
     <title>Idade</title>
 </head>
+
+<header>
+    <div class="logo">
+        
+    </div>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#projeto">Projeto</a>
+        <a href="#contato">Contato</a>
+    </nav>
+</header>
+
 <body>
     <form>
         <label for="idade">IDADE:</label>
-        <input type="<?= $age?>">
+        <input type=$age>
         <br> <br>
         <h2> <?= $age ?> </h2>
         <h3> <?= $situation ?> </h3>
