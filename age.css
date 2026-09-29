@@ -1,5 +1,5 @@
 header{
-    background-color: #222121;
+    background-color: #070707;
     color: aliceblue;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -12,7 +12,7 @@ nav a{
 }
 
 body{
-    background-color: #222121;
+    background-color: #0f0f0f;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -24,7 +24,7 @@ body{
 }
 
 .exit{
-    background-color: #222121;
+    background-color: #0f0f0f;
     color: aliceblue;
 }
 
