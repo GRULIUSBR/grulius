@@ -1,6 +1,6 @@
 <?php
-$age;
-$name;
+$age=$_POST["age"];
+$name=$_POST["name"];
 
 if($age >= 18){
     $situation = "adult";
@@ -22,7 +22,7 @@ else{
 
 <header>
     <div class="logo">
-        
+        <h2>Jose <span>Oropesa</span> </h2>
     </div>
     <nav>
         <a href="#inicio">Inicio</a>
@@ -33,9 +33,11 @@ else{
 </header>
 
 <body>
-    <form>
-        <label for="idade">IDADE:</label>
-        <input type=$age>
+    <form method="POST">
+        <label>NAME:</label>
+        <input type="text" class="name" id="name" name="name">
+        <label>AGE:</label>
+        <input type="number" class="age" id="age" name="age">
         <br> <br>
         <h2> <?= $age ?> </h2>
         <h3> <?= $situation ?> </h3>

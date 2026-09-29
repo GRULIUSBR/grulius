@@ -24,3 +24,10 @@ h1 - h6 = TITULOS
 =============================================
 
 usar ponto so quando e class 
+
+id = nunca se repete
+class = estilizar
+
+class = css
+id = js
+name = php
