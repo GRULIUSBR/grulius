@@ -32,7 +32,8 @@ else{
     <body>
         <main>
             <section class="form-geral">
-    <form method="POST" class="form-cont">
+                <div class="form-cont">
+                <form method="POST">
     <label>NAME:</label>
     <input type="text" class="name" id="name" name="name">
     <br> <br>
@@ -41,8 +42,9 @@ else{
     <br> <br>
     <br>
     <button type="submit" class="boton">REGISTER</button>
-    
 </form>
+</div>
+    
 <div class="exit">
 <h1> NAME:<?= $name ?> </h1>
 <h2> AGE:<?= $age ?> </h2>
