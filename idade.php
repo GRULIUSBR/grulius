@@ -31,8 +31,8 @@ else{
 
     <body>
         <main>
-            <section class="formulario">
-    <form method="POST">
+            <section class="form-geral">
+    <form method="POST" class="form-cont">
     <label>NAME:</label>
     <input type="text" class="name" id="name" name="name">
     <br> <br>

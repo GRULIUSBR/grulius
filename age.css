@@ -27,8 +27,9 @@ nav a{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.formulario{
-    margin-top: 60px;
+.form-cont{
+    margin-top: 20px;
+    font-size: 1.6;
     background-color: #0f0f0f;
     color: aliceblue;
     align-items: center;
@@ -38,11 +39,13 @@ nav a{
 .boton{
 background-color: rgb(255, 0, 119);
 color: aliceblue;
-height: 67px;
+height: 35px;
 width: 100px;
+border-radius: 8px;
 }
 
 .exit{
+    margin-top: 20px;
     background-color: #0f0f0f;
     color: aliceblue;
 }
