@@ -3,6 +3,18 @@
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #032f3b;
+    color: #e3ecee;
+    line-height: 1.6;
+}
+
+
 a{
     color: #e3ecee;
     text-decoration: none;
@@ -11,6 +23,7 @@ a{
 /*cabeçalho*/
 
 .logo{
+    height: 80px;
     background-color: #032f3b;
     display: flex;
     flex-direction: column;
@@ -30,6 +43,7 @@ a{
 }
 
 .area-usuario{
+    margin-top: 20px;
     background-color: #094854;
     gap: 10px;
 }
