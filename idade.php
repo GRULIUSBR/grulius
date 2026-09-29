@@ -26,7 +26,7 @@ else{
     <nav>
     <a href="index.php">BACK TO MAIN</a>
     </nav>
-    <hr>
+    
 </header>
 
     <body>
@@ -41,7 +41,7 @@ else{
     <br> <br>
     <br>
     <button type="submit">REGISTER</button>
-    <hr>
+    
 </form>
 <div class="exit">
 <h1> NAME:<?= $name ?> </h1>

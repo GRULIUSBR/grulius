@@ -1,22 +1,3 @@
-<?php
-$nome = "Jose";
-$idade = 19;
-$altura = 1.73;
-$matricula_ativa = true;
-$resultado = "";
-if ($idade >= 18){
-    $resultado = "sim";
-}
-else{
-    $resultado = "nao";
-}
-
-
-
-
-
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
