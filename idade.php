@@ -3,7 +3,7 @@ $age=$_POST["age"];
 $name=$_POST["name"];
 
 if($age >= 18){
-    $situation = "ADULT: ACCESS ALLOWED";
+    $situation = "ACCESS GRANTED";
 }
 else{
     $situation = "ACCESS DENIED";
@@ -22,15 +22,16 @@ else{
 <header>
     <div class="logo">
         <h2>Jose <span>Oropesa</span> </h2>
+        <hr>
     </div>
     <nav>
-    <a href="index.php">BACK</a>
+    <a href="index.php">BACK TO MAIN</a>
     </nav>
 </header>
 
     <body>
         <main>
-            <section>
+            <section class="formulario">
     <form method="POST">
     <label>NAME:</label>
     <input type="text" class="name" id="name" name="name">
@@ -38,11 +39,15 @@ else{
     <label>AGE:</label>
     <input type="number" class="age" id="age" name="age">
     <br> <br>
-    <h2> AGE:<?= $age ?> </h2>
-    <h3> SITUATION: <?= $situation ?> </h3>
+    <hr>
     <br>
     <button type="submit">REGISTER</button>
 </form>
+<div class="exit">
+<h2> AGE:<?= $age ?> </h2>
+<h3> SITUATION: <?= $situation ?> </h3>
+</div>
+
             </section>
         </main>  
     </body>
