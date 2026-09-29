@@ -127,7 +127,7 @@
                 </div>
             </div>
         </section>
-        <section id="contatos" class="contatos">
+        <section id="contato" class="contato">
             <div class="titulo-secao">
                 <p>Vamos conversar</p>
                 <h2>Contato</h2>
