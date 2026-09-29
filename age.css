@@ -17,10 +17,16 @@ body{
 }
 
 .formulario{
+    margin-top: 60px;
     background-color: #0f0f0f;
     color: aliceblue;
     align-items: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.boton{
+background-color: rgb(255, 0, 119);
+color: aliceblue;
 }
 
 .exit{

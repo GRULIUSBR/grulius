@@ -40,7 +40,7 @@ else{
     <input type="number" class="age" id="age" name="age">
     <br> <br>
     <br>
-    <button type="submit">REGISTER</button>
+    <button type="submit" class="boton">REGISTER</button>
     
 </form>
 <div class="exit">
