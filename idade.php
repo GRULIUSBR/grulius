@@ -3,10 +3,13 @@ $age=$_POST["age"];
 $name=$_POST["name"];
 
 if($age >= 18){
-    $situation = "adult";
+    $situation = "ADULT: ACCESS ALLOWED";
+}
+if($age = 0){
+    $situation = "ACCESS DENIED";
 }
 else{
-    $situation = "minor";
+    $situation = "MINOR: ACCESS DENIED";
 }
 ?>
 
@@ -41,9 +44,10 @@ else{
     <label>AGE:</label>
     <input type="number" class="age" id="age" name="age">
     <br> <br>
-    <h2> <?= $age ?> </h2>
-    <h3> <?= $situation ?> </h3>
-    <button type="submit"></button>
+    <h2> age: <?= $age ?> </h2>
+    <h3> situation: <?= $situation ?> </h3>
+    <br>
+    <button type="submit">CADASTRAR</button>
 </form>
             </section>
         </main>  
