@@ -48,9 +48,8 @@ else{
 <div class="exit">
 <h1> NAME:<?= $name ?> </h1>
 <h2> AGE:<?= $age ?> </h2>
-<h3> SITUATION:<?=  $situation ?> </h3>
+<h2> SITUATION:<?=  $situation ?> </h2>
 </div>
-
             </section>
         </main>  
     </body>

@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    margin-left: 10px;
+    margin-left: 5px;
 }
     
 html{
@@ -33,7 +33,7 @@ nav a{
     font-size: 1.6;
     background-color: #0f0f0f;
     color: aliceblue;
-    align-items: center;
+    text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
