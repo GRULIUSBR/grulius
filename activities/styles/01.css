@@ -6,24 +6,27 @@
 /*cabeçalho*/
 
 .container cabecalho-container{
+    
+}
+
+.logo{
     background-color: rgb(139, 40, 37);
     color: rgb(253, 187, 6);
 }
 
-.logo{
-
-}
-
 .area-usuario{
+    background-color: rgb(139, 40, 37);
 
 }
 
 .botao-login{
-
+    background-color: rgb(139, 40, 37);
+    border-radius: 14px;
 }
 
 .botao-cadastro{
-
+    border-color: rgb(139, 40, 37);
+    border-radius: 14px;
 }
 
 /*menu de nav*/
