@@ -39,13 +39,14 @@ else{
     <label>AGE:</label>
     <input type="number" class="age" id="age" name="age">
     <br> <br>
-    <hr>
     <br>
     <button type="submit">REGISTER</button>
+    <hr>
 </form>
 <div class="exit">
+<h1> NAME:<?= $name ?> </h1>
 <h2> AGE:<?= $age ?> </h2>
-<h3> SITUATION: <?= $situation ?> </h3>
+<h3> SITUATION:<?=  $situation ?> </h3>
 </div>
 
             </section>
