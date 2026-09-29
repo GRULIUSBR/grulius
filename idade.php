@@ -8,7 +8,6 @@ if($age >= 18){
 else{
     $situation = "minor";
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -32,16 +31,21 @@ else{
     </nav>
 </header>
 
-<body>
+    <body>
+        <main>
+            <section>
     <form method="POST">
-        <label>NAME:</label>
-        <input type="text" class="name" id="name" name="name">
-        <label>AGE:</label>
-        <input type="number" class="age" id="age" name="age">
-        <br> <br>
-        <h2> <?= $age ?> </h2>
-        <h3> <?= $situation ?> </h3>
-    </form>
-    
-</body>
+    <label>NAME:</label>
+    <input type="text" class="name" id="name" name="name">
+    <br> <br>
+    <label>AGE:</label>
+    <input type="number" class="age" id="age" name="age">
+    <br> <br>
+    <h2> <?= $age ?> </h2>
+    <h3> <?= $situation ?> </h3>
+    <button type="submit"></button>
+</form>
+            </section>
+        </main>  
+    </body>
 </html>
