@@ -39,9 +39,6 @@ a:hover{
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap: 10px;
-    padding: 5px;
-       
 }
 
 .logo h1{
