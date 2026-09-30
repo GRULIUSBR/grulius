@@ -54,7 +54,11 @@ a:hover{
 .area-usuario{
     background-color: #032f3b;
     gap: 25px;
-    height: 250px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 10px;
 }
 
 .botao-login{
