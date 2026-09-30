@@ -54,6 +54,7 @@ a:hover{
 .area-usuario{
     background-color: #032f3b;
     gap: 25px;
+    height: 250px;
 }
 
 .botao-login{
@@ -62,6 +63,20 @@ a:hover{
     color: #f04d65;
     width: 100px;
     height: 40px;
+}
+
+.botao-login:hover{
+    background-color: #f04d65;
+    color: #e3ecee;
+    transition: 0.3s;
+    transform: translateY(-4px);
+}
+
+.botao-cadastro:hover{
+    background-color: #f04d65;
+    color: #e3ecee;
+    transition: 0.3s;
+    transform: translateY(-4px);
 }
 
 .botao-cadastro{
