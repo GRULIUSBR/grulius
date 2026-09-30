@@ -26,9 +26,9 @@ a{
     height: 80px;
     background-color: #032f3b;
     display: flex;
-    flex-direction: column;
+    flex-direction: ;
     padding: 5px;
-    border-bottom: 1px solid #1e748b;    
+    border-bottom: 1px solid #144f5f;    
 }
 
 .logo h1{
@@ -54,6 +54,7 @@ a{
     border-radius: 14px;
     color: #f04d65;
     width: 100px;
+    height: 40px;
 }
 
 .botao-cadastro{
@@ -61,6 +62,7 @@ a{
     border-radius: 14px;
     color: #f04d65;
     width: 100px;
+    height: 40px;
 }
 
 /*menu de nav*/
@@ -90,8 +92,8 @@ background-color: #094854;
 /*cont-principal*/
 
 .conteudo{
-margin-top: 15px;
-color: #094854;
+margin-top: 1px;
+color: #e3ecee;
 }
 
 
