@@ -51,13 +51,12 @@ a:hover{
 }
 
 .area-usuario{
-    margin-top: 20px;
     background-color: #032f3b;
-    gap: 10px;
+    gap: 25px;
 }
 
 .botao-login{
-    background-color: #032f3b;
+    border-color: #032f3b;
     border-radius: 14px;
     color: #f04d65;
     width: 100px;
@@ -107,6 +106,10 @@ background-color: #094854;
 .conteudo{
 margin-top: 1px;
 color: #e3ecee;
+}
+
+.titulo-secao h2{
+
 }
 
 
