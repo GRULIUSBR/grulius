@@ -22,6 +22,7 @@ a{
 
 a:hover{
     color: #f04d65;
+    transition: 0.4s;
 }
 
 /*cabeçalho*/
@@ -30,11 +31,11 @@ a:hover{
     height: 80px;
     background-color: #032f3b;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: start;
     gap: 10px;
     padding: 5px;
-    border-bottom: 1px solid #144f5f;    
+       
 }
 
 .logo h1{
@@ -51,12 +52,12 @@ a:hover{
 
 .area-usuario{
     margin-top: 20px;
-    background-color: #094854;
+    background-color: #032f3b;
     gap: 10px;
 }
 
 .botao-login{
-    background-color: #094854;
+    background-color: #032f3b;
     border-radius: 14px;
     color: #f04d65;
     width: 100px;
@@ -64,7 +65,7 @@ a:hover{
 }
 
 .botao-cadastro{
-    border-color: #094854;
+    border-color: #032f3b;
     border-radius: 14px;
     color: #f04d65;
     width: 100px;
