@@ -28,6 +28,7 @@ a{
     display: flex;
     flex-direction: column;
     padding: 5px;
+    border-bottom: 1px solid #063947;    
 }
 
 .logo h1{
@@ -87,6 +88,10 @@ background-color: #094854;
 /*a href - menu item*/
 
 /*cont-principal*/
+
+.conteudo{
+margin-top: 15px;
+}
 
 
 
