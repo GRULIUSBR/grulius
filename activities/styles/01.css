@@ -28,7 +28,7 @@ a{
     display: flex;
     flex-direction: column;
     padding: 5px;
-    border-bottom: 1px solid #063947;    
+    border-bottom: 1px solid #1e748b;    
 }
 
 .logo h1{
@@ -91,6 +91,7 @@ background-color: #094854;
 
 .conteudo{
 margin-top: 15px;
+color: #094854;
 }
 
 
