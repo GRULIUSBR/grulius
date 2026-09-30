@@ -27,6 +27,12 @@ a:hover{
 
 /*cabeçalho*/
 
+.container cabecalho-container{
+    display: flex;
+    flex-direction: row;
+    align-items: normal;
+}
+
 .logo{
     height: 80px;
     background-color: #032f3b;
@@ -57,6 +63,7 @@ a:hover{
     height: 60px;
     display: flex;
     flex-direction: row;
+    align-items:center;
     gap: 30px;
     padding: 10px;
     padding-top: 10px;
