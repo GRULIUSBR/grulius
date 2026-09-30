@@ -98,7 +98,7 @@
                     <div class="numero-projeto">
                         02
                     </div>
-                    <h3>Sistema de Cadastro</h3>
+                    <h3>IDADE-GET.PHP</h3>
                     <p>
                         Descriçao do sistema de Cadastro
                     </p>
@@ -107,7 +107,7 @@
                         <span>CSS</span>
                         <!--span>PHP</span-->
                     </div>
-                    <a href="cadastro.html">Ver Projeto</a>
+                    <a href="/activities/idade-get.php">Ver Projeto</a>
                 </div>
                 <!-- PROJETO 3 -->
                 <div class="card">
