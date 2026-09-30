@@ -89,6 +89,7 @@ margin-top: 7px;
 }
 
 .menu-item{
+    list-style: none;
 color: #e3ecee;
 background-color: #094854;
 }
