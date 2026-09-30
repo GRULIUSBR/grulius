@@ -132,6 +132,8 @@ background-color: #032f3b;
 /*cont-principal*/
 
 .conteudo{
+    display: flex;
+    flex-direction: column;
 margin-top: 1px;
 color: #e3ecee;
 }
