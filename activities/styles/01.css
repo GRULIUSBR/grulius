@@ -26,7 +26,9 @@ a{
     height: 80px;
     background-color: #032f3b;
     display: flex;
-    flex-direction: ;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
     padding: 5px;
     border-bottom: 1px solid #144f5f;    
 }
