@@ -59,6 +59,7 @@ a:hover{
     flex-direction: row;
     gap: 30px;
     padding: 10px;
+    padding-top: 10px;
 }
 
 .botao-login{
