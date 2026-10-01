@@ -58,7 +58,7 @@ a:hover{
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    gap: 10px
+    gap: 5px
 }
 
 .form-button{
@@ -67,12 +67,17 @@ a:hover{
     height: 34px;
 }
 
-.campo{
+.campos{
+    display: flex;
+    flex-direction: row;
+}
+
+.inputs{
     border-radius: 7px;
 }
 
 .pedido{
-    margin-top: 10px;
+    margin-top: 7px;
     height: 150px;
     width: 300px;
     border-radius: 7px;
