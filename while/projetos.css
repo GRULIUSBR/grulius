@@ -37,6 +37,11 @@ a{
     border-radius: 5px;
 }
 
+a:hover{ 
+    color: #00ff00;
+    transition: 0.3s;
+}
+
 .logo span{
     color: #00ff00;
 }
