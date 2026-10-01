@@ -22,8 +22,6 @@ header{
     color: aliceblue;
     font-size: 30px;
     padding: 10px;
-    display: flex;
-    flex-direction: column;
 }
 
 nav{
