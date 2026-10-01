@@ -125,6 +125,23 @@
                     </div>
                     <a href="idade.php">Ver Projeto</a>
                 </div>
+                <!-- PROJETO 4 -->
+                 <div class="card">
+                    <div class="numero-projeto">
+                        04
+                    </div>
+                    <h3>software house</h3>
+                    <p>
+                        Descriçao do sistema de Cadastro
+                    </p>
+                    <div class="tecnologias">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <!--span>PHP</span-->
+                    </div>
+                    <a href="/while/solicitar_projeto.html">Ver Projeto</a>
+                </div>
+                <!--fin-->
             </div>
         </section>
         <section id="contato" class="contato">
