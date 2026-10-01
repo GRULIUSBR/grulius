@@ -69,7 +69,7 @@ a:hover{
 
 .campos{
     display: flex;
-    flex-direction: row;
+    gap: 1em;
 }
 
 .inputs{
