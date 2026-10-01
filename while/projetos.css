@@ -60,5 +60,14 @@ a:hover{
 .form-button{
     margin-top: 10px;
     width: 100px;
-    height: 45px;
+    height: 34px;
+}
+
+.campo{
+    border-radius: 14px;
+}
+
+.pedido{
+    height: 300px;
+    width: 300px;
 }
