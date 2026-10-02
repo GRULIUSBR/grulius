@@ -1,57 +1,57 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #3b3b3b;
     color: aliceblue;
 }
 
-header{
+header {
     background-color: #1f1f1f;
     color: aliceblue;
 }
 
-.logo{
+.logo {
     color: aliceblue;
     font-size: 30px;
     padding: 10px;
 }
 
-nav{
+nav {
     padding: 10px;
     gap: 10px;
     text-align: end;
 }
 
-a{
+a {
     text-decoration: none;
     color: aliceblue;
     padding: 5px;
     border-radius: 5px;
 }
 
-a:hover{ 
+a:hover {
     color: #00ff00;
     transition: 0.3s;
 }
 
-.logo span{
+.logo span {
     color: #00ff00;
 }
 
-.text{
+.text {
     text-align: left;
     margin: 5px
 }
 
-.content-form{
+.content-form {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
@@ -61,24 +61,24 @@ a:hover{
     gap: 5px
 }
 
-.form-button{
+.form-button {
     margin-top: 10px;
     width: 100px;
     height: 34px;
 }
 
-.campos{
+.campos {
     display: flex;
     gap: 1em;
 }
 
-.inputs{
+.inputs {
     border-radius: 7px;
-    display: flex;
+    flex: 1;
     flex-direction: column;
 }
 
-.pedido{
+.pedido {
     margin-top: 7px;
     height: 150px;
     width: 300px;
