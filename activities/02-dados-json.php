@@ -82,7 +82,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dados-json</title>
-    <link rel="stylesheet" href="/activities/styles/02-persist-dados.css">
+    <link rel="stylesheet" href="/activities/styles/02-dados-json.css">
 </head>
 
 <body>
