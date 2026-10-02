@@ -141,6 +141,22 @@
                     </div>
                     <a href="/while/solicitar_projeto.html">Ver Projeto</a>
                 </div>
+                <!-- PROJETO 5 -->
+                <div class="card">
+                    <div class="numero-projeto">
+                        05
+                    </div>
+                    <h3>Persistencia de Dados</h3>
+                    <p>
+                        Descriçao do sistema de Cadastro
+                    </p>
+                    <div class="tecnologias">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <!--span>PHP</span-->
+                    </div>
+                    <a href="/activities/02-persist-dados.html">Ver Projeto</a>
+                </div>
                 <!--fin-->
             </div>
         </section>

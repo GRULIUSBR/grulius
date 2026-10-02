@@ -40,3 +40,10 @@ cores:
 #c74049
 #f04d65
 #e3ecee
+
+=============================json da scola===========================
+{
+    "editor.accessibilitySupport": "on",
+    "workbench.iconTheme": "vscode-icons",
+    "files.autoSave": "afterDelay"
+}
