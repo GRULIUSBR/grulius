@@ -155,7 +155,7 @@
                         <span>CSS</span>
                         <!--span>PHP</span-->
                     </div>
-                    <a href="/activities/02-persist-dados.php">Ver Projeto</a>
+                    <a href="/activities/02-dados-json.php">Ver Projeto</a>
                 </div>
                 <!--fin-->
             </div>
