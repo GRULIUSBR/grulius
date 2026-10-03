@@ -109,35 +109,35 @@ $alunos = json_decode($conteudoJson, true);
                 <!--port-->
                 <h2>Portugues</h2>
                 <label>Prova: 1</label>
-                <input type="number" name="portugues_prova1" min="0" max="0" step="0.1" required>
+                <input type="number" name="portugues_prova1" min="0" max="10" step="0.1" required>
                 <br><br>
                 <label>Prova: 2</label>
-                <input type="number" name="portugues_prova2" min="0" max="0" step="0.1" required>
+                <input type="number" name="portugues_prova2" min="0" max="10" step="0.1" required>
                 <br><br>
                 <label>Prova: 3</label>
-                <input type="number" name="portugues_prova3" min="0" max="0" step="0.1" required>
+                <input type="number" name="portugues_prova3" min="0" max="10" step="0.1" required>
                 <br><br>
                 <!--mate-->
                 <h2>Matematica</h2>
                 <label>Prova: 1</label>
-                <input type="number" name="matematica_prova1" min="0" max="0" step="0.1" required>
+                <input type="number" name="matematica_prova1" min="0" max="10" step="0.1" required>
                 <br><br>
                 <label>Prova: 2</label>
-                <input type="number" name="matematica_prova2" min="0" max="0" step="0.1" required>
+                <input type="number" name="matematica_prova2" min="0" max="10" step="0.1" required>
                 <br><br>
                 <label>Prova: 3</label>
-                <input type="number" name="matematica_prova3" min="0" max="0" step="0.1" required>
+                <input type="number" name="matematica_prova3" min="0" max="10" step="0.1" required>
                 <br><br>
                 <!--historia-->
                 <h2>Historia</h2>
                 <label>Prova: 1</label>
-                <input type="number" name="historia_prova1" min="0" max="0" step="0.1" required>
+                <input type="number" name="historia_prova1" min="0" max="10" step="0.1" required>
                 <br><br>
                 <label>Prova: 2</label>
-                <input type="number" name="historia_prova2" min="0" max="0" step="0.1" required>
+                <input type="number" name="historia_prova2" min="0" max="10" step="0.1" required>
                 <br><br>
                 <label>Prova: 3</label>
-                <input type="number" name="historia_prova3" min="0" max="0" step="0.1" required>
+                <input type="number" name="historia_prova3" min="0" max="10" step="0.1" required>
                 <br><br>
                 <button class="boton">ENVIAR FORMULARIO</button>
     </form>
