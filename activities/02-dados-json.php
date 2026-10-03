@@ -45,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     ];
 
     //serve pra ler/abrir arquivo json
-    $conteudoJson = file_get_contents(__DIR__ . "dados/intro.json");
+    $conteudoJson = file_get_contents(__DIR__ . "/dados/intro.json");
 
     // serve para converter json para array php
     //o (true) serve para converter o json em array associativo para php ler
@@ -63,7 +63,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     );
 
     //salvar no arquivo json
-    file_get_contents(__DIR__ . "/dados/intro.json", $jsonAtualizado);
+    file_put_contents(__DIR__ . "/dados/intro.json", $jsonAtualizado);
 }
 
 //ler dados para exibir
