@@ -44,33 +44,35 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         ]
     ];
 
-    echo "<h2>DADOS RECEBIDOS</h2>";
-    echo "Nome: " . $nome . "<br>";
-    echo "Idade: " . $idade .
-        "<br><br>";
+    //serve pra ler/abrir arquivo json
+    $conteudoJson = file_get_contents(__DIR__ . "dados/intro.json");
 
-    echo "<strong>Portugues:</strong><br>";
-    echo "Prova 1: " . $portugues_prova1 . "<br>";
-    echo "Prova 2: " . $portugues_prova2 . "<br>";
-    echo "Prova 3: " . $portugues_prova3 .
-        "<br><br>";
+    // serve para converter json para array php
+    //o (true) serve para converter o json em array associativo para php ler
+    $alunos = json_decode($conteudoJson, true);
 
-    echo "<strong>Matematica:</strong><br>";
-    echo "Prova 1: " . $matematica_prova1 . "<br>";
-    echo "Prova 2: " . $matematica_prova2 . "<br>";
-    echo "Prova 3: " . $matematica_prova3 .
-        "<br><br>";
+    //adicionar novo aluno
+    $alunos[] = $novoAluno;
 
-    echo "<strong>Historia:</strong><br>";
-    echo "Prova 1: " . $historia_prova1 . "<br>";
-    echo "Prova 2: " . $historia_prova2 . "<br>";
-    echo "Prova 3: " . $historia_prova3 .
-        "<br><br>";
+    //CONVERTER O ARRAY PHP PARA JSON
+    $jsonAtualizado = json_encode(
+        $alunos,
+        //json pretty print deixa o json bonito pulando linhas
+        //json unescaped unicode serve pros carateres especiais do portuges joao = jou00e30o
+        JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE
+    );
+
+    //salvar no arquivo json
+    file_get_contents(__DIR__ . "/dados/intro.json", $jsonAtualizado);
 }
 
+//ler dados para exibir
 
+//lee el archuivo JSON
+$conteudoJson = file_get_contents(__DIR__ . "/dados/intro.json");
 
-
+//converte o json para array php
+$alunos = json_decode($conteudoJson, true);
 
 
 
@@ -84,6 +86,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>dados-json</title>
     <link rel="stylesheet" href="/activities/styles/02-dados-json.css">
 </head>
+<header>
+    <div class="logo">
+        <h2>José <span>Oropesa</span></h2>
+    </div>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+    </nav>
+</header>
 
 <body>
     <h1>CADASTRO DE NOTAS</h1>
@@ -128,6 +141,32 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <br><br>
                 <button class="boton">ENVIAR FORMULARIO</button>
     </form>
+
+    <h1>ALUNOS CADASTRADOS</h1>
+
+    <?php foreach ($alunos as $aluno) { ?>
+
+        <h2> <?= $aluno["nome"] ?> </h2>
+        <p>Idade: <?= $aluno["idade"] ?> </p>
+        <!--PORTUGUES-->
+        <h2>PORTUGUES</h2>
+        <p>Prova 1: <?= $aluno["notas"]["portugues"]["prova1"] ?> </p>
+        <p>Prova 2: <?= $aluno["notas"]["portugues"]["prova1"] ?> </p>
+        <p>Prova 3: <?= $aluno["notas"]["portugues"]["prova1"] ?> </p>
+        <!--MATEMATICA-->
+        <h2>MATEMATICA</h2>
+        <p>Prova 1: <?= $aluno["notas"]["matematica"]["prova1"] ?> </p>
+        <p>Prova 2: <?= $aluno["notas"]["matematica"]["prova1"] ?> </p>
+        <p>Prova 3: <?= $aluno["notas"]["matematica"]["prova1"] ?> </p>
+        <!--HISTORIA-->
+        <h2>HISTORIA</h2>
+        <p>Prova 1: <?= $aluno["notas"]["historia"]["prova1"] ?> </p>
+        <p>Prova 2: <?= $aluno["notas"]["historia"]["prova1"] ?> </p>
+        <p>Prova 3: <?= $aluno["notas"]["historia"]["prova1"] ?> </p>
+    <?php } ?>
+
+
+
 </body>
 
 </html>

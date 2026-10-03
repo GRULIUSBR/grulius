@@ -33,13 +33,20 @@ id = js
 name = php
 
 =================================================
-cores:
+cores: valorant
 #032f3b
 #094854
 #7b3f50
 #c74049
 #f04d65
 #e3ecee
+
+cores: verde menta
+#2a8c4a
+#64c27b
+#9bfab0
+#d0fdd7
+#ffffff
 
 =============================json da scola===========================
 {
