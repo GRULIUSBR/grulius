@@ -4,5 +4,21 @@
 }
 
 .intro-form{
-    background-color: ;
+    background-color: #22300B;
+    color: #76993D;
+}
+
+.boton{
+    border-radius: 7px;
+    background-color: #293B14;
+    color: #76993D;
+    width: 100px;
+    height: 40px;
+}
+
+/**/
+
+.cadastrados{
+    background-color: #22300B;
+    color: #76993D;
 }
