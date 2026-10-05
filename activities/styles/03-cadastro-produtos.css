@@ -34,12 +34,15 @@ body{
     color: #fff;
 }
 
+
 .card-container{
+    margin: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
     border-color: #fff;
     border: 10px;
+    gap: 25px;
 }
 
 .form-card{
