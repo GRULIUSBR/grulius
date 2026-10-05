@@ -34,9 +34,12 @@ body{
     color: #fff;
 }
 
-.formulario{
+.card-container{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    border-color: #fff;
+    border: 10px;
 }
 
 .form-card{
