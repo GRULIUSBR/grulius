@@ -3,23 +3,23 @@
     margin: 0;
 }
 
-body {
+body{
     line-height: 1.6;
 }
 
-.intro-form {
+.intro-form{
     background-color: #22300B;
     color: #76993D;
 }
 
-.boxes {
+.boxes{
     border: 5px;
     background-color: black;
     color: #76993D;
     border-color: none;
 }
 
-.boton {
+.boton{
     margin-top: 10px;
     border-radius: 7px;
     background-color: #293B14;
@@ -28,13 +28,13 @@ body {
     height: 40px;
 }
 
-.boton:hover {
+.boton:hover{
     transform: translateY(-3px);
     background-color: #76993D;
     color: #fff;
 }
 
-.formulario {
+.card-container{
     margin: 10px;
     display: flex;
     flex-direction: row;
@@ -44,15 +44,14 @@ body {
     gap: 25px;
 }
 
-
-.form-card {
+.form-card{
     display: flex;
     flex-direction: column;
 }
 
 /**/
 
-.cadastrados {
+.cadastrados{
     background-color: #22300B;
     color: #76993D;
     height: 100vh;

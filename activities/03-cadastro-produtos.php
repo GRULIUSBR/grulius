@@ -74,7 +74,7 @@ $cadastros = json_decode($conteudoJson, true);
                         </div>
                         <div class="form-card">
                             <label>PREÇO</label>
-                            <input type="number" class="boxes">
+                            <input type="number" step="0.1" class="boxes">
                             <label>QUANTIDADE</label>
                             <input type="number" class="boxes">
                             <label>NOME DO FABRICANTE</label>
