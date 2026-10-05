@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     ];
 
     //abrir-ler arquivo
-    $conteudoJson = file_get_contents(__DIR__ . "/dados/22-cadastro.json");
+    $conteudoJson = file_get_contents(__DIR__ . "/activities/dados/22-cadastro.json");
 
     $cadastros = json_decode($conteudoJson, true);
     //adicionar cadastro
@@ -35,10 +35,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     );
 
     //salvando en .json
-    file_put_contents(__DIR__ . "/dados/22-cadastro.json", $jsonAtualizado);
+    file_put_contents(__DIR__ . "/activities/dados/22-cadastro.json", $jsonAtualizado);
 }
 
-$conteudoJson = file_get_contents(__DIR__ . "dados/22-cadastro.json");
+$conteudoJson = file_get_contents(__DIR__ . "/activitiesdados/22-cadastro.json");
 $cadastros = json_decode($conteudoJson, true);
 
 ?>
