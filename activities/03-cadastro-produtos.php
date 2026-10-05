@@ -77,7 +77,7 @@ $cadastros = json_decode($conteudoJson, true);
                     <input type="text">
                     <label>PAIS</label>
                     <input type="text">
-                    <button type="submit"></button>
+                    <button type="submit">FINALIZAR CADASTRO</button>
                 </form>
             </div>
         </section> <!--introform section-->

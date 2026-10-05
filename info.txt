@@ -48,6 +48,13 @@ cores: verde menta
 #d0fdd7
 #ffffff
 
+cores: verde musgo
+#76993D lighter
+#4d4019
+#344D0E
+#293B14
+#22300B darker
+
 =============================json da scola===========================
 {
     "editor.accessibilitySupport": "on",
