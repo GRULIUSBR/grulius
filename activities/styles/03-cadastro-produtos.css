@@ -8,6 +8,12 @@
     color: #76993D;
 }
 
+.boxes{
+    border: 5px;
+    background-color: black;
+    color: #76993D;
+}
+
 .boton{
     border-radius: 7px;
     background-color: #293B14;
@@ -16,9 +22,15 @@
     height: 40px;
 }
 
+.formulario{
+    display: flex;
+    flex-direction: row;
+}
+
 /**/
 
 .cadastrados{
     background-color: #22300B;
     color: #76993D;
+    height: 100vh;
 }

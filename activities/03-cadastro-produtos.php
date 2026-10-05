@@ -64,19 +64,19 @@ $cadastros = json_decode($conteudoJson, true);
             <div class="formulario">
                 <form method="$_POST">
                     <label>NOME:</label>
-                    <input type="text">
+                    <input type="text" class="boxes">
                     <label>CATEGORIA:</label>
-                    <input type="text">
+                    <input type="text" class="boxes">
                     <label>MARCA</label>
-                    <input type="text">
+                    <input type="text" class="boxes">
                     <label>PREÇO</label>
-                    <input type="number">
+                    <input type="number" class="boxes">
                     <label>QUANTIDADE</label>
-                    <input type="number">
+                    <input type="number" class="boxes">
                     <label>NOME DO FABRICANTE</label>
-                    <input type="text">
+                    <input type="text" class="boxes">
                     <label>PAIS</label>
-                    <input type="text">
+                    <input type="text" class="boxes">
                     <button type="submit" class="boton">FINALIZAR CADASTRO</button>
                 </form>
             </div>
