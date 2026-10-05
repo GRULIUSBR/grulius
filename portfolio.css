@@ -225,7 +225,7 @@ font-size: 14px;
 }
 
 .card{
-    flex: 1;
+    flex: 2;
     background-color: #191922;
     padding: 30px;
     border-radius: 12px;
