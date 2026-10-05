@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+body{
+    line-height: 1.6;
+}
+
 .intro-form{
     background-color: #22300B;
     color: #76993D;
@@ -12,9 +16,11 @@
     border: 5px;
     background-color: black;
     color: #76993D;
+    border-color: none;
 }
 
 .boton{
+    margin-top: 10px;
     border-radius: 7px;
     background-color: #293B14;
     color: #76993D;
@@ -22,9 +28,20 @@
     height: 40px;
 }
 
+.boton:hover{
+    transform: translateY(-3px);
+    background-color: #76993D;
+    color: #fff;
+}
+
 .formulario{
     display: flex;
     flex-direction: row;
+}
+
+.form-card{
+    display: flex;
+    flex-direction: column;
 }
 
 /**/
