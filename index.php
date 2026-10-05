@@ -130,7 +130,7 @@
                     <div class="numero-projeto">
                         04
                     </div>
-                    <h3>software house</h3>
+                    <h3>Cadastro de Produtos PHP-JSON</h3>
                     <p>
                         Descriçao do sistema de Cadastro
                     </p>
@@ -139,7 +139,7 @@
                         <span>CSS</span>
                         <!--span>PHP</span-->
                     </div>
-                    <a href="/while/solicitar_projeto.html">Ver Projeto</a>
+                    <a href="/activities/03-cadastro-produtos.php">Ver Projeto</a>
                 </div>
                 <!-- PROJETO 5 -->
                 <div class="card">
