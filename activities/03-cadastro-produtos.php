@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     ];
 
     //abrir-ler arquivo
-    $conteudoJson = file_get_contents(__DIR__ . "/activities/dados/22-cadastro.json");
+    $conteudoJson = file_get_contents(__DIR__ . "/dados/22-cadastro.json");
 
     $cadastros = json_decode($conteudoJson, true);
     //adicionar cadastro
@@ -35,10 +35,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     );
 
     //salvando en .json
-    file_put_contents(__DIR__ . "/activities/dados/22-cadastro.json", $jsonAtualizado);
+    file_put_contents(__DIR__ . "/dados/22-cadastro.json", $jsonAtualizado);
 }
 
-$conteudoJson = file_get_contents(__DIR__ . "/activitiesdados/dados/22-cadastro.json");
+$conteudoJson = file_get_contents(__DIR__ . "/dados/22-cadastro.json");
 $cadastros = json_decode($conteudoJson, true);
 
 ?>
@@ -66,21 +66,21 @@ $cadastros = json_decode($conteudoJson, true);
                     <div class="card-container">
                         <div class="form-card">
                             <label>NOME:</label>
-                            <input type="text" class="boxes">
+                            <input type="text" name="nome" class="boxes">
                             <label>CATEGORIA:</label>
-                            <input type="text" class="boxes">
+                            <input type="text" name="categoria" class="boxes">
                             <label>MARCA</label>
-                            <input type="text" class="boxes">
+                            <input type="text" name="marca" class="boxes">
                         </div>
                         <div class="form-card">
                             <label>PREÇO</label>
-                            <input type="number" step="0.1" class="boxes">
+                            <input type="number" name="preco" step="0.1" class="boxes">
                             <label>QUANTIDADE</label>
-                            <input type="number" class="boxes">
+                            <input type="number" name="quantidade" class="boxes">
                             <label>NOME DO FABRICANTE</label>
-                            <input type="text" class="boxes">
+                            <input type="text" name="fabricanteNome" class="boxes">
                             <label>PAIS</label>
-                            <input type="text" class="boxes">
+                            <input type="text" name="pais" class="boxes">
                         </div>
                     </div>
 
