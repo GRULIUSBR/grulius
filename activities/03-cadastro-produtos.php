@@ -108,13 +108,21 @@ $cadastros = json_decode($conteudoJson, true);
                         <p> <?= $cadastro["preco"] ?> </p>
                         <p> <?= $cadastro["quantidade"] ?> </p>
                         <h3>FABRICANTE</h3>
-                        <p> <?= $cadastro["fabricanteNome"] ?> </p>
-                        <p> <?= $cadastro["pais"] ?> </p>
+                        <p> <?= $cadastro["fabricante"]["fabricanteNome"] ?> </p>
+                        <p> <?= $cadastro["fabricante"]["pais"] ?> </p>
                     </div>
             </div>
         <?php } ?>
         </section>
     </main>
+    <footer>
+        <p>
+            DESENVOLVIDO POR <a href="https://jose755.devlook.xyz">JOSE OROPESA</a>
+        </p>
+        <p>
+            HTML + CSS + PHP + JSON
+        </p>
+    </footer>
 </body>
 
 </html>
