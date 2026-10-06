@@ -5,6 +5,7 @@
 
 body {
     line-height: 1.6;
+    margin-left: 5px;
 }
 
 .intro-form {
@@ -13,10 +14,9 @@ body {
 }
 
 .boxes {
-    border: 5px;
+    border-radius: 5px;
     background-color: black;
     color: #76993D;
-    border-color: none;
 }
 
 .boton {
@@ -48,6 +48,7 @@ body {
 .form-card {
     display: flex;
     flex-direction: column;
+    margin-top: 26px;
 }
 
 /**/
