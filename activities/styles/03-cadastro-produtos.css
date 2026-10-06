@@ -41,7 +41,7 @@ body {
     flex-direction: row;
     align-items: center;
     border-color: #fff;
-    border: 10px;
+    border: 2px;
     gap: 25px;
 }
 
@@ -67,6 +67,8 @@ body {
     border-color: #76993D;
     background-color: #5a7234;
     color: #76993D;
+    border: 2px;
+    border-radius: 10px;
 }
 
 .card-produto:hover{
