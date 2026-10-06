@@ -30,6 +30,7 @@ body {
 
 .boton:hover {
     transform: translateY(-3px);
+    transition: 0.3s;
     background-color: #76993D;
     color: #fff;
 }
@@ -60,6 +61,18 @@ body {
 .cards {
     display: flex;
     flex-direction: row;
+}
+
+.card-produto{
+    border-color: #76993D;
+    background-color: #5a7234;
+    color: #76993D;
+}
+
+.card-produto:hover{
+    border-color: #fff;
+    transform: translateY(-3px);
+    transition: 0.3s;
 }
 
 footer {

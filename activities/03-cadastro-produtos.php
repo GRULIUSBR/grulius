@@ -102,12 +102,13 @@ $cadastros = json_decode($conteudoJson, true);
             <div class="cards">
                 <?php foreach ($cadastros as $cadastro) {  ?>
                     <div class="card-produto">
+                        <h2>PRODUTO:</h2>
                         <h2> <?= $cadastro["nome"] ?> </h2>
                         <p> <?= $cadastro["categoria"] ?> </p>
                         <p> <?= $cadastro["marca"] ?> </p>
                         <p> <?= $cadastro["preco"] ?> </p>
                         <p> <?= $cadastro["quantidade"] ?> </p>
-                        <h3>FABRICANTE</h3>
+                        <h3>FABRICANTE:</h3>
                         <p> <?= $cadastro["fabricante"]["fabricanteNome"] ?> </p>
                         <p> <?= $cadastro["fabricante"]["pais"] ?> </p>
                     </div>
