@@ -9,6 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // fabricante
     $fabricanteNome = $_POST["fabricanteNome"];
     $pais = $_POST["pais"];
+    //valor no estoque
 
     $novoCadastro = [
         "nome" => $nome,
@@ -111,6 +112,8 @@ $cadastros = json_decode($conteudoJson, true);
                         <h3>FABRICANTE:</h3>
                         <p> <?= $cadastro["fabricante"]["fabricanteNome"] ?> </p>
                         <p> <?= $cadastro["fabricante"]["pais"] ?> </p>
+                        <h3> VALOR NO ESTOQUE: </h3>
+                        <p> <?= $preco["preco"] * $quantidade["quantidade"]?> </p>
                     </div>
             </div>
         <?php } ?>
