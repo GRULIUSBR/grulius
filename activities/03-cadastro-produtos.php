@@ -66,7 +66,7 @@ $cadastros = json_decode($conteudoJson, true);
                 <h2>FORMULARIO DE CADASTRO</h2>
             </div>
             <div class="formulario">
-                <form method="$_POST">
+                <form method="POST">
                     <div class="card-container">
                         <div class="form-card">
                             <label>NOME:</label>
