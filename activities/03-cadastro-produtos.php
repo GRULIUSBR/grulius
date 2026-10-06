@@ -36,6 +36,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     //salvando en .json
     file_put_contents(__DIR__ . "/dados/22-cadastro.json", $jsonAtualizado);
+
+    //lee el archivo json
+    $conteudoJson = file_get_contents(__DIR__ . "/dados/22-cadastro.json");
+    $cadastros = json_decode($conteudoJson, true);
 }
 
 $conteudoJson = file_get_contents(__DIR__ . "/dados/22-cadastro.json");
