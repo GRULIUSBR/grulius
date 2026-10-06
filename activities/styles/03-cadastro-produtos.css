@@ -7,15 +7,19 @@ body {
     margin-left: 5px;
 }
 
-.formulario{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
+
 
 .intro-form {
     background-color: #22300B;
     color: #76993D;
+}
+
+.formulario{
+    align-items: center;
+    padding: 30px;
+    border: 2px;
+    border-color: #fff;
+    background-color: #0b0b10;
 }
 
 .boxes {
