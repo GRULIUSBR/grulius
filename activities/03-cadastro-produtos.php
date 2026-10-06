@@ -113,7 +113,7 @@ $cadastros = json_decode($conteudoJson, true);
                         <p> <?= $cadastro["fabricante"]["fabricanteNome"] ?> </p>
                         <p> <?= $cadastro["fabricante"]["pais"] ?> </p>
                         <h3> VALOR NO ESTOQUE: </h3>
-                        <p> <?= $preco["preco"] * $quantidade["quantidade"]?> </p>
+                        <p> <?= (float)$cadastro["preco"] * (int)$cadastro["quantidade"] ?> </p>
                     </div>
             </div>
         <?php } ?>
