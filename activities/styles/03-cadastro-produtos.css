@@ -1,95 +1,368 @@
+/* =========================
+   RESET
+========================= */
+
 * {
+    margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    line-height: 1.6;
-    margin-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eef2f7;
+    color: #1e293b;
 }
+
+
+/* =========================
+   MAIN
+========================= */
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+
+/* =========================
+   FORMULÁRIO
+========================= */
 
 .intro-form {
-    background-color: #22300B;
-    color: #76993D;
-}
-
-.formulario{
-    align-items: center;
+    background: white;
     padding: 30px;
-    border: 2px;
-    border-color: #fff;
-    background-color: #0b0b10;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    margin-bottom: 50px;
 }
 
-.boxes {
-    border-radius: 5px;
-    background-color: black;
-    color: #76993D;
+.intro {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-.boton {
-    margin-top: 10px;
-    border-radius: 7px;
-    background-color: #293B14;
-    color: #76993D;
-    width: 100px;
-    height: 40px;
+.intro h2 {
+    color: #2563eb;
+    font-size: 28px;
 }
 
-.boton:hover {
-    transform: translateY(-3px);
-    transition: 0.3s;
-    background-color: #76993D;
-    color: #fff;
-}
+
+/* =========================
+   CONTAINER DOS FORM CARDS
+========================= */
 
 .card-container {
-    margin: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    border-color: #fff;
-    border: 2px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 25px;
 }
 
 .form-card {
     display: flex;
     flex-direction: column;
-    margin-top: 26px;
+
+    background: #f8fafc;
+    padding: 25px;
+
+    border: 1px solid #dbe3ec;
+    border-radius: 12px;
 }
 
-/**/
 
-.cadastrados {
-    background-color: #22300B;
-    color: #76993D;
-    height: 100vh;
+/* =========================
+   LABELS
+========================= */
+
+.form-card label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #475569;
+
+    margin-top: 12px;
+    margin-bottom: 6px;
 }
 
-.cards {
-    display: flex;
-    flex-direction: row;
-}
 
-.card-produto{
-    border-color: #76993D;
-    background-color: #5a7234;
-    color: #76993D;
-    border: 2px;
-    border-radius: 10px;
-}
+/* =========================
+   INPUTS
+========================= */
 
-.card-produto:hover{
-    border-color: #fff;
-    transform: translateY(-3px);
+.boxes {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 2px solid #cbd5e1;
+    border-radius: 8px;
+
+    background: white;
+
+    font-size: 16px;
+
+    outline: none;
+
     transition: 0.3s;
 }
 
-footer {
-    padding: 25px 10%;
-    background-color: #0b0b10;
-    color: #737380;
-    display: flex;
-    justify-content: space-between;
+.boxes:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+
+/* =========================
+   BOTÃO
+========================= */
+
+.boton {
+    display: block;
+
+    margin: 30px auto 0;
+
+    padding: 14px 30px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #2563eb;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background: #1d4ed8;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 15px rgba(37, 99, 235, 0.25);
+}
+
+
+/* =========================
+   PRODUTOS CADASTRADOS
+========================= */
+
+.cadastrados {
+    width: 100%;
+}
+
+.intro-cadastrados {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.intro-cadastrados h1 {
+    font-size: 30px;
+    color: #1e293b;
+}
+
+
+/* =========================
+   GRID DOS PRODUTOS
+========================= */
+
+.cards {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* =========================
+   CARD DO PRODUTO
+========================= */
+
+.card-produto {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 14px;
+
+    border: 1px solid #e2e8f0;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.07);
+
+    transition: 0.3s;
+}
+
+.card-produto:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+/* "PRODUTO:" */
+
+.card-produto h2:first-child {
     font-size: 13px;
+
+    color: #2563eb;
+
+    margin-bottom: 5px;
+}
+
+
+/* Nome do produto */
+
+.card-produto h2:nth-child(2) {
+    font-size: 23px;
+
+    color: #0f172a;
+
+    margin-bottom: 20px;
+}
+
+
+/* Informações */
+
+.card-produto p {
+    color: #64748b;
+
+    font-size: 15px;
+
+    margin: 8px 0;
+}
+
+
+/* Títulos internos */
+
+.card-produto h3 {
+    margin-top: 20px;
+    margin-bottom: 8px;
+
+    padding-bottom: 7px;
+
+    border-bottom: 1px solid #e2e8f0;
+
+    color: #475569;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   VALOR DO ESTOQUE
+========================= */
+
+.card-produto h3:last-of-type {
+    color: #16a34a;
+}
+
+.card-produto h3:last-of-type + p {
+    color: #16a34a;
+
+    font-size: 20px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    margin-top: 60px;
+
+    padding: 30px 20px;
+
+    background: #0f172a;
+
+    color: #cbd5e1;
+
+    text-align: center;
+}
+
+footer p {
+    margin: 8px 0;
+
+    font-size: 14px;
+}
+
+footer a {
+    color: #60a5fa;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #93c5fd;
+
+    text-decoration: underline;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 650px) {
+
+    main {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .intro-form {
+        padding: 20px 15px;
+    }
+
+    .intro h2 {
+        font-size: 22px;
+    }
+
+    /* Formulário vira uma coluna */
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Produtos viram uma coluna */
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .intro-cadastrados h1 {
+        font-size: 24px;
+    }
+
+    .boton {
+        width: 100%;
+    }
+
 }

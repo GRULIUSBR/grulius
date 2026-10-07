@@ -61,3 +61,15 @@ cores: verde musgo
     "workbench.iconTheme": "vscode-icons",
     "files.autoSave": "afterDelay"
 }
+
+
+
+======================== CRUD =================================== //organizar o codigo , o pseudocodigo . . .
+CREATE
+READ
+UPDATE
+DELETE
+
+======= PHP ============================================================
+CREATE -- file_put_contents
+READ -- file_get_contents

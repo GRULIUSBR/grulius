@@ -25,14 +25,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     //abrir-ler arquivo
     $conteudoJson = file_get_contents(__DIR__ . "/dados/22-cadastro.json");
-
     $cadastros = json_decode($conteudoJson, true);
+
     //adicionar cadastro
     $cadastros[] = $novoCadastro;
+
     //array php -> json
     $jsonAtualizado = json_encode(
         $cadastros,
-        JSON_PRETTY_PRINT
+        JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE
     );
 
     //salvando en .json
@@ -115,8 +116,8 @@ $cadastros = json_decode($conteudoJson, true);
                         <h3> VALOR NO ESTOQUE: </h3>
                         <p> <?= (float)$cadastro["preco"] * (int)$cadastro["quantidade"] ?> </p>
                     </div>
+                <?php } ?>
             </div>
-        <?php } ?>
         </section>
     </main>
     <footer>
