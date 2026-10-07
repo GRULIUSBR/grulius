@@ -55,7 +55,7 @@ $cadastros = json_decode($conteudoJson, true);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>22-CadastroProdutos-PHP-JSON</title>
-    <link rel="stylesheet" href="/activities/styles/03-cadastro-produtos.css">
+    <link rel="stylesheet" href="/css/03-cadastro-produtos.css">
 </head>
 
 <body>

@@ -91,7 +91,7 @@
                         <span>CSS</span>
                         <!--span>PHP</span-->
                     </div>
-                    <a href="/activities/01.html">Ver Projeto</a>
+                    <a href="/atividades/01.html">Ver Projeto</a>
                 </div>
                 <!-- PROJETO 2 -->
                 <div class="card">
