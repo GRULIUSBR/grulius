@@ -73,3 +73,5 @@ DELETE
 ======= PHP ============================================================
 CREATE -- file_put_contents
 READ -- file_get_contents
+unset = remover
+array
