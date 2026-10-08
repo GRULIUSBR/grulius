@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         "descricao" => $descricao,
         "prioridade" => $prioridade
     ];
-    
+
     //ler abrir o arquivo json
     $conteudoJson = file_get_contents(__DIR__ . "../dados/chamados.json");
 
@@ -63,43 +63,44 @@ $chamados = json_decode($conteudoJson, true);
 <body>
     <h1>BEM VINDO AO HELPDESK: <?= $nomeEmpresa ?> </h1>
     <main>
-    <!--CREATE-->
-    <section class="formulario">
-        <h2>FORMULARIO</h2>
-        <form method="post">
-            <label>NOME DO FUNCIONARIO</label>
-            <input type="text" name="nome">
-            <label>SETOR DA EMPRESA</label>
-            <input type="text" name="setor">
-            <label>EQUIPAMENTO AFETADO</label>
-            <input type="text" name="equipamento">
-            <textarea name="descricao"></textarea>
-            <label>PRIORIDADE</label>
-            <input type="text" name="prioridade">
-            <button type="submit">ENVIAR</button>
-        </form>
-    </section>
-    <!--READ-->
-    <section class="chamados">
-    <h2>CHAMADOS</h2>
-    <?php foreach ($chamados as $chamado) { ?>
-        <p> NOME DO FUNCIONARIO: <?= $chamado["nome"] ?>  </p>
-        <p> SETOR DA EMPRESA: <?= $chamado["setor"] ?>  </p>
-        <p> EQUIPAMENTO: <?= $chamado["equipamento"] ?>  </p>
-        <p> PRIORIDADE: <?= $chamado["prioridade"] ?>  </p>
-        <button type="">ELIMINAR CHAMADO</button>
-    <?php } ?>
+        <!--CREATE-->
+        <section class="formulario">
+            <h2>FORMULARIO</h2>
+            <form method="post">
+                <label>NOME DO FUNCIONARIO</label>
+                <input type="text" name="nome" required>
+                <label>SETOR DA EMPRESA</label>
+                <input type="text" name="setor" required>
+                <label>EQUIPAMENTO AFETADO</label>
+                <input type="text" name="equipamento" required>
+                <label>DESCRIÇÃO:</label>
+                <textarea name="descricao" required></textarea>
+                <label>PRIORIDADE</label>
+                <input type="text" name="prioridade" required>
+                <button type="submit">ENVIAR</button>
+            </form>
+        </section>
+        <!--READ-->
+        <section class="chamados">
+            <h2>CHAMADOS</h2>
+            <?php foreach ($chamados as $chamado) { ?>
+                <p> NOME DO FUNCIONARIO: <?= $chamado["nome"] ?> </p>
+                <p> SETOR DA EMPRESA: <?= $chamado["setor"] ?> </p>
+                <p> EQUIPAMENTO: <?= $chamado["equipamento"] ?> </p>
+                <p> PRIORIDADE: <?= $chamado["prioridade"] ?> </p>
+                <button type="">ELIMINAR CHAMADO</button>
+            <?php } ?>
 
-    </section>
-    <!--UPDATE-->
-    <section class="atualizar">
+        </section>
+        <!--UPDATE-->
+        <section class="atualizar">
 
-    </section>
-    <!--DELETE-->
-    <section class="remover">
+        </section>
+        <!--DELETE-->
+        <section class="remover">
 
-    </section>
-    <!--END-->
+        </section>
+        <!--END-->
     </main>
 </body>
 
