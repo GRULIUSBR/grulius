@@ -36,6 +36,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <button type="submit">CALCULAR MEDIA</button>
         </form>
     </div>
+    <h2>
+        MEDIA:
+        <?= $media ?>
+    </h2>
     <h3>
         SITUAÇAO:
         <?= $situacao ?>
