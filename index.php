@@ -137,7 +137,7 @@
                     <div class="tecnologias">
                         <span>HTML</span>
                         <span>CSS</span>
-                        <!--span>PHP</span-->
+                        <span>PHP</span>
                     </div>
                     <a href="/activities/03-cadastro-produtos.php">Ver Projeto</a>
                 </div>
@@ -153,7 +153,7 @@
                     <div class="tecnologias">
                         <span>HTML</span>
                         <span>CSS</span>
-                        <!--span>PHP</span-->
+                        <span>PHP</span>
                     </div>
                     <a href="/activities/02-dados-json.php">Ver Projeto</a>
                 </div>
@@ -169,7 +169,7 @@
                     <div class="tecnologias">
                         <span>HTML</span>
                         <span>CSS</span>
-                        <!--span>PHP</span-->
+                        <span>PHP</span>
                     </div>
                     <a href="/atividades/09-funcoes2.php">Ver Projeto</a>
                 </div>
