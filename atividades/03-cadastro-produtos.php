@@ -58,6 +58,19 @@ $cadastros = json_decode($conteudoJson, true);
     <link rel="stylesheet" href="../css/03-cadastro-produtos.css">
 </head>
 
+<header>
+    <div class="logo">
+        <h2>José <span>Oropesa</span></h2>
+    </div>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+        
+    </nav>
+    </header>
+    
 <body>
     <main>
 

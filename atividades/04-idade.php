@@ -21,13 +21,16 @@ else{
 
 <header>
     <div class="logo">
-        <h2>Jose <span>Oropesa</span> </h2>
+        <h2>José <span>Oropesa</span></h2>
     </div>
     <nav>
-    <a href="index.php">BACK TO MAIN</a>
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+        
     </nav>
-    
-</header>
+    </header>
 
     <body>
         <main>

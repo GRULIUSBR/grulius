@@ -19,6 +19,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>FUNÇOES NO FRONT</title>
 </head>
 
+<header>
+    <div class="logo">
+        <h2>José <span>Oropesa</span></h2>
+    </div>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+        
+    </nav>
+    </header>
+    
 <body>
     <h1> <?= $nomeEscola ?> </h1>
     <h2> <?= saudacao() ?> </h2>
