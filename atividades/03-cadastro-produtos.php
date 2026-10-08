@@ -63,14 +63,14 @@ $cadastros = json_decode($conteudoJson, true);
         <h2>José <span>Oropesa</span></h2>
     </div>
     <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#contato">Contato</a>
+        <a href="../index.php">Inicio</a>
+        <a href="../index.php#sobre">Sobre</a>
+        <a href="../index.php#projetos">Projetos</a>
+        <a href="../index.php#contato">Contato</a>
         
     </nav>
     </header>
-    
+
 <body>
     <main>
 

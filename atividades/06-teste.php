@@ -34,6 +34,18 @@ echo "aluno atualizado"
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRUD</title>
 </head>
+<header>
+    <div class="logo">
+        <h2>José <span>Oropesa</span></h2>
+    </div>
+    <nav>
+        <a href="../index.php">Inicio</a>
+        <a href="../index.php#sobre">Sobre</a>
+        <a href="../index.php#projetos">Projetos</a>
+        <a href="../index.php#contato">Contato</a>
+        
+    </nav>
+    </header>
 <body>
     
 </body>
