@@ -30,9 +30,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="media">
         <form method="post">
             <label>PRIMER NUMERO:</label>
-            <input type="number" name="nota1" step="0.1" min="0" max="10">
+            <input type="number" name="nota1" step="0.1" min="0" max="10" required>
             <label>SEGUNDO NUMERO:</label>
-            <input type="number" name="nota2" step="0.2" min="0" max="10">
+            <input type="number" name="nota2" step="0.2" min="0" max="10" required>
             <button type="submit">CALCULAR MEDIA</button>
         </form>
     </div>
