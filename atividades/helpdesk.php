@@ -12,9 +12,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         "setor" => $setor,
         "equipamento" => $equipamento,
         "descricao" => $descricao,
-        "prioridade" => $prioridade,
-
+        "prioridade" => $prioridade
     ];
+    
     //ler abrir o arquivo json
     $conteudoJson = file_get_contents(__DIR__ . "../dados/chamados.json");
 
