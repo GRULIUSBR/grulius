@@ -61,6 +61,7 @@ $chamados = json_decode($conteudoJson, true);
 </header>
 
 <body>
+    <h1>BEM VINDO AO HELPDESK: <?= $nomeEmpresa ?> </h1>
     <main>
     <!--CREATE-->
     <section class="formulario">
@@ -79,15 +80,23 @@ $chamados = json_decode($conteudoJson, true);
         </form>
     </section>
     <!--READ-->
-    <section class="formulario">
+    <section class="chamados">
+    <h2>CHAMADOS</h2>
+    <?php foreach ($chamados as $chamado) { ?>
+        <p> NOME DO FUNCIONARIO: <?= $chamado["nome"] ?>  </p>
+        <p> SETOR DA EMPRESA: <?= $chamado["setor"] ?>  </p>
+        <p> EQUIPAMENTO: <?= $chamado["equipamento"] ?>  </p>
+        <p> PRIORIDADE: <?= $chamado["prioridade"] ?>  </p>
+        <button type="">ELIMINAR CHAMADO</button>
+    <?php } ?>
 
     </section>
     <!--UPDATE-->
-    <section class="formulario">
+    <section class="atualizar">
 
     </section>
     <!--DELETE-->
-    <section class="formulario">
+    <section class="remover">
 
     </section>
     <!--END-->
