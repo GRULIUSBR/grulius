@@ -107,7 +107,7 @@
                         <span>CSS</span>
                         <!--span>PHP</span-->
                     </div>
-                    <a href="/activities/idade-get.php">Ver Projeto</a>
+                    <a href="/atividades/05-idade-get.php">Ver Projeto</a>
                 </div>
                 <!-- PROJETO 3 -->
                 <div class="card">
@@ -123,7 +123,7 @@
                         <span>CSS</span>
                         <!--span>PHP</span-->
                     </div>
-                    <a href="idade.php">Ver Projeto</a>
+                    <a href="/atividades/04-idade.php">Ver Projeto</a>
                 </div>
                 <!-- PROJETO 4 -->
                  <div class="card">
@@ -139,7 +139,7 @@
                         <span>CSS</span>
                         <span>PHP</span>
                     </div>
-                    <a href="/activities/03-cadastro-produtos.php">Ver Projeto</a>
+                    <a href="/atividades/03-cadastro-produtos.php">Ver Projeto</a>
                 </div>
                 <!-- PROJETO 5 -->
                 <div class="card">
