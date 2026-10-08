@@ -75,3 +75,16 @@ CREATE -- file_put_contents
 READ -- file_get_contents
 unset = remover
 array
+
+
+
+================<aborting>==================
+cd www
+git pull
+(deu aborting)
+
+cd ..
+rm -rf www
+git clone (link) www
+cd www
+================</aborting>==================
