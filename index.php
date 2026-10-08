@@ -173,6 +173,22 @@
                     </div>
                     <a href="/atividades/09-funcoes2.php">Ver Projeto</a>
                 </div>
+                <!-- PROJETO 7 -->
+                <div class="card">
+                    <div class="numero-projeto">
+                        06
+                    </div>
+                    <h3>HelpDesk</h3>
+                    <p>
+                        Descriçao do sistema de Cadastro
+                    </p>
+                    <div class="tecnologias">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>PHP</span>
+                    </div>
+                    <a href="/atividades/helpdesk.php">Ver Projeto</a>
+                </div>
                 <!--fin-->
             </div>
         </section>
