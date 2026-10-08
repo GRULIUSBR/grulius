@@ -28,14 +28,14 @@ function calcularMedia($nota1, $nota2){
 
 function verificarStatus($media){
     if($media >= 7){
-        $situacao = "APROVADO";
+        return "APROVADO";
     }
 
     if($media >= 5 && $media <7){
-        $situacao = "RECUPERAÇAO";
+        return "RECUPERAÇAO";
     }
 
     if($media < 5){
-        $situacao = "REPROVADO";
+        return "REPROVADO";
     }
 }
