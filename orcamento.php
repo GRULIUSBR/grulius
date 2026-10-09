@@ -29,12 +29,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <header>
         <div class="Nav-bar">
             <img src="imgHtml/Gemini_Generated_Image_5kpxl15kpxl15kpx-removebg-preview.png" alt="">
-            <a href="#">INICIO</a>
-            <a href="solicitar_projeto.html">Orçamento</a>
-            <a href="#">FINANCEIRO</a>
-            <a href="juridico.php">JURIDICO</a>
-            <a href="#">PROJETOS</a>
-            <a href="#">DESENVOLVIMENTO</a>
+            <a href="../index.php">INICIO</a>
+            <a href="orcamentos.php">ORÇAMENTO</a>
+            <a href="../financiero.php">FINANCEIRO</a>
+            <a href="../juridico.php">JURIDICO</a>
+            <a href="../projetos.php">PROJETOS</a>
+            <a href="../desenvolivmento.php">DESENVOLVIMENTO</a>
         </div><!--Nav-bar-->
     </header>
 
@@ -48,7 +48,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <h4>(*)obrigatorio</h4>
             </div>
             <div class="form">
-                <form action="" method="POST" class="content-form">
+                <form action="" method="POST">
                     <div class="campos">
                         <div class="campo">
                             <label for="empresa">Empresa*</label>
@@ -59,7 +59,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <input type="text" class="inputs" name="responsavel" required>
                         </div>
                         <div class="campo">
-                            <label for="telefone">Numero de Telefone*</label>
+                            <label for="telefone">Numero de Telefone</label>
                             <input type="tel" class="inputs" name="telefone" required>
                             <label for="email">Email*</label>
                             <input type="email" class="inputs" name="email" required>
