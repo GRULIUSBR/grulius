@@ -74,7 +74,7 @@ $chamados = json_decode($conteudoJson, true);
                 <label>EQUIPAMENTO AFETADO</label>
                 <input type="text" name="equipamento" required>
                 <label>DESCRIÇÃO:</label>
-                <input name="descricao" required>
+                <input type="text" name="descricao" required>
                 <label>PRIORIDADE</label>
                 <input type="text" name="prioridade" required>
                 <button type="submit">ENVIAR</button>
@@ -88,7 +88,7 @@ $chamados = json_decode($conteudoJson, true);
                 <p> SETOR DA EMPRESA: <?= $chamado["setor"] ?> </p>
                 <p> EQUIPAMENTO: <?= $chamado["equipamento"] ?> </p>
                 <p> PRIORIDADE: <?= $chamado["prioridade"] ?> </p>
-                <button type="">ELIMINAR CHAMADO</button>
+                <button type="submit">ELIMINAR CHAMADO</button>
             <?php } ?>
 
         </section>
