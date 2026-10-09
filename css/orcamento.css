@@ -44,6 +44,11 @@ html {
     flex-direction: column;
 }
 
+.card{
+    width: 1000px;
+    height: 750px;
+}
+
 .grupo{
     display: flex;
     flex-direction: row;
