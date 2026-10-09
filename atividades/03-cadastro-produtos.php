@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     ];
 
     //abrir-ler arquivo
-    $conteudoJson = file_get_contents(__DIR__ . "/dados/22-cadastro.json");
+    $conteudoJson = file_get_contents(__DIR__ . "../dados/22-cadastro.json");
     $cadastros = json_decode($conteudoJson, true);
 
     //adicionar cadastro

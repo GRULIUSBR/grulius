@@ -74,7 +74,7 @@ $chamados = json_decode($conteudoJson, true);
                 <label>EQUIPAMENTO AFETADO</label>
                 <input type="text" name="equipamento" required>
                 <label>DESCRIÇÃO:</label>
-                <textarea name="descricao" required></textarea>
+                <input name="descricao" required>
                 <label>PRIORIDADE</label>
                 <input type="text" name="prioridade" required>
                 <button type="submit">ENVIAR</button>
