@@ -60,8 +60,7 @@ html {
     justify-content: center;
     align-items: center;
     background-color: blue;
-    
-    
+    gap: 40px;
 }
 
 .grupo-f{
