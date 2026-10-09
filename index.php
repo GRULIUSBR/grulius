@@ -155,7 +155,7 @@
                         <span>CSS</span>
                         <span>PHP</span>
                     </div>
-                    <a href="/activities/02-dados-json.php">Ver Projeto</a>
+                    <a href="/atividades/02-dados-json.php">Ver Projeto</a>
                 </div>
                 <!-- PROJETO 6 -->
                 <div class="card">
@@ -176,7 +176,7 @@
                 <!-- PROJETO 7 -->
                 <div class="card">
                     <div class="numero-projeto">
-                        06
+                        07
                     </div>
                     <h3>HelpDesk</h3>
                     <p>
