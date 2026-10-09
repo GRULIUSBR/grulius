@@ -49,41 +49,41 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
             <div class="form">
                 <div class="card">
-                <form action="" method="POST">
+                    <form action="" method="POST">
 
-<div class="grupo">
+                        <div class="grupo">
 
-    <label for="empresa">Empresa*</label>
-    <input type="text" class="inputs" name="empresa" required>]
+                            <label for="empresa">Empresa*</label>
+                            <input type="text" class="inputs" name="empresa" required>
 
-    <label for="email">Email*</label>
-    <input type="email" class="inputs" name="email" required>
+                            <label for="email">Email*</label>
+                            <input type="email" class="inputs" name="email" required>
 
-</div>
+                        </div>
 
-<div class="grupo">
+                        <div class="grupo">
 
-    <label for="responsavel">Responsavel*</label>
-    <input type="text" class="inputs" name="responsavel" required>
+                            <label for="responsavel">Responsavel*</label>
+                            <input type="text" class="inputs" name="responsavel" required>
 
-    <label for="telefone">Numero de Telefone</label>
-    <input type="tel" class="inputs" name="telefone" required>
+                            <label for="telefone">Numero de Telefone</label>
+                            <input type="tel" class="inputs" name="telefone" required>
 
-</div>
+                        </div>
 
-<div class="grupo-f">
+                        <div class="grupo-f">
 
-    <label for="prazo">Prazo/Deadline</label>
-    <input type="text" class="inputs" name="prazo" required>
+                            <label for="prazo">Prazo/Deadline</label>
+                            <input type="text" class="inputs" name="prazo" required>
 
-    <label for="projeto">Descriçao do Projeto</label>
-    <textarea name="projeto" id="Projeto" class="pedido" required></textarea>
+                            <label for="projeto">Descriçao do Projeto</label>
+                            <textarea name="projeto" id="Projeto" class="pedido" required></textarea>
 
-    <button type="submit" class="form-button">ENVIAR SOLICITAÇÃO</button>
+                            <button type="submit" class="form-button">ENVIAR SOLICITAÇÃO</button>
 
-</div>
+                        </div>
 
-</form>
+                    </form>
                 </div>
             </div>
         </section> <!--solicitacao-->
@@ -101,17 +101,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
