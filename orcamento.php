@@ -53,21 +53,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                         <div class="grupo">
 
-                            <label for="empresa">Empresa*</label>
-                            <input type="text" class="inputs" name="empresa" required>
-
                             <label for="email">Email*</label>
                             <input type="email" class="inputs" name="email" required>
+
+                            <label for="telefone">Numero de Telefone</label>
+                            <input type="tel" class="inputs" name="telefone" required>
 
                         </div>
 
                         <div class="grupo">
 
+                            <label for="empresa">Empresa*</label>
+                            <input type="text" class="inputs" name="empresa" required>
+
                             <label for="responsavel">Responsavel*</label>
                             <input type="text" class="inputs" name="responsavel" required>
-
-                            <label for="telefone">Numero de Telefone</label>
-                            <input type="tel" class="inputs" name="telefone" required>
 
                         </div>
 
