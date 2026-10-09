@@ -49,33 +49,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
             <div class="form">
                 <form action="" method="POST">
-                    <div class="campos">
-                        <div class="campo">
-                            <label for="empresa">Empresa*</label>
-                            <input type="text" class="inputs" name="empresa" required>
-
-                            <label for="responsavel">Responsavel*</label>
-
-                            <input type="text" class="inputs" name="responsavel" required>
-                        </div>
-                        <div class="campo">
-                            <label for="telefone">Numero de Telefone</label>
-                            <input type="tel" class="inputs" name="telefone" required>
-                            <label for="email">Email*</label>
-                            <input type="email" class="inputs" name="email" required>
-
-                            <label for="prazo">Prazo/Deadline</label>
-
-                            <input type="text" class="inputs" name="prazo" required>
-                        </div>
-                    </div>
+                    
 
 
-                    <label for="projeto">Descriçao do Projeto</label>
-                    <textarea name="projeto" id="Projeto" class="pedido" required></textarea>
-                    <button type="submit" class="form-button">ENVIAR</button>
+
                 </form>
             </div>
+        </section> <!--solicitacao-->
+
+        <section class="solicitacoes">
+            <h2>SOLICITAÇOES ENVIADAS:
+                <div class="solicitadas">
+
+                </div>
+            </h2>
         </section>
     </main>
 
@@ -83,3 +70,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </body>
 
 </html>
+
+
+
+<label for="empresa">Empresa*</label>
+<input type="text" class="inputs" name="empresa" required>
+
+<label for="responsavel">Responsavel*</label>
+<input type="text" class="inputs" name="responsavel" required>
+
+<label for="telefone">Numero de Telefone</label>
+<input type="tel" class="inputs" name="telefone" required>
+
+<label for="email">Email*</label>
+<input type="email" class="inputs" name="email" required>
+
+<label for="prazo">Prazo/Deadline</label>
+<input type="text" class="inputs" name="prazo" required>
+
+<label for="projeto">Descriçao do Projeto</label>
+<textarea name="projeto" id="Projeto" class="pedido" required></textarea>
+<button type="submit" class="form-button">ENVIAR</button>
