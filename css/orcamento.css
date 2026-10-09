@@ -49,20 +49,22 @@ html {
     width: 1000px;
     height: 500px;
     background-color: brown;
-    padding: 25px 20px;   
+    padding: 25px 20px;
+    border-radius: 16px; 
 }
 
 .grupo{
     display: flex;
     flex-direction: row;
     align-items: center;
+    background-color: blue;
 }
 
 .grupo-f{
     display: flex;
     flex-direction: column;
     align-items: left;
-    
+
 }
 
 .inputs{
