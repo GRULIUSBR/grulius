@@ -1,14 +1,14 @@
+<!--COMITADO POR JOSE-->
 <?php
-if($_SERVER["REQUEST_METHOD"] == "POST") {
 
-$responsavel = $_POST["responsavel"];
-$empresa = $_POST["empresa"];
-$projeto = $_POST["projeto"];
-$telefone = $_POST["telefone"];
-$email = $_POST["email"];
-$prazo = $_POST["prazo"];
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-
+    $responsavel = $_POST["responsavel"];
+    $empresa = $_POST["empresa"];
+    $projeto = $_POST["projeto"];
+    $telefone = $_POST["telefone"];
+    $email = $_POST["email"];
+    $prazo = $_POST["prazo"];
 }
 
 
@@ -26,22 +26,22 @@ $prazo = $_POST["prazo"];
 
 <body>
 
-<header>
-    <div class="Nav-bar">
-        <img src="imgHtml/Gemini_Generated_Image_5kpxl15kpxl15kpx-removebg-preview.png" alt="">
-        <a href="#">INICIO</a>
-        <a href="solicitar_projeto.html">Orçamento</a>
-        <a href="#">FINANCEIRO</a>
-        <a href="juridico.php">JURIDICO</a>
-        <a href="#">PROJETOS</a>
-        <a href="#">DESENVOLVIMENTO</a>
-    </div><!--Nav-bar-->
-</header>
+    <header>
+        <div class="Nav-bar">
+            <img src="imgHtml/Gemini_Generated_Image_5kpxl15kpxl15kpx-removebg-preview.png" alt="">
+            <a href="#">INICIO</a>
+            <a href="solicitar_projeto.html">Orçamento</a>
+            <a href="#">FINANCEIRO</a>
+            <a href="juridico.php">JURIDICO</a>
+            <a href="#">PROJETOS</a>
+            <a href="#">DESENVOLVIMENTO</a>
+        </div><!--Nav-bar-->
+    </header>
 
-<!--solicitacion de projecto-->
+    <!--solicitacion de projecto-->
 
     <main>
-        <section>
+        <section class="solicitacao">
             <div class="text">
                 <h1>Solicitaçao De Projeto</h1>
                 <h2>Preencha o formulario para <br> a Solicitaçao do Projeto</h2>
@@ -52,11 +52,11 @@ $prazo = $_POST["prazo"];
                     <div class="campos">
                         <div class="campo">
                             <label for="empresa">Empresa*</label>
-                           <input type="text" class="inputs" name="empresa" required>
+                            <input type="text" class="inputs" name="empresa" required>
 
-<label for="responsavel">Responsavel*</label>
+                            <label for="responsavel">Responsavel*</label>
 
-<input type="text" class="inputs" name="responsavel" required> 
+                            <input type="text" class="inputs" name="responsavel" required>
                         </div>
                         <div class="campo">
                             <label for="telefone">Numero de Telefone*</label>
@@ -64,9 +64,9 @@ $prazo = $_POST["prazo"];
                             <label for="email">Email*</label>
                             <input type="email" class="inputs" name="email" required>
 
-<label for="prazo">Prazo/Deadline</label>
+                            <label for="prazo">Prazo/Deadline</label>
 
-<input type="text" class="inputs" name="prazo" required>
+                            <input type="text" class="inputs" name="prazo" required>
                         </div>
                     </div>
 
