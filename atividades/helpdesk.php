@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     ];
 
     //ler abrir o arquivo json //json to array php
-    $conteudoJson = file_get_contents(__DIR__ . "/dados/chamados.json");
+    $conteudoJson = file_get_contents(__DIR__ . "../dados/chamados.json");
     $chamados = json_decode($conteudoJson, true);
 
     //adicionar chamado
@@ -29,12 +29,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     );
 
     //salvar json
-    file_put_contents(__DIR__ . "/../dados/chamados.json", $jsonAtualizado);
-    $conteudoJson = file_get_contents(__DIR__ . "/dados/chamados.json");
+    file_put_contents(__DIR__ . "../dados/chamados.json", $jsonAtualizado);
+    $conteudoJson = file_get_contents(__DIR__ . "../dados/chamados.json");
     $chamados = json_decode($conteudoJson, true);
 }
 
-$conteudoJson = file_get_contents(__DIR__ . "/dados/chamados.json");
+$conteudoJson = file_get_contents(__DIR__ . "../dados/chamados.json");
 $chamados = json_decode($conteudoJson, true);
 
 ?>
