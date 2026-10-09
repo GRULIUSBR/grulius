@@ -189,6 +189,22 @@
                     </div>
                     <a href="/atividades/helpdesk.php">Ver Projeto</a>
                 </div>
+                <!-- PROJETO * -->
+                <div class="card">
+                    <div class="numero-projeto">
+                        LP
+                    </div>
+                    <h3>ORÇAMENTO</h3>
+                    <p>
+                        Descriçao do sistema de Cadastro
+                    </p>
+                    <div class="tecnologias">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>PHP</span>
+                    </div>
+                    <a href="orcamento.php">Ver Projeto</a>
+                </div>
                 <!--fin-->
             </div>
         </section>
