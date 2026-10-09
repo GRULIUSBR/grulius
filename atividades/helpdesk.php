@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     ];
 
     //ler abrir o arquivo json
-    $conteudoJson = file_get_contents(__DIR__ . "../dados/chamados.json");
+    $conteudoJson = file_get_contents(__DIR__ . "/dados/chamados.json");
 
     //json to array php
     $chamados = json_decode($conteudoJson, true);
