@@ -34,6 +34,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $chamados = json_decode($conteudoJson, true);
 }
 
+
+
 $conteudoJson = file_get_contents(__DIR__ . "../dados/chamados.json");
 $chamados = json_decode($conteudoJson, true);
 
@@ -88,17 +90,17 @@ $chamados = json_decode($conteudoJson, true);
                 <p> SETOR DA EMPRESA: <?= $chamado["setor"] ?> </p>
                 <p> EQUIPAMENTO: <?= $chamado["equipamento"] ?> </p>
                 <p> PRIORIDADE: <?= $chamado["prioridade"] ?> </p>
-                <button type="submit">ELIMINAR CHAMADO</button>
+                <button type="submit"
+                    <?php foreach ($chamados as $posicao => $chamado) {
+                        unset($chamados[$posicao]);
+                    } ?>> ELIMINAR CHAMADO
+                </button>
             <?php } ?>
 
         </section>
         <!--UPDATE-->
         <section class="atualizar">
-
-        </section>
-        <!--DELETE-->
-        <section class="remover">
-
+            
         </section>
         <!--END-->
     </main>
