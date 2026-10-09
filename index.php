@@ -203,7 +203,7 @@
                         <span>CSS</span>
                         <span>PHP</span>
                     </div>
-                    <a href="orcamentos.php">Ver Projeto</a>
+                    <a href="orcamento.php">Ver Projeto</a>
                 </div>
                 <!--fin-->
             </div>
