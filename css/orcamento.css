@@ -57,9 +57,10 @@ html {
     border: 2px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
     background-color: blue;
-    border-color: black;
+    
     
 }
 
