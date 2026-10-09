@@ -15,10 +15,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         "prioridade" => $prioridade
     ];
 
-    //ler abrir o arquivo json
+    //ler abrir o arquivo json //json to array php
     $conteudoJson = file_get_contents(__DIR__ . "/dados/chamados.json");
-
-    //json to array php
     $chamados = json_decode($conteudoJson, true);
 
     //adicionar chamado
@@ -104,6 +102,16 @@ $chamados = json_decode($conteudoJson, true);
         </section>
         <!--END-->
     </main>
+
+    <footer>
+        <p>
+            DESENVOLVIDO POR <a href="https://jose755.devlook.xyz">JOSE OROPESA</a>
+        </p>
+        <p>
+            HTML + CSS + PHP + JSON
+        </p>
+    </footer>
+
 </body>
 
 </html>
