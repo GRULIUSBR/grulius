@@ -7,19 +7,6 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: aliceblue;
-    background-color: black;
-    overflow-x: hidden;
-    width: 100%;
-}
-
-header {
-    background-color: #1f1f1f;
-    color: aliceblue;
-}
-
 /* nav bar*/ 
 
 .Nav-bar{
@@ -52,58 +39,21 @@ header {
 }
 /* final do nav*/
 
-a {
-    text-decoration: none;
-    color: white;   
-    padding: 5px;
-    border-radius: 5px;
-}
-
-a:hover {
-    color: #00ff00;
-    transition: 0.3s;
-}
-
-.logo span {
-    color: #00ff00;
-}
-
-.text {
-    text-align: left;
-    margin-left: 30px
-}
-
-.content-form {
-    margin-top: 20px;
+.form{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    gap: 5px
 }
 
-.form-button {
-    margin-top: 10px;
-    width: 100px;
-    height: 34px;
-}
-
-.campos {
+.grupo{
     display: flex;
-    gap: 1em;
+    flex-direction: row;
+}
+
+.grupo-f{
+    display: flex;
     flex-direction: column;
 }
 
-.inputs {
-    border-radius: 7px;
-    flex: 1;
-    flex-direction: column;
-}
-
-.pedido {
-    margin-top: 7px;
-    height: 110px;
-    width: 300px;
-    border-radius: 7px;
+.inputs{
+    border-radius: 8px;
 }
