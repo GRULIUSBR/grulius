@@ -66,7 +66,7 @@ $chamados = json_decode($conteudoJson, true);
         <!--CREATE-->
         <section class="formulario">
             <h2>FORMULARIO</h2>
-            <form method="post">
+            <form action="post">
                 <label>NOME DO FUNCIONARIO</label>
                 <input type="text" name="nome" required>
                 <label>SETOR DA EMPRESA</label>
