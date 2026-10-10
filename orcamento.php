@@ -79,67 +79,65 @@ $orcamentos = json_decode($conteudoJson, true);
                 <h2>Preencha o formulario para <br> a Solicitaçao do Projeto</h2>
                 <h4>(*)obrigatorio</h4>
             </div>
-            
-                <div class="card">
-                    <form action="" method="POST">
 
-                        <div class="grupo">
+            <div class="card">
+                <form action="" method="POST">
 
-                            <label for="email">Email*</label>
-                            <input type="email" class="inputs" name="email" required>
+                    <div class="item">
+                        <label for="email">Email*</label>
+                        <input type="email" class="inputs" name="email" required>
+                    </div>
 
-                            <label for="telefone">Numero de Telefone</label>
-                            <input type="tel" class="inputs" name="telefone" required>
+                    <div class="item">
+                        <label for="telefone">Numero de Telefone</label>
+                        <input type="tel" class="inputs" name="telefone" required>
+                    </div>
 
-                        </div>
+                    <div class="item">
+                        <label for="empresa">Empresa*</label>
+                        <input type="text" class="inputs" name="empresa" required>
+                    </div>
 
-                        <div class="grupo">
+                    <div class="item">
+                        <label for="responsavel">Responsavel*</label>
+                        <input type="text" class="inputs" name="responsavel" required>
+                    </div>
 
-                            <label for="empresa">Empresa*</label>
-                            <input type="text" class="inputs" name="empresa" required>
+                    <div class="item">
+                        <label for="prazo">Prazo/Deadline</label>
+                        <input type="text" class="inputs" name="prazo" required>
+                    </div>
 
-                            <label for="responsavel">Responsavel*</label>
-                            <input type="text" class="inputs" name="responsavel" required>
+                    <div class="item">
+                        <label for="nomeProjeto">Nome Do Projeto*</label>
+                        <input type="text" class="inputs" name="nomeProjeto" required>
+                    </div>
 
-                        </div>
+                    <div class="item">
+                        <label for="projeto">Descriçao do Projeto</label>
+                        <textarea name="projeto" id="Projeto" class="pedido" required></textarea>
+                    </div>
 
-                        <div class="grupo">
+                    <button type="submit" class="form-button">ENVIAR SOLICITAÇÃO</button>
+                </form>
+            </div>
 
-                            <label for="prazo">Prazo/Deadline</label>
-                            <input type="text" class="inputs" name="prazo" required>
-
-                            <label for="nomeProjeto">Nome Do Projeto*</label>
-                            <input type="text" class="inputs" name="nomeProjeto" required>
-
-                        </div>
-
-                        <div class="grupo">
-
-                            <label for="projeto">Descriçao do Projeto</label>
-                            <textarea name="projeto" id="Projeto" class="pedido" required></textarea>
-
-                        </div>
-
-                        <button type="submit" class="form-button">ENVIAR SOLICITAÇÃO</button>
-                    </form>
-                </div>
-            
         </section> <!--solicitacao-->
 
         <section class="solicitacoes">
             <h1>SOLICITAÇOES ENVIADAS:</h1>
-                <div class="solicitadas">
-                    <?php foreach ($orcamentos as $orcamento) { ?>
-                        <div class="solicitacao">
-                    <h2> <?= $nomeProjeto ?> </h2>
-                    <p> <?= $empresa ?> </p>
-                    <p> <?= $email ?> </p>
-                    <p> <?= $prazo ?> </p>
-                    <a href="projetos.php" class="button-solicitacao">VER SITUAÇÃO</a>
-                        </div>
-                    <?php } ?>
-                </div>
-            
+            <div class="solicitadas">
+                <?php foreach ($orcamentos as $orcamento) { ?>
+                    <div class="solicitacao">
+                        <h2> <?= $nomeProjeto ?> </h2>
+                        <p> <?= $empresa ?> </p>
+                        <p> <?= $email ?> </p>
+                        <p> <?= $prazo ?> </p>
+                        <a href="projetos.php" class="button-solicitacao">VER SITUAÇÃO</a>
+                    </div>
+                <?php } ?>
+            </div>
+
         </section>
     </main>
 
