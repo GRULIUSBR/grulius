@@ -1,16 +1,46 @@
 <!--COMITADO POR JOSE-->
+
 <?php
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
     $responsavel = $_POST["responsavel"];
     $empresa = $_POST["empresa"];
     $projeto = $_POST["projeto"];
     $telefone = $_POST["telefone"];
     $email = $_POST["email"];
     $prazo = $_POST["prazo"];
+
+
+$novoOrcamento = [
+    $responsavel => "responsavel",
+    $empresa => "empresa",
+    $projeto => "projeto",
+    $telefone => "telefone",
+    $email => "email",
+    $prazo => "prazo"
+
+];
+//abrir/ler arquivo json
+$conteudoJson = file_get_contents(__DIR__ . "orcamento.json");
+
+//adicionar cadastro
+$orcamentos[] = $novoOrcamento;
+
+//array php to json
+$jsonAtualizado = json_encode(
+    $orcamentos,
+    JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE
+);
+
+//salvar em json
+file_put_contents(__DIR__ . "orcamento.json", $jsonAtualizado);
+
+//le o arquivo json
+$conteudoJson = file_get_contents(__DIR__ . "orcamento.json");
+$orcamentos = json_decode($conteudoJson, true);
 }
 
+$conteudoJson = file_get_contents(__DIR__ . "orcamento.json");
+$orcamentos = json_decode($conteudoJson, true);
 
 ?>
 
