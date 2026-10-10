@@ -79,7 +79,7 @@ $orcamentos = json_decode($conteudoJson, true);
                 <h2>Preencha o formulario para <br> a Solicitaçao do Projeto</h2>
                 <h4>(*)obrigatorio</h4>
             </div>
-            <div class="form">
+            
                 <div class="card">
                     <form action="" method="POST">
 
@@ -123,7 +123,7 @@ $orcamentos = json_decode($conteudoJson, true);
                         <button type="submit" class="form-button">ENVIAR SOLICITAÇÃO</button>
                     </form>
                 </div>
-            </div>
+            
         </section> <!--solicitacao-->
 
         <section class="solicitacoes">
@@ -142,6 +142,15 @@ $orcamentos = json_decode($conteudoJson, true);
             
         </section>
     </main>
+
+    <footer>
+        <p>
+            DESENVOLVIDO POR <a href="https://jose755.devlook.xyz">JOSE OROPESA</a>
+        </p>
+        <p>
+            HTML + CSS + PHP + JSON
+        </p>
+    </footer>
 
 
 </body>
