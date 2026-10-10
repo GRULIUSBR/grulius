@@ -4,39 +4,41 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $responsavel = $_POST["responsavel"];
     $empresa = $_POST["empresa"];
-    $projeto = $_POST["projeto"];
     $telefone = $_POST["telefone"];
     $email = $_POST["email"];
+    $projeto = $_POST["projeto"];
+    $nomeProjeto = $_POST["nomeProjeto"];
     $prazo = $_POST["prazo"];
 
 
-$novoOrcamento = [
-    $responsavel => "responsavel",
-    $empresa => "empresa",
-    $projeto => "projeto",
-    $telefone => "telefone",
-    $email => "email",
-    $prazo => "prazo"
+    $novoOrcamento = [
+        $responsavel => "responsavel",
+        $empresa => "empresa",
+        $telefone => "telefone",
+        $email => "email",
+        $nomeProjeto => "nomeProjeto",
+        $projeto => "projeto",
+        $prazo => "prazo"
 
-];
-//abrir/ler arquivo json
-$conteudoJson = file_get_contents(__DIR__ . "orcamento.json");
+    ];
+    //abrir/ler arquivo json
+    $conteudoJson = file_get_contents(__DIR__ . "orcamento.json");
 
-//adicionar cadastro
-$orcamentos[] = $novoOrcamento;
+    //adicionar cadastro
+    $orcamentos[] = $novoOrcamento;
 
-//array php to json
-$jsonAtualizado = json_encode(
-    $orcamentos,
-    JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE
-);
+    //array php to json
+    $jsonAtualizado = json_encode(
+        $orcamentos,
+        JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE
+    );
 
-//salvar em json
-file_put_contents(__DIR__ . "orcamento.json", $jsonAtualizado);
+    //salvar em json
+    file_put_contents(__DIR__ . "orcamento.json", $jsonAtualizado);
 
-//le o arquivo json
-$conteudoJson = file_get_contents(__DIR__ . "orcamento.json");
-$orcamentos = json_decode($conteudoJson, true);
+    //le o arquivo json
+    $conteudoJson = file_get_contents(__DIR__ . "orcamento.json");
+    $orcamentos = json_decode($conteudoJson, true);
 }
 
 $conteudoJson = file_get_contents(__DIR__ . "orcamento.json");
@@ -65,7 +67,7 @@ $orcamentos = json_decode($conteudoJson, true);
             <a href="../juridico.php">JURIDICO</a>
             <a href="../projetos.php">PROJETOS</a>
             <a href="../desenvolivmento.php">DESENVOLVIMENTO</a>
-        </div><!--Nav-bar-->
+        </div> <!--Nav-bar-->
     </header>
 
     <!--solicitacion de projecto-->
@@ -101,29 +103,43 @@ $orcamentos = json_decode($conteudoJson, true);
 
                         </div>
 
-                        <div class="grupo-f">
+                        <div class="grupo">
 
                             <label for="prazo">Prazo/Deadline</label>
                             <input type="text" class="inputs" name="prazo" required>
 
-                            <label for="projeto">Descriçao do Projeto</label>
-                            <textarea name="projeto" id="Projeto" class="pedido" required></textarea>
-
-                            <button type="submit" class="form-button">ENVIAR SOLICITAÇÃO</button>
+                            <label for="nomeProjeto">Nome Do Projeto*</label>
+                            <input type="text" class="inputs" name="nomeProjeto" required>
 
                         </div>
 
+                        <div class="grupo">
+
+                            <label for="projeto">Descriçao do Projeto</label>
+                            <textarea name="projeto" id="Projeto" class="pedido" required></textarea>
+
+                        </div>
+
+                        <button type="submit" class="form-button">ENVIAR SOLICITAÇÃO</button>
                     </form>
                 </div>
             </div>
         </section> <!--solicitacao-->
 
         <section class="solicitacoes">
-            <h2>SOLICITAÇOES ENVIADAS:
+            <h1>SOLICITAÇOES ENVIADAS:</h1>
                 <div class="solicitadas">
-
+                    <?php foreach ($orcamentos as $orcamento) { ?>
+                        <div class="solicitacao">
+                    <h2> <?= $nomeProjeto ?> </h2>
+                    <p> <?= $empresa ?> </p>
+                    <p> <?= $email ?> </p>
+                    <p> <?= $prazo ?> </p>
+                    <a href="projetos.php" class="button-solicitacao">VER SITUAÇÃO</a>
+                        </div>
+                    <?php } ?>
                 </div>
-            </h2>
+            
         </section>
     </main>
 
