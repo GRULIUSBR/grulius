@@ -47,15 +47,9 @@ html {
 }
 
 .card{
-    width: 1000px;
-    height: 500px;
-    background-color: brown;
-    padding: 25px 20px;
-    border-radius: 16px; 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    width: 90%;
+  max-width: 1150px;
+  margin: 40px auto;
 }
 
 .linha{
