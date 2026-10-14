@@ -21,6 +21,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         "prazo" => $prazo
 
     ];
+
+    $orcamentos = [];
     //abrir/ler arquivo json
     $conteudoJson = file_get_contents(__DIR__ . "/orcamento.json");
 
@@ -37,8 +39,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     file_put_contents(__DIR__ . "/orcamento.json", $jsonAtualizado);
 
     //le o arquivo json
-    $conteudoJson = file_get_contents(__DIR__ . "/orcamento.json");
-    $orcamentos = json_decode($conteudoJson, true);
+    // $conteudoJson = file_get_contents(__DIR__ . "/orcamento.json");
+    // $orcamentos = json_decode($conteudoJson, true);
 }
 
 $conteudoJson = file_get_contents(__DIR__ . "/orcamento.json");
