@@ -25,6 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     //abrir/ler arquivo json
     $conteudoJson = file_get_contents(__DIR__ . "/orcamento.json");
 
+    $orcamentos = json_decode($conteudoJson, true);
     //adicionar cadastro
     $orcamentos[] = $novoOrcamento;
 
