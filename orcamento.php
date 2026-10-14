@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     ];
     //abrir/ler arquivo json
-    $conteudoJson = file_get_contents(__DIR__ . "orcamento.json");
+    $conteudoJson = file_get_contents(__DIR__ . "/orcamento.json");
 
     //adicionar cadastro
     $orcamentos[] = $novoOrcamento;
@@ -34,14 +34,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     );
 
     //salvar em json
-    file_put_contents(__DIR__ . "orcamento.json", $jsonAtualizado);
+    file_put_contents(__DIR__ . "/orcamento.json", $jsonAtualizado);
 
     //le o arquivo json
-    $conteudoJson = file_get_contents(__DIR__ . "orcamento.json");
+    $conteudoJson = file_get_contents(__DIR__ . "/orcamento.json");
     $orcamentos = json_decode($conteudoJson, true);
 }
 
-$conteudoJson = file_get_contents(__DIR__ . "orcamento.json");
+$conteudoJson = file_get_contents(__DIR__ . "/orcamento.json");
 $orcamentos = json_decode($conteudoJson, true);
 
 ?>
@@ -82,7 +82,7 @@ $orcamentos = json_decode($conteudoJson, true);
             </div>
 
             <div class="card">
-                <form action="" method="POST">
+                <form method="POST">
 
                     <div class="linha">
                         <div class="item">
