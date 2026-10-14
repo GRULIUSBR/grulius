@@ -38,11 +38,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     //salvar em json
     file_put_contents(__DIR__ . "/orcamento.json", $jsonAtualizado);
 
-    //le o arquivo json
-    // $conteudoJson = file_get_contents(__DIR__ . "/orcamento.json");
-    // $orcamentos = json_decode($conteudoJson, true);
 }
 
+    //le o arquivo json
 $conteudoJson = file_get_contents(__DIR__ . "/orcamento.json");
 $orcamentos = json_decode($conteudoJson, true);
 
