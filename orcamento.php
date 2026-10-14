@@ -138,10 +138,10 @@ $orcamentos = json_decode($conteudoJson, true);
             <div class="solicitadas">
                 <?php foreach ($orcamentos as $orcamento) { ?>
                     <div class="solicitacao">
-                        <h2>NOME DO PROJETO: <?= $nomeProjeto ?> </h2>
-                        <p>EMPRESA: <?= $empresa ?> </p>
-                        <p>EMAIL DE CONTATO: <?= $email ?> </p>
-                        <p>PRAZO: <?= $prazo ?> </p>
+                        <h2>NOME DO PROJETO: <?= $orcamento["nomeProjeto"] ?> </h2>
+                        <p>EMPRESA: <?= $orcamento["empresa"] ?> </p>
+                        <p>EMAIL DE CONTATO: <?= $orcamento["email"] ?> </p>
+                        <p>PRAZO: <?= $orcamento["prazo"] ?> </p>
                         <a href="projetos.php" class="button-solicitacao">VER SITUAÇÃO</a>
                     </div>
                 <?php } ?>
