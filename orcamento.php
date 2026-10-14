@@ -22,7 +22,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     ];
 
-    $orcamentos = [];
     //abrir/ler arquivo json
     $conteudoJson = file_get_contents(__DIR__ . "/orcamento.json");
 
