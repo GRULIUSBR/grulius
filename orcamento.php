@@ -137,14 +137,15 @@ $orcamentos = json_decode($conteudoJson, true);
             <h1>SOLICITAÇOES ENVIADAS:</h1>
             <div class="solicitadas">
                 <?php foreach ($orcamentos as $orcamento) { ?>
-                <div class="solicitacao">
-                    <h2> <?= $nomeProjeto ?> </h2>
-                    <p> <?= $empresa ?> </p>
-                    <p> <?= $email ?> </p>
-                    <p> <?= $prazo ?> </p>
-                    <a href="projetos.php" class="button-solicitacao">VER SITUAÇÃO</a>
+                    <div class="solicitacao">
+                        <h2>NOME DO PROJETO: <?= $nomeProjeto ?> </h2>
+                        <p>EMPRESA: <?= $empresa ?> </p>
+                        <p>EMAIL DE CONTATO: <?= $email ?> </p>
+                        <p>PRAZO: <?= $prazo ?> </p>
+                        <a href="projetos.php" class="button-solicitacao">VER SITUAÇÃO</a>
+
+                    <?php } ?>
                 </div>
-                <?php } ?>
             </div>
 
         </section>
@@ -152,7 +153,7 @@ $orcamentos = json_decode($conteudoJson, true);
 
     <footer>
         <p>
-            DESENVOLVIDO POR <a href="https://jose755.devlook.xyz">JOSE OROPESA</a>
+            DESENVOLVIDO POR <a href="https://jose755.devlook.xyz">CINCO DEVS </a>
         </p>
         <p>
             HTML + CSS + PHP + JSON
