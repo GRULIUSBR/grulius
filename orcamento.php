@@ -12,13 +12,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
     $novoOrcamento = [
-        $responsavel => "responsavel",
-        $empresa => "empresa",
-        $telefone => "telefone",
-        $email => "email",
-        $nomeProjeto => "nomeProjeto",
-        $projeto => "projeto",
-        $prazo => "prazo"
+        "responsavel" => $responsavel,
+        "telefone" => $telefone,
+        "email" => $email,
+        "nomeProjeto" => $nomeProjeto,
+        "projeto" => $projeto,
+        "prazo" => $prazo
 
     ];
     //abrir/ler arquivo json
