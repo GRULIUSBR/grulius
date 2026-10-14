@@ -15,6 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         "responsavel" => $responsavel,
         "telefone" => $telefone,
         "email" => $email,
+        "empresa" => $empresa,
         "nomeProjeto" => $nomeProjeto,
         "projeto" => $projeto,
         "prazo" => $prazo
