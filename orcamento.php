@@ -143,9 +143,9 @@ $orcamentos = json_decode($conteudoJson, true);
                         <p>EMAIL DE CONTATO: <?= $email ?> </p>
                         <p>PRAZO: <?= $prazo ?> </p>
                         <a href="projetos.php" class="button-solicitacao">VER SITUAÇÃO</a>
+                    </div>
+                <?php } ?>
 
-                    <?php } ?>
-                </div>
             </div>
 
         </section>
