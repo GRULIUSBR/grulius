@@ -98,15 +98,17 @@ html {
 }
 
 .resposta{
+    margin-top: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     height: 40px;
-    width: 100px;
+    width: 60%;
     background-color: #91e789;
     color: #43434b;
     border-radius: 8px;
+    padding: 25px;
 }
 
 a {
