@@ -88,12 +88,12 @@ $orcamentos = json_decode($conteudoJson, true);
 
                     <div class="linha">
                         <div class="item">
-                            <label for="empresa">Empresa*</label>
+                            <label for="empresa" class="labelText">Empresa*</label>
                             <input type="text" class="inputs" name="empresa" required>
                         </div>
 
                         <div class="item">
-                            <label for="email">Email*</label>
+                            <label for="email" class="labelText">Email*</label>
                             <input type="email" class="inputs" name="email" required>
                         </div>
                     </div>
@@ -101,30 +101,30 @@ $orcamentos = json_decode($conteudoJson, true);
 
                     <div class="linha">
                         <div class="item">
-                            <label for="telefone">Numero de Telefone</label>
+                            <label for="telefone" class="labelText">Numero de Telefone</label>
                             <input type="tel" class="inputs" name="telefone" required>
                         </div>
 
                         <div class="item">
-                            <label for="responsavel">Responsavel*</label>
+                            <label for="responsavel" class="labelText">Responsavel*</label>
                             <input type="text" class="inputs" name="responsavel" required>
                         </div>
                     </div>
 
                     <div class="linha">
                         <div class="item">
-                            <label for="prazo">Prazo/Deadline</label>
+                            <label for="prazo" class="labelText">Prazo/Deadline</label>
                             <input type="text" class="inputs" name="prazo" required>
                         </div>
 
                         <div class="item">
-                            <label for="nomeProjeto">Nome Do Projeto*</label>
+                            <label for="nomeProjeto" class="labelText">Nome Do Projeto*</label>
                             <input type="text" class="inputs" name="nomeProjeto" required>
                         </div>
                     </div>
 
                     <div class="item">
-                        <label for="projeto">Descriçao do Projeto</label>
+                        <label for="projeto" class="labelText">Descriçao do Projeto</label>
                         <textarea name="projeto" id="Projeto" class="pedido" required></textarea>
                     </div>
 
