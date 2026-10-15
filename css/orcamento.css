@@ -81,6 +81,9 @@ font-size: 20px;
 height: 40px;
 color: aqua;
 background-color: rgb(25, 37, 41);
+margin-top: 15px;
+border-radius: 7px;
+padding: 10px;
 }
 
 .form-button:hover{
