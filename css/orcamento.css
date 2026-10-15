@@ -125,6 +125,7 @@ textarea {
     height: 90px;
     font-size: 19px;
     border-radius: 8px;
+    padding: 3px 3px;
 }
 
 footer {
