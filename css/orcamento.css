@@ -52,6 +52,7 @@ html {
   margin: 40px auto;
   background-color: #f1f1f1;
   border-radius: 16px;
+  padding: 25px 25px;
 }
 
 .linha{
@@ -64,7 +65,6 @@ html {
     display: flex;
     flex-direction: column;
     gap: 11px;
-
 }
 
 .inputs{
@@ -75,6 +75,19 @@ html {
 .labelText{
 font-family: Arial, Helvetica, sans-serif;
 font-size: 20px;
+}
+
+.form-button{
+height: 40px;
+color: aqua;
+background-color: rgb(25, 37, 41);
+}
+
+.form-button:hover{
+background-color: rgb(37, 56, 63);
+color: rgb(171, 255, 255);
+transform: translateY(-3px);
+transition: 0.3s;
 }
 
 a{
@@ -98,6 +111,7 @@ a{
 
 textarea{
     resize: vertical;
+    height: 90px;
 }
 
 footer{

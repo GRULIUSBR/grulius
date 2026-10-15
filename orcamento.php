@@ -10,6 +10,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $projeto = $_POST["projeto"];
     $nomeProjeto = $_POST["nomeProjeto"];
     $prazo = $_POST["prazo"];
+    $indice = 0;
+
     
 
 
@@ -23,6 +25,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         "prazo" => $prazo
 
     ];
+
+
+
+
 
     //abrir/ler arquivo json
     $conteudoJson = file_get_contents(__DIR__ . "/orcamento.json");
@@ -138,7 +144,7 @@ $orcamentos = json_decode($conteudoJson, true);
         <section class="solicitacoes">
             <h1>SOLICITAÇOES ENVIADAS:</h1>
             <div class="solicitadas">
-                <?php foreach ($orcamentos as $orcamento) { ?>
+                <?php foreach ($orcamentos as $indice => $orcamento) { ?>  <!--indiceDaniel-->
                     <div class="solicitacao">
                         <h2>NOME DO PROJETO: <?= $orcamento["nomeProjeto"] ?> </h2>
                         <p>EMPRESA: <?= $orcamento["empresa"] ?> </p>
