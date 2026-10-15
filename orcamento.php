@@ -148,14 +148,14 @@ $orcamentos = json_decode($conteudoJson, true);
                 <?php foreach ($orcamentos as $indice => $orcamento) { ?> <!--indiceDaniel-->
                     <div class="resposta">
                         <p> SOLICITAÇÃO ENVIADA COM SUCESSO! </p>
+                        <a href="projetos.php" class="button-solicitacao">VER SITUAÇÃO</a>
                     </div>
-                    
+
                     <div class="solicitacao">
                         <h2>NOME DO PROJETO: <?= $orcamento["nomeProjeto"] ?> </h2>
                         <p>EMPRESA: <?= $orcamento["empresa"] ?> </p>
                         <p>EMAIL DE CONTATO: <?= $orcamento["email"] ?> </p>
                         <p>PRAZO: <?= $orcamento["prazo"] ?> </p>
-                        <a href="projetos.php" class="button-solicitacao">VER SITUAÇÃO</a>
                     </div>
                 <?php } ?>
 
