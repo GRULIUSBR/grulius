@@ -50,6 +50,8 @@ html {
     width: 90%;
   max-width: 1150px;
   margin: 40px auto;
+  background-color: #f1f1f1;
+  border-radius: 16px;
 }
 
 .linha{
