@@ -1,6 +1,7 @@
 <!--COMITADO POR JOSE-->
 
 <?php
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $responsavel = $_POST["responsavel"];
     $empresa = $_POST["empresa"];
@@ -9,6 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $projeto = $_POST["projeto"];
     $nomeProjeto = $_POST["nomeProjeto"];
     $prazo = $_POST["prazo"];
+    
 
 
     $novoOrcamento = [
