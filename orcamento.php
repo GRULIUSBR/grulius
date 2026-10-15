@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $prazo = $_POST["prazo"];
     $indice = 0;
 
-    
+
 
 
     $novoOrcamento = [
@@ -45,10 +45,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     //salvar em json
     file_put_contents(__DIR__ . "/orcamento.json", $jsonAtualizado);
-
 }
 
-    //le o arquivo json
+//le o arquivo json
 $conteudoJson = file_get_contents(__DIR__ . "/orcamento.json");
 $orcamentos = json_decode($conteudoJson, true);
 
@@ -142,9 +141,15 @@ $orcamentos = json_decode($conteudoJson, true);
         <!--solicitacao-->
 
         <section class="solicitacoes">
+
+
             <h1>SOLICITAÇOES ENVIADAS:</h1>
             <div class="solicitadas">
-                <?php foreach ($orcamentos as $indice => $orcamento) { ?>  <!--indiceDaniel-->
+                <?php foreach ($orcamentos as $indice => $orcamento) { ?> <!--indiceDaniel-->
+                    <div class="resposta">
+                        <p> SOLICITAÇÃO ENVIADA COM SUCESSO! </p>
+                    </div>
+                    
                     <div class="solicitacao">
                         <h2>NOME DO PROJETO: <?= $orcamento["nomeProjeto"] ?> </h2>
                         <p>EMPRESA: <?= $orcamento["empresa"] ?> </p>
