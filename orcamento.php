@@ -45,6 +45,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     //salvar em json
     file_put_contents(__DIR__ . "/orcamento.json", $jsonAtualizado);
+    header("Location: orcamento.php");
+    exit;
 }
 
 //le o arquivo json
