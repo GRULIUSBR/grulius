@@ -152,13 +152,6 @@ $orcamentos = json_decode($conteudoJson, true);
                         <p> SOLICITAÇÃO ENVIADA COM SUCESSO! </p>
                         <a href="projetos.php" class="button-solicitacao">VER SITUAÇÃO</a>
                     </div>
-
-                    <div class="solicitacao">
-                        <h2>NOME DO PROJETO: <?= $orcamento["nomeProjeto"] ?> </h2>
-                        <p>EMPRESA: <?= $orcamento["empresa"] ?> </p>
-                        <p>EMAIL DE CONTATO: <?= $orcamento["email"] ?> </p>
-                        <p>PRAZO: <?= $orcamento["prazo"] ?> </p>
-                    </div>
                 <?php } ?>
 
             </div>
