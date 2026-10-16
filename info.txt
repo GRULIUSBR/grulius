@@ -106,6 +106,7 @@ vercel.com hospedar vps free
 
 
 //tirando o exibir o cadastrado do hmtl
+<h1>SOLICITAÇOES ENVIADAS:</h1>
 <div class="solicitacao">
     <h2>NOME DO PROJETO: <?= $orcamento["nomeProjeto"] ?> </h2>
     <p>EMPRESA: <?= $orcamento["empresa"] ?> </p>

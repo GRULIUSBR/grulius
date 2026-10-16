@@ -113,8 +113,8 @@ html {
     justify-content: center;
     height: 40px;
     width: 60%;
-    background-color: #91e789;
-    color: #43434b;
+    background-color: rgb(25, 37, 41);
+    color: #fff;
     border-radius: 8px;
     padding: 25px;
     gap: 25px;
@@ -123,13 +123,14 @@ html {
 .button-solicitacao {
     width: auto;
     height: 65;
-    background-color: rgb(57, 131, 42);
+    background-color: #fff;
+    color: rgb(25, 37, 41);
     border-radius: 7px;
 }
 
 .button-solicitacao:hover {
-    background-color: rgb(0, 209, 63);
-    color: rgb(24, 24, 34);
+    background-color: rgb(24, 24, 34);
+    color: #fff;
     transform: translateY(-3px);
     transition: 0.3s;
 }

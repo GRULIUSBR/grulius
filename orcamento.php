@@ -143,9 +143,7 @@ $orcamentos = json_decode($conteudoJson, true);
         <!--solicitacao-->
 
         <section class="solicitacoes">
-
-
-            <h1>SOLICITAÇOES ENVIADAS:</h1>
+            
             <div class="solicitadas">
                 <?php foreach ($orcamentos as $indice => $orcamento) { ?> <!--indiceDaniel-->
                     <div class="resposta">
