@@ -97,9 +97,15 @@ html {
     color: #192529;
     background-color: #E2E8F0;
     margin-top: 15px;
+    border: none;
     border-radius: 7px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
     padding: 10px;
     transition: all 0.3s ease;
+    
 }
 
 .form-button:hover {
