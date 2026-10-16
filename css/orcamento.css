@@ -62,6 +62,7 @@ html {
     background-color: rgb(25, 37, 41);
     border-radius: 16px;
     padding: 25px 25px;
+    gap: 10px;
 }
 
 .linha {
