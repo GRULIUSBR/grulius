@@ -114,3 +114,17 @@ vercel.com hospedar vps free
     <p>PRAZO: <?= $orcamento["prazo"] ?> </p>
 </div>
 
+//tirando foreach que funciona certo pra colocar if(isset(GET["enviado]))
+<section class="solicitacoes">
+
+            <div class="solicitadas">
+                <?php foreach ($orcamentos as $indice => $orcamento) { ?> <!--indiceDaniel-->
+                    <div class="resposta">
+                        <p> SOLICITAÇÃO ENVIADA COM SUCESSO! </p>
+                        <a href="projetos.php" class="button-solicitacao">VER SITUAÇÃO</a>
+                    </div>
+                <?php } ?>
+
+            </div>
+
+        </section>

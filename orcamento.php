@@ -1,7 +1,7 @@
 <!--COMITADO POR JOSE-->
 
 <?php
-
+$enviado = false;
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $responsavel = $_POST["responsavel"];
     $empresa = $_POST["empresa"];
@@ -45,7 +45,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     //salvar em json
     file_put_contents(__DIR__ . "/orcamento.json", $jsonAtualizado);
-    header("Location: orcamento.php");
+    $enviado = true;
+    header("Location: orcamento.php?enviado=1");
     exit;
 }
 
@@ -143,9 +144,9 @@ $orcamentos = json_decode($conteudoJson, true);
         <!--solicitacao-->
 
         <section class="solicitacoes">
-            
+
             <div class="solicitadas">
-                <?php foreach ($orcamentos as $indice => $orcamento) { ?> <!--indiceDaniel-->
+                <?php if (isset($_GET["enviado"]) && $_GET["enviado"] == "1") { ?> 
                     <div class="resposta">
                         <p> SOLICITAÇÃO ENVIADA COM SUCESSO! </p>
                         <a href="projetos.php" class="button-solicitacao">VER SITUAÇÃO</a>
