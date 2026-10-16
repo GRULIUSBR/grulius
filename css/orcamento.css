@@ -60,9 +60,11 @@ html {
     max-width: 1150px;
     margin: 40px auto;
     background-color: rgb(25, 37, 41);
+    box-shadow: 0 2px 8px rgba(0,0,0,.15);
     border-radius: 16px;
     padding: 25px 25px;
     gap: 10px;
+    
 }
 
 .linha {
