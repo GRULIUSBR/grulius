@@ -191,3 +191,60 @@ footer {
     font-size: 13px;
     
 }
+
+@media (max-width: 768px) {
+
+    
+    .linha {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    
+    .card {
+        width: auto;
+        margin: 20px 12px;
+        padding: 16px;
+    }
+
+    
+    .resposta {
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        padding: 16px;
+        gap: 12px;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    
+    .Nav-bar {
+        gap: 12px;
+        padding: 10px;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .Nav-bar img {
+        width: 120px;
+        height: auto;
+        margin-left: 0;
+    }
+
+    
+    .inputs,
+    textarea {
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    
+    footer {
+        box-sizing: border-box;
+        padding: 15px 16px;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+}
