@@ -52,7 +52,7 @@ html {
     width: 90%;
     max-width: 1150px;
     margin: 40px auto;
-    background-color: #f1f1f1;
+    background-color: rgb(25, 37, 41);
     border-radius: 16px;
     padding: 25px 25px;
 }
@@ -78,6 +78,7 @@ html {
 .labelText {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
+    color: #fff;
 }
 
 .form-button {
