@@ -126,6 +126,9 @@ html {
     background-color: #fff;
     color: rgb(25, 37, 41);
     border-radius: 7px;
+    text-align: center;
+    justify-content: center;
+    
 }
 
 .button-solicitacao:hover {
