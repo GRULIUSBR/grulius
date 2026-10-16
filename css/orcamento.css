@@ -92,9 +92,10 @@ html {
 }
 
 .form-button {
-    height: 40px;
-    color: #67E8F9;
-    background-color: rgb(25, 37, 41);
+    width: 150px;
+    height: 45px;
+    color: #192529;
+    background-color: #E2E8F0;
     margin-top: 15px;
     border-radius: 7px;
     padding: 10px;
@@ -136,7 +137,7 @@ html {
     width: 150px;
     height: 50px;
     background-color: #E2E8F0;
-    color: rgb(25, 37, 41);
+    color: #192529;
     border-radius: 7px;
     display: flex;
     align-items: center;
