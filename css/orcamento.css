@@ -121,8 +121,8 @@ html {
 }
 
 .button-solicitacao {
-    width: auto;
-    height: 65;
+    width: 150px;
+    height: 50px;
     background-color: #fff;
     color: rgb(25, 37, 41);
     border-radius: 7px;
@@ -130,7 +130,7 @@ html {
 
 .button-solicitacao:hover {
     background-color: rgb(24, 24, 34);
-    color: #fff;
+    color: aqua;
     transform: translateY(-3px);
     transition: 0.3s;
 }
