@@ -98,13 +98,14 @@ html {
     margin-top: 15px;
     border-radius: 7px;
     padding: 10px;
+    transition: all 0.3s ease;
 }
 
 .form-button:hover {
     background-color: rgb(37, 56, 63);
     color: rgb(171, 255, 255);
     transform: translateY(-3px);
-    transition: 0.3s;
+    
 }
 
 .solicitadas{
@@ -141,6 +142,7 @@ html {
     align-items: center;
     text-align: center;
     justify-content: center;
+    transition: all 0.3s ease;
     
 }
 
@@ -148,7 +150,6 @@ html {
     background-color: rgb(24, 24, 34);
     color: aqua;
     transform: translateY(-3px);
-    transition: 0.3s;
 }
 
 a {
