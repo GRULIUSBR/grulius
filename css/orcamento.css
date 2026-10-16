@@ -163,10 +163,16 @@ textarea {
 }
 
 footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
     padding: 25px 10%;
     background-color: #0b0b10;
     color: #737380;
     display: flex;
     justify-content: space-between;
     font-size: 13px;
+    
 }
