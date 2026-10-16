@@ -13,11 +13,11 @@ html {
 }
 
 .Nav-bar { /* nav bar*/
-    background-color: rgb(25, 37, 41);
+    background-color: #192529;
     width: 100%;
     height: 50px;
     margin-top: 0;
-    color: white;
+    color: #E2E8F0;
     padding: 10px 0;
     align-items: center;
     text-align: center;
@@ -28,7 +28,7 @@ html {
 }
 
 .Nav-bar a {
-    color: white;
+    color: #E2E8F0;
     text-decoration: none;
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -52,14 +52,14 @@ html {
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
-    color: rgb(25, 37, 41);
+    color: #192529;
 }
 
 .card {
     width: 90%;
     max-width: 1150px;
     margin: 40px auto;
-    background-color: rgb(25, 37, 41);
+    background-color: #192529;
     box-shadow: 0 4px 12px rgba(0,0,0,.25);
     border-radius: 16px;
     padding: 25px 25px;
@@ -88,12 +88,12 @@ html {
 .labelText {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    color: #fff;
+    color: #E2E8F0;
 }
 
 .form-button {
     height: 40px;
-    color: aqua;
+    color: #67E8F9;
     background-color: rgb(25, 37, 41);
     margin-top: 15px;
     border-radius: 7px;
@@ -102,8 +102,8 @@ html {
 }
 
 .form-button:hover {
-    background-color: rgb(37, 56, 63);
-    color: rgb(171, 255, 255);
+    background-color: #344B53;
+    color: #67E8F9;
     transform: translateY(-3px);
     
 }
@@ -125,8 +125,8 @@ html {
     justify-content: center;
     height: 40px;
     width: 60%;
-    background-color: rgb(25, 37, 41);
-    color: #fff;
+    background-color: #192529;
+    color: #E2E8F0;
     border-radius: 8px;
     padding: 25px;
     gap: 25px;
@@ -135,7 +135,7 @@ html {
 .button-solicitacao {
     width: 150px;
     height: 50px;
-    background-color: #fff;
+    background-color: #E2E8F0;
     color: rgb(25, 37, 41);
     border-radius: 7px;
     display: flex;
@@ -147,8 +147,8 @@ html {
 }
 
 .button-solicitacao:hover {
-    background-color: rgb(24, 24, 34);
-    color: aqua;
+    background-color: #344B53;
+    color: #67E8F9;
     transform: translateY(-3px);
 }
 
@@ -172,7 +172,7 @@ footer {
     left: 0;
     z-index: 1000;
     padding: 25px 10%;
-    background-color: #0b0b10;
+    background-color: #11191D;
     color: #737380;
     display: flex;
     justify-content: space-between;
