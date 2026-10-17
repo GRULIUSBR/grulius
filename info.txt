@@ -55,6 +55,9 @@ cores: verde musgo
 #293B14
 #22300B darker
 
+
+cor DANIEL
+#344B53
 =============================json da scola===========================
 {
     "editor.accessibilitySupport": "on",

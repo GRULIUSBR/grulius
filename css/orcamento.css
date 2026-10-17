@@ -32,6 +32,11 @@ html {
     text-decoration: none;
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: all 0.3s ease;
+}
+
+.Nav-bar a:hover{
+color: #67E8F9;
 }
 
 .Nav-bar img {
@@ -89,7 +94,7 @@ html {
 .labelText {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    color: #E2E8F0;
+    color: #67E8F9;
 }
 
 .form-button {
