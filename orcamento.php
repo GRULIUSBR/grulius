@@ -162,9 +162,6 @@ $orcamentos = json_decode($conteudoJson, true);
         <p>
             DESENVOLVIDO POR <a href="https://jose755.devlook.xyz">CINCO DEVS </a>
         </p>
-        <p>
-            HTML + CSS + PHP + JSON
-        </p>
     </footer>
 
 
