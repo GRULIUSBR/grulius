@@ -91,7 +91,7 @@ color: #375bfc;
     height: 40px;
     font-size: 15px;
     border: none;
-    background-color: #b2b2b7;
+    background-color: #e0e0e0;
 }
 
 .labelText {
@@ -185,7 +185,7 @@ textarea {
     font-size: 19px;
     border-radius: 8px;
     padding: 3px 3px;
-    background-color: #b2b2b7;
+    background-color: #e0e0e0;
 }
 
 footer {
