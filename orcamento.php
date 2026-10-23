@@ -149,7 +149,7 @@ $orcamentos = json_decode($conteudoJson, true);
                 <?php if (isset($_GET["enviado"]) && $_GET["enviado"] == "1") { ?> 
                     <div class="resposta">
                         <p> SOLICITAÇÃO ENVIADA COM SUCESSO! </p>
-                        <a href="financeiro.php" class="button-solicitacao">VER SITUAÇÃO</a>
+                        <a href="financeiro.php" class="button-solicitacao">ACORDAR UM VALOR</a>
                     </div>
                 <?php } ?>
 
