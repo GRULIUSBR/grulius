@@ -6,6 +6,7 @@
 
 body{
     height: 100vh;
+    background-color: #1a1a20;
 }
 
 html {
@@ -57,7 +58,7 @@ color: #67E8F9;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
-    color: #192529;
+    color: #375bfc;
 }
 
 .card {
@@ -96,7 +97,7 @@ color: #67E8F9;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 23px;
     font-weight: bold;
-    color: #67E8F9;
+    color: #375bfc;
 }
 
 .form-button {
@@ -121,7 +122,7 @@ color: #67E8F9;
 
 .form-button:hover {
     background-color: #344B53;
-    color: #67E8F9;
+    color: #375bfc;
     transform: translateY(-3px);
     
 }
@@ -168,7 +169,7 @@ color: #67E8F9;
 
 .button-solicitacao:hover {
     background-color: #344B53;
-    color: #67E8F9;
+    color: #375bfc;
     transform: translateY(-3px);
 }
 
