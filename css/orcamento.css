@@ -37,7 +37,7 @@ html {
 }
 
 .Nav-bar a:hover{
-color: #67E8F9;
+color: #375bfc;
 }
 
 .Nav-bar img {
@@ -91,13 +91,14 @@ color: #67E8F9;
     height: 40px;
     font-size: 15px;
     border: none;
+    background-color: #424254;
 }
 
 .labelText {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 23px;
     font-weight: bold;
-    color: #375bfc;
+    color: #2a789f;
 }
 
 .form-button {
