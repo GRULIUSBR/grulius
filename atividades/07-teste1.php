@@ -22,13 +22,6 @@ file_put_contents($arquivo, $json);
 echo "aluno excluido";
 
 
-
-
-
-
-
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -81,6 +81,38 @@ array
 
 
 
+
+===========================MYSQL PHPMyAdmin==============================
+CREATE TABLE senai(
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    aluno VARCHAR(100) NOT NULL,
+    idade INT NOT NULL,
+    turma INT NOT NULL
+);
+
+INSERT INTO
+senai(aluno, idade, turma)
+
+VALUES
+('Jose', 19, 755),
+('Armando', 41, 315);
+
+INSERT INTO
+senai(aluno, idade, turma)
+
+VALUES
+('Eduardo', 24, 755);
+
+UPDATE senai SET idade = 22 WHERE id = 3;
+
+DELETE FROM senai WHERE id = 3;
+
+DROP TABLE senai;
+
+=========================================================================
+
+
+
 ================<aborting>==================
 cd www
 git pull
