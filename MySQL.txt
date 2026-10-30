@@ -59,7 +59,20 @@ AULA2(
 );
 
 AULA3(
-    ainda
+
+    
+
+    ALTER TABLE table-name ADD column-name datatype;
+
+    ALTER TABLE table-name DROP COLUMN column-name;
+
+    ALTER TABlE table-name ALTER COLMUN column-name new-datatype constraint;
+
+    [ALTER TABLE = alterar la tabelas,
+    ADD adicionar columna,
+    DROP COLMUN borrar la columna,
+    ALTER COLMUN alterar una columna];
+
 );
 
 
