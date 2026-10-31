@@ -78,3 +78,36 @@ AULA3(
 
 
 
+
+
+atividade
+
+CREATE TABLE clientes (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(150) NOT NULL,
+    telefone INT(20) NOT NULL,
+    data_nascimento DATE,
+    data_cadastro DATETIME,
+    ativo BOOLEAN
+);
+
+CREATE TABLE categorias (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    descricao VARCHAR(500) NOT NULL
+);
+
+CREATE TABLE produtos (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    descricao VARCHAR(500) NOT NULL,
+    preco DECIMAL NOT NULL,
+    quantidade INT NOT NULL,
+    categoria_id INT 
+
+);
+
+fim da atv
+
+
