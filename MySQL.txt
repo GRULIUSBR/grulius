@@ -80,33 +80,298 @@ AULA3(
 
 
 
+
 atividade
+
+-------------------CRIAÇAO DAS TABELAS------------------------
 
 CREATE TABLE clientes (
 	id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
-    email VARCHAR(150) NOT NULL,
-    telefone INT(20) NOT NULL,
+    email VARCHAR(150) UNIQUE NOT NULL,
+    telefone VARCHAR(20) NOT NULL,
     data_nascimento DATE,
-    data_cadastro DATETIME,
-    ativo BOOLEAN
+    data_cadastro DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    ativo BOOLEAN NOT NULL DEFAULT TRUE
 );
 
 CREATE TABLE categorias (
 	id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
-    descricao VARCHAR(500) NOT NULL
+    descricao VARCHAR(500)
 );
 
 CREATE TABLE produtos (
 	id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
-    descricao VARCHAR(500) NOT NULL,
-    preco DECIMAL NOT NULL,
-    quantidade INT NOT NULL,
-    categoria_id INT 
+    descricao VARCHAR(500),
+    preco DECIMAL(10,2) NOT NULL,
+    quantidade INT NOT NULL DEFAULT 0,
+    categoria_id INT NOT NULL,
+    ativo BOOLEAN NOT NULL DEFAULT TRUE,
+    
 
+    FOREIGN KEY (categoria_id) REFERENCES categorias(id)
 );
+
+CREATE TABLE pedidos (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    cliente_id INT NOT NULL,
+    data_pedido DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    valor_total DECIMAL(10,2) NOT NULL DEFAULT 0,
+    FOREIGN KEY (cliente_id) REFERENCES clientes(id)
+);
+
+CREATE TABLE itens_pedido (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    pedido_id INT NOT NULL,
+    produto_id INT NOT NULL,
+    quantidade INT NOT NULL,
+    preco_unitario DECIMAL(10,2) NOT NULL,
+    FOREIGN KEY (pedido_id) REFERENCES pedidos(id),
+    FOREIGN KEY (produto_id) REFERENCES produtos(id)
+    
+);
+
+----------------------------CADASTRANDO 5 CATEGORIAS------------------------------------------
+
+INSERT INTO categorias
+(nome, descricao)
+VALUES
+('LIMPEZA', 'sabao, detergente, lava-louças');
+
+
+INSERT INTO categorias
+(nome, descricao)
+VALUES
+('HORTIFRUTI', 'legumes, frutas, verduras');
+
+
+INSERT INTO categorias
+(nome, descricao)
+VALUES
+('PADARIA', 'pão, doces, salgados');
+
+
+INSERT INTO categorias
+(nome, descricao)
+VALUES
+('AÇOUGUE', 'carne e ossos');
+
+
+INSERT INTO categorias
+(nome, descricao)
+VALUES
+('ADEGA', 'vinho importado e nacional');
+
+-----------------------CADASTRANDO 8 CLIENTES-------------------
+
+INSERT INTO clientes
+(nome, email, telefone, data_nascimento)
+VALUES
+('Nikolai_Madurenz', 'vivavenezulachamo@hotmail.com', '+58_419672-7265', '1978-09-15');
+
+
+INSERT INTO clientes
+(nome, email, telefone, data_nascimento)
+VALUES
+('Darren_Jason_Watkins_Jr.', 'ishowspeedeua@gmail.com', '+1_572_419259-6874', '2005-01-21');
+
+
+INSERT INTO clientes
+(nome, email, telefone, data_nascimento)
+VALUES
+('Maria_Becerra', 'becerrita6767music@gmail.com', '+52_8967671234', '1991-07-30');
+
+
+INSERT INTO clientes
+(nome, email, telefone, data_nascimento)
+VALUES
+('José', 'josealdeanisuwu@gmail.com', '+53_56898512', '1961-12-15');
+
+
+INSERT INTO clientes
+(nome, email, telefone, data_nascimento)
+VALUES
+('Cristhian', 'greentwt@gmail.com', '+53_42678906', '1961-07-12');
+
+
+INSERT INTO clientes
+(nome, email, telefone, data_nascimento)
+VALUES
+('Yuri', 'eduardocamaguey@gmail.com', '+53_55555556', '1988-11-05');
+
+
+INSERT INTO clientes
+(nome, email, telefone, data_nascimento)
+VALUES
+('Lola', 'lolalolita@gmail.com', '+53_797984', '1981-11-11');
+
+
+INSERT INTO clientes
+(nome, email, telefone, data_nascimento)
+VALUES
+('Juan', 'illojuanillo@gmail.com', '+53_55555556', '2009-06-13');
+
+-----------------------CADASTRANDO 15 PRODUTOS-------------------
+
+INSERT INTO produtos
+(nome, descricao, preco, quantidade, categoria_id, ativo)
+VALUES
+('detergente_ype', 'maca', 3.99, 50, 1, TRUE);
+
+INSERT INTO produtos
+(nome, descricao, preco, quantidade, categoria_id, ativo)
+VALUES
+('batata', 'mona_lisa', 8.99, 80, 2, TRUE);
+
+INSERT INTO produtos
+(nome, descricao, preco, quantidade, categoria_id, ativo)
+VALUES
+('pao', 'de_agua', 16.90, 100, 3, TRUE);
+
+INSERT INTO produtos
+(nome, descricao, preco, quantidade, categoria_id, ativo)
+VALUES
+('peito_de_frango', 'cancao', 8.99, 60, 4, TRUE);
+
+INSERT INTO produtos
+(nome, descricao, preco, quantidade, categoria_id, ativo)
+VALUES
+('vinho_campolargo', 'suave', 19.99, 40, 5, TRUE);
+
+INSERT INTO produtos
+(nome, descricao, preco, quantidade, categoria_id, ativo)
+VALUES
+('amaciante_de_roupa', 'downy', 14.99, 24, 1, TRUE);
+
+INSERT INTO produtos
+(nome, descricao, preco, quantidade, categoria_id, ativo)
+VALUES
+('tomate', 'longa_vida', 10.99, 75, 2, TRUE);
+
+INSERT INTO produtos
+(nome, descricao, preco, quantidade, categoria_id, ativo)
+VALUES
+('bolo', 'nega_maluca', 45.90, 4, 3, TRUE);
+
+INSERT INTO produtos
+(nome, descricao, preco, quantidade, categoria_id, ativo)
+VALUES
+('pernil_suino', 'frigonobre', 25.75, 85, 4, TRUE);
+
+INSERT INTO produtos
+(nome, descricao, preco, quantidade, categoria_id, ativo)
+VALUES
+('vinho_belavista', 'seco', 14.50, 12, 5, TRUE);
+
+INSERT INTO produtos
+(nome, descricao, preco, quantidade, categoria_id, ativo)
+VALUES
+('sabao_liq', 'omo', 17.90, 48, 1, TRUE);
+
+INSERT INTO produtos
+(nome, descricao, preco, quantidade, categoria_id, ativo)
+VALUES
+('banana', 'prata', 6.99, 52, 2, TRUE);
+
+INSERT INTO produtos
+(nome, descricao, preco, quantidade, categoria_id, ativo)
+VALUES
+('queijo_fatiado', 'prato', 79.90, 10, 3, TRUE);
+
+INSERT INTO produtos
+(nome, descricao, preco, quantidade, categoria_id, ativo)
+VALUES
+('coracao_de_frango', 'passarinho', 46.00, 50, 4, TRUE);
+
+INSERT INTO produtos
+(nome, descricao, preco, quantidade, categoria_id, ativo)
+VALUES
+('vinho_campolargo', 'seco', 26.62, 36, 5, FALSE);
+
+-------------------------- CADASTRANDO 10 PEDIDOS----------------
+
+INSERT INTO pedidos
+(cliente_id, valor_total)
+VALUES
+(1, 14.50);
+
+INSERT INTO pedidos
+(cliente_id, valor_total)
+VALUES
+(3, 16.90);
+
+INSERT INTO pedidos
+(cliente_id, valor_total)
+VALUES
+(3, 3.99);
+
+INSERT INTO pedidos
+(cliente_id, valor_total)
+VALUES
+(4, 19.99);
+
+INSERT INTO pedidos
+(cliente_id, valor_total)
+VALUES
+(5, 6.99);
+
+INSERT INTO pedidos
+(cliente_id, valor_total)
+VALUES
+(6, 46.00);
+
+INSERT INTO pedidos
+(cliente_id, valor_total)
+VALUES
+(7, 40.67);
+
+INSERT INTO pedidos
+(cliente_id, valor_total)
+VALUES
+(8, 17.90);
+
+INSERT INTO pedidos
+(cliente_id, valor_total)
+VALUES
+(6, 25.75);
+
+INSERT INTO pedidos
+(cliente_id, valor_total)
+VALUES
+(1, 45.90);
+
+-----------------20 itens de pedidos---------
+
+INSERT INTO itens_pedido
+(pedido_id, produto_id, quantidade, preco_unitario)
+VALUES
+(1, 1, 30, 56.99),
+(1, 3, 12, 14.99),
+(2, 15, 9, 40.99),
+(2, 14, 5, 23.99),
+(3, 3, 25, 56.99),
+
+(3, 4, 19, 52.99),
+(4, 5, 1, 12.99),
+(4, 6, 5, 3.99),
+(5, 6, 10, 3.99),
+(5, 7, 4, 17.90),
+
+(6, 7, 8, 17.90),
+(6, 13, 4, 99.90),
+(7, 11, 4, 66.90),
+(7, 10, 4, 61.90),
+(8, 9, 2, 11.90),
+
+(9, 9, 78, 11.90),
+(9, 9, 78, 11.90),
+
+
+
+
+
 
 fim da atv
 
