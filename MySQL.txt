@@ -138,31 +138,31 @@ CREATE TABLE itens_pedido (
 INSERT INTO categorias
 (nome, descricao)
 VALUES
-('LIMPEZA', 'sabao, detergente, lava-louças');
+('SOFTWARE', 'SO_e_mais');
 
 
 INSERT INTO categorias
 (nome, descricao)
 VALUES
-('HORTIFRUTI', 'legumes, frutas, verduras');
+('HARDWARE', 'componentes_internos');
 
 
 INSERT INTO categorias
 (nome, descricao)
 VALUES
-('PADARIA', 'pão, doces, salgados');
+('ACESSORIOS', 'teclado_monitor_mouse');
 
 
 INSERT INTO categorias
 (nome, descricao)
 VALUES
-('AÇOUGUE', 'carne e ossos');
+('SMARTPHONES', 'todos_os_telefones');
 
 
 INSERT INTO categorias
 (nome, descricao)
 VALUES
-('ADEGA', 'vinho importado e nacional');
+('CAPAS', 'capa_pro_teu_telefone');
 
 -----------------------CADASTRANDO 8 CLIENTES-------------------
 
@@ -215,158 +215,244 @@ VALUES
 
 -----------------------CADASTRANDO 15 PRODUTOS-------------------
 
-INSERT INTO produtos
-(nome, descricao, preco, quantidade, categoria_id, ativo)
-VALUES
-('detergente_ype', 'maca', 3.99, 50, 1, TRUE);
+CREATE TABLE produtos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(150) NOT NULL,
+    descricao VARCHAR(500),
+    preco DECIMAL(10, 2) NOT NULL,
+    quantidade INT NOT NULL,
+    categoria_id INT NOT NULL,
+    ativo BOOLEAN NOT NULL DEFAULT TRUE
+);
 
-INSERT INTO produtos
-(nome, descricao, preco, quantidade, categoria_id, ativo)
-VALUES
-('batata', 'mona_lisa', 8.99, 80, 2, TRUE);
+INSERT INTO Produtos (nome, descricao, preco, quantidade, categoria_id, ativo) VALUES 
+-- Software (categoria_id: 1)
+('Licença Windows 11 Home', 'Chave de ativação digital permanente para 1 PC.', 749.00, 50, 1, TRUE),
+('Microsoft 365 Personal', 'Assinatura anual com pacote Office e 1TB no OneDrive.', 299.00, 100, 1, TRUE),
+('Antivírus Kaspersky Total', 'Proteção digital avançada contra malware válida por 1 ano.', 99.90, 30, 1, TRUE),
 
-INSERT INTO produtos
-(nome, descricao, preco, quantidade, categoria_id, ativo)
-VALUES
-('pao', 'de_agua', 16.90, 100, 3, TRUE);
+('Processador AMD Ryzen 5 5600X', 'Processador de 6 núcleos e 12 threads, clock até 4.6GHz.', 950.00, 15, 2, TRUE),
+('Placa de Vídeo RTX 4060 8GB', 'Placa gráfica com suporte a Ray Tracing e DLSS 3.', 2100.00, 8, 2, TRUE),
+('Memória RAM Kingston 16GB DDR4', 'Módulo de memória de 3200MHz com dissipador de calor.', 320.00, 40, 2, TRUE),
 
-INSERT INTO produtos
-(nome, descricao, preco, quantidade, categoria_id, ativo)
-VALUES
-('peito_de_frango', 'cancao', 8.99, 60, 4, TRUE);
+('Mouse Logitech G203', 'Mouse gamer com sensor de 8.000 DPI e iluminação RGB.', 150.00, 25, 3, TRUE),
+('Teclado Mecânico Redragon', 'Teclado gamer compacto com switches azuis táteis.', 249.90, 18, 3, TRUE),
+('Headset HyperX Cloud Stinger 2', 'Fone de ouvido com drivers de 50mm e microfone com cancelamento de ruído.', 299.00, 12, 3, TRUE),
 
-INSERT INTO produtos
-(nome, descricao, preco, quantidade, categoria_id, ativo)
-VALUES
-('vinho_campolargo', 'suave', 19.99, 40, 5, TRUE);
+('iPhone 15 Pro Max 256GB', 'Smartphone Apple com tela Super Retina, chip A17 Pro e câmera tripla.', 7999.00, 5, 4, TRUE),
+('Galaxy S24 Ultra 512GB', 'Smartphone Samsung com câmera de 200MP e caneta S Pen integrada.', 6899.00, 7, 4, TRUE),
+('Xiaomi Redmi Note 13 Pro', 'Smartphone com tela AMOLED de 120Hz e carregamento rápido de 67W.', 1899.00, 14, 4, TRUE),
 
-INSERT INTO produtos
-(nome, descricao, preco, quantidade, categoria_id, ativo)
-VALUES
-('amaciante_de_roupa', 'downy', 14.99, 24, 1, TRUE);
+('Capa Antishock iPhone 15', 'Capa de acrílico transparente com bordas reforçadas contra quedas.', 49.90, 120, 5, TRUE),
+('Capa Silicone MagSafe S24', 'Capa de silicone com toque suave e alinhamento magnético.', 120.00, 60, 5, TRUE),
+('Capa Carteira Redmi Note 13', 'Capa de couro sintético com compartimentos para cartões e notas.', 39.90, 45, 5, TRUE);
 
-INSERT INTO produtos
-(nome, descricao, preco, quantidade, categoria_id, ativo)
-VALUES
-('tomate', 'longa_vida', 10.99, 75, 2, TRUE);
-
-INSERT INTO produtos
-(nome, descricao, preco, quantidade, categoria_id, ativo)
-VALUES
-('bolo', 'nega_maluca', 45.90, 4, 3, TRUE);
-
-INSERT INTO produtos
-(nome, descricao, preco, quantidade, categoria_id, ativo)
-VALUES
-('pernil_suino', 'frigonobre', 25.75, 85, 4, TRUE);
-
-INSERT INTO produtos
-(nome, descricao, preco, quantidade, categoria_id, ativo)
-VALUES
-('vinho_belavista', 'seco', 14.50, 12, 5, TRUE);
-
-INSERT INTO produtos
-(nome, descricao, preco, quantidade, categoria_id, ativo)
-VALUES
-('sabao_liq', 'omo', 17.90, 48, 1, TRUE);
-
-INSERT INTO produtos
-(nome, descricao, preco, quantidade, categoria_id, ativo)
-VALUES
-('banana', 'prata', 6.99, 52, 2, TRUE);
-
-INSERT INTO produtos
-(nome, descricao, preco, quantidade, categoria_id, ativo)
-VALUES
-('queijo_fatiado', 'prato', 79.90, 10, 3, TRUE);
-
-INSERT INTO produtos
-(nome, descricao, preco, quantidade, categoria_id, ativo)
-VALUES
-('coracao_de_frango', 'passarinho', 46.00, 50, 4, TRUE);
-
-INSERT INTO produtos
-(nome, descricao, preco, quantidade, categoria_id, ativo)
-VALUES
-('vinho_campolargo', 'seco', 26.62, 36, 5, FALSE);
 
 -------------------------- CADASTRANDO 10 PEDIDOS----------------
 
 INSERT INTO pedidos
 (cliente_id, valor_total)
 VALUES
-(1, 14.50);
+(1, 1420.50);
 
 INSERT INTO pedidos
 (cliente_id, valor_total)
 VALUES
-(3, 16.90);
+(3, 6850.90);
 
 INSERT INTO pedidos
 (cliente_id, valor_total)
 VALUES
-(3, 3.99);
+(3, 235.99);
 
 INSERT INTO pedidos
 (cliente_id, valor_total)
 VALUES
-(4, 19.99);
+(4, 3119.99);
 
 INSERT INTO pedidos
 (cliente_id, valor_total)
 VALUES
-(5, 6.99);
+(5, 5206.99);
 
 INSERT INTO pedidos
 (cliente_id, valor_total)
 VALUES
-(6, 46.00);
+(6, 4460.00);
 
 INSERT INTO pedidos
 (cliente_id, valor_total)
 VALUES
-(7, 40.67);
+(7, 840.67);
 
 INSERT INTO pedidos
 (cliente_id, valor_total)
 VALUES
-(8, 17.90);
+(8, 2717.90);
 
 INSERT INTO pedidos
 (cliente_id, valor_total)
 VALUES
-(6, 25.75);
+(6, 5925.75);
 
 INSERT INTO pedidos
 (cliente_id, valor_total)
 VALUES
-(1, 45.90);
+(1, 450.90);
+
 
 -----------------20 itens de pedidos---------
 
 INSERT INTO itens_pedido
 (pedido_id, produto_id, quantidade, preco_unitario)
 VALUES
-(1, 1, 30, 56.99),
-(1, 3, 12, 14.99),
-(2, 15, 9, 40.99),
-(2, 14, 5, 23.99),
-(3, 3, 25, 56.99),
+(1, 1, 30, 45.00),
+(1, 3, 12, 5.88),
+(2, 15, 9, 650.00),
+(2, 14, 5, 200.18),
+(3, 3, 25, 9.44),
 
-(3, 4, 19, 52.99),
-(4, 5, 1, 12.99),
+(3, 4, 19, 1.00),
+(4, 5, 1, 3100.00),
 (4, 6, 5, 3.99),
-(5, 6, 10, 3.99),
-(5, 7, 4, 17.90),
+(5, 6, 10, 450.00),
+(5, 7, 4, 176.75),
 
-(6, 7, 8, 17.90),
-(6, 13, 4, 99.90),
-(7, 11, 4, 66.90),
-(7, 10, 4, 61.90),
-(8, 9, 2, 11.90),
+(6, 7, 8, 450.00),
+(6, 13, 4, 215.00),
+(7, 11, 4, 110.16),
+(7, 10, 4, 100.00),
+(8, 9, 2, 1358.95),
 
-(9, 9, 78, 11.90),
-(9, 9, 78, 11.90),
+(9, 9, 78, 37.98),
+(9, 9, 78, 37.98),
+(10, 8, 3, 110.00),
+(10, 8, 6, 15.00),
+(10, 4, 1, 30.90);
+
+
+-------------------------etapa5-----------------------------
+
+UPDATE produtos 
+SET preco = 780.00 
+WHERE id = 1;
+
+UPDATE produtos 
+SET preco = 6590.00 
+WHERE id = 10;
+
+UPDATE produtos 
+SET preco = 79.99 
+WHERE id = 13;
+
+--------------
+
+UPDATE produtos 
+SET quantidade = 50 
+WHERE id = 2;
+
+UPDATE produtos 
+SET quantidade = 30 
+WHERE id = 4;
+
+----------------
+
+UPDATE clientes
+SET ativo = FALSE
+WHERE id = 1;
+
+----------------
+
+UPDATE categorias
+SET descricao = 'as_melhores_capas_pro_teu_celular'
+WHERE id = 5;
+
+----------------
+
+INSERT INTO produtos
+(id, nome, descricao, preco, quantidade, categoria_id, ativo)
+VALUES
+(999 ,'testeeeee', 'bomdiapravoce', 999.99, 1000, 1, FALSE);
+
+DELETE FROM produtos
+WHERE id = 999;
+
+-------------------etapa6-----------------------
+
+SELECT * FROM produtos
+WHERE preco > 100;
+
+SELECT * FROM produtos
+WHERE preco < 50;
+
+SELECT * FROM produtos
+WHERE preco >= 200;
+
+SELECT * FROM produtos
+WHERE quantidade <= 10;
+
+SELECT * FROM clientes
+WHERE ativo = TRUE;
+
+SELECT * FROM produtos
+WHERE ativo = FALSE;
+
+SELECT * FROM produtos
+WHERE categoria_id != 5;
+
+-----------------etapa7------------------------
+
+SELECT * FROM produtos
+WHERE ativo = TRUE
+AND preco > 100;
+
+SELECT * FROM produtos
+WHERE preco < 50
+AND preco > 500;
+
+SELECT * FROM produtos
+WHERE preco < 50
+AND preco > 500;
+
+SELECT * FROM produtos
+WHERE NOT ativo;
+
+SELECT * FROM produtos
+WHERE preco BETWEEN 100 AND 300;
+
+----------etapa8--------------------------
+
+SELECT * FROM produtos
+WHERE nome LIKE 'P%';
+
+SELECT * FROM produtos
+WHERE nome LIKE '%git%';
+
+SELECT * FROM clientes
+WHERE nome LIKE '%i';
+
+SELECT * FROM clientes
+ORDER BY preco DESC;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
