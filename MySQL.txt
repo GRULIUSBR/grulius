@@ -431,33 +431,69 @@ WHERE nome LIKE '%git%';
 SELECT * FROM clientes
 WHERE nome LIKE '%i';
 
+SELECT * FROM produtos
+ORDER BY preco ASC;
+
 SELECT * FROM clientes
 ORDER BY preco DESC;
 
+SELECT * FROM clientes
+ORDER BY nome ASC;
 
+SELECT * FROM produtos
+ORDER BY preco DESC
+LIMIT 5;
 
+SELECT * FROM produtos
+ORDER BY preco ASC
+LIMIT 3;
 
+SELECT * FROM produtos
+ORDER BY preco DESC
+LIMIT 5 OFFSET 3;
 
+SELECT * FROM produtos
+ORDER BY categoria_id DESC
+LIMIT 5 OFFSET 3;
 
+SELECT DISTINCT categoria_id
+FROM produtos;
 
+-------------ETAPA9----------------------
 
+SELECT COUNT(*) FROM clientes;
 
+SELECT COUNT(*) FROM produtos;
 
+SELECT COUNT(*) FROM produtos
+WHERE ativo = 1;
 
+SELECT SUM(quantidade) FROM produtos
+WHERE quantidade >= 0;
 
+SELECT AVG(preco) FROM produtos;
 
+SELECT MIN(preco) FROM produtos;
+SELECT nome, preco FROM produtos
+WHERE preco = (SELECT MIN(preco) FROM produtos);
 
+SELECT MAX(preco) FROM produtos;
+SELECT nome, preco FROM produtos
+WHERE preco = (SELECT MAX(preco) FROM produtos);
 
+SELECT COUNT(*) FROM pedidos;
 
+SELECT SUM(valor_total) FROM pedidos
+WHERE valor_total >= 0;
 
+SELECT AVG(valor_total) FROM pedidos;
 
+-------------etapa11---------------
 
-
-
-
-
-
-
+SELECT * FROM pedidos
+ORDER BY preco ASC;
+WHERE ativo = 1 AND preco >= 1500
+LIMIT 5;
 
 fim da atv
 
