@@ -55,6 +55,8 @@ cores: verde musgo
 #293B14
 #22300B darker
 
+#5A342B marrom
+
 
 cor DANIEL
 #344B53
