@@ -1,7 +1,7 @@
 <?php
 //db1.php
-require_once "conexao.php"
-//criar tabela
+require_once "conexao.php";
+//1-criar tabela
 $sql = "CREATE TABLE IF NOT EXISTS produtos (
 id INT AUTO_INCREMENT PRIMARY KEY,
 nome VARCHAR(100) NOT NULL,
@@ -10,7 +10,7 @@ quantidade INT NOT NULL)";
 
 $pdo->exec($sql);
 
-//cadastrar produto
+//2-cadastrar produto
 if (isset($_POST["cadastrar"])) {
     $nome = $_POST["nome"];
     $preco = $_POST["preco"];
@@ -21,14 +21,28 @@ if (isset($_POST["cadastrar"])) {
     $stmt = $pdo->prepare($sql);
 
     $stmt->execute([
-    "nome" => $nome,
-    "preco" => $preco,
-    "quantidade" => $quantidade
+        "nome" => $nome,
+        "preco" => $preco,
+        "quantidade" => $quantidade
     ]);
-    
-
 }
+//3-atualizar produto
+if (isset($_POST["atualizar"])) {
+    $id = $_POST["id"];
+    $nome = $_POST["nome"];
+    $preco = $_POST["preco"];
+    $quantidade = $_POST["quantidade"];
 
+    $sql = "UPDATE produtos SET nome = '$nome', preco = $preco, quantidade = $quantidade WHERE id = $id";
+
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute([
+        "nome" => $nome,
+        "preco" => $preco,
+        "quantidade" => $quantidade,
+        "id" => $id
+    ]);
+}
 
 ?>
 
