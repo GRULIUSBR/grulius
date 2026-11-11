@@ -1,6 +1,35 @@
 <?php
 //db1.php
 require_once "conexao.php"
+//criar tabela
+$sql = "CREATE TABLE IF NOT EXISTS produtos (
+id INT AUTO_INCREMENT PRIMARY KEY,
+nome VARCHAR(100) NOT NULL,
+preco DECIMAL(10,2) NOT NULL,
+quantidade INT NOT NULL)";
+
+$pdo->exec($sql);
+
+//cadastrar produto
+if (isset($_POST["cadastrar"])) {
+    $nome = $_POST["nome"];
+    $preco = $_POST["preco"];
+    $quantidade = $_POST["quantidade"];
+
+    $sql - "INSERT INTO produtos ('$nome', $preco, $quantidade)";
+
+    $stmt = $pdo->prepare($sql);
+
+    $stmt->execute([
+    "nome" => $nome,
+    "preco" => $preco,
+    "quantidade" => $quantidade
+    ]);
+    
+
+}
+
+
 ?>
 
 <!DOCTYPE html>
