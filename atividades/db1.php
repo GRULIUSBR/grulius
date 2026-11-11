@@ -16,7 +16,7 @@ if (isset($_POST["cadastrar"])) {
     $preco = $_POST["preco"];
     $quantidade = $_POST["quantidade"];
 
-    $sql - "INSERT INTO produtos ('$nome', $preco, $quantidade)";
+    $sql = "INSERT INTO produtos ('$nome', $preco, $quantidade)";
 
     $stmt = $pdo->prepare($sql);
 
@@ -56,6 +56,8 @@ if (isset($_POST["excluir"])) {
 }
 
 //5-buscarProdutoParaEdiçao
+$produtoEditar = null;
+
 if (isset($_GET["editar"])) {
     $id = $_GET["editar"];
     $sql = "SELECT * FROM produtos WHERE id = $id";
