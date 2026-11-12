@@ -23,7 +23,7 @@ if (isset($_POST["cadastrar"])) {
 
     echo "debug3";
 
-    $sql = "INSERT INTO produtos (nome, preco, quantidade)";
+    $sql = "INSERT INTO produtos (nome, preco, quantidade) VALUES ('$nome', $preco, $quantidade)";
 
     echo "debug4";
 
