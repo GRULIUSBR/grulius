@@ -20,11 +20,7 @@ if (isset($_POST["cadastrar"])) {
 
     $stmt = $pdo->prepare($sql);
 
-    $stmt->execute([
-        "nome" => $nome,
-        "preco" => $preco,
-        "quantidade" => $quantidade
-    ]);
+    $stmt->execute();
 }
 //3-atualizar produto
 if (isset($_POST["atualizar"])) {
@@ -36,12 +32,8 @@ if (isset($_POST["atualizar"])) {
     $sql = "UPDATE produtos SET nome = '$nome', preco = $preco, quantidade = $quantidade WHERE id = $id";
 
     $stmt = $pdo->prepare($sql);
-    $stmt->execute([
-        "nome" => $nome,
-        "preco" => $preco,
-        "quantidade" => $quantidade,
-        "id" => $id
-    ]);
+
+    $stmt->execute();
 }
 
 //4-excluir
@@ -50,9 +42,7 @@ if (isset($_POST["excluir"])) {
 
     $sql = "DELETE FROM produtos WHERE id = $id";
     $stmt = $pdo->prepare($sql);
-    $stmt->execute([
-        "id" => $id
-    ]);
+    $stmt->execute();
 }
 
 //5-buscarProdutoParaEdiçao
@@ -62,7 +52,7 @@ if (isset($_GET["editar"])) {
     $id = $_GET["editar"];
     $sql = "SELECT * FROM produtos WHERE id = $id";
     $stmt = $pdo->prepare($sql);
-    $stmt->execute(["id" => $id]);
+    $stmt->execute();
     $produtoEditar = $stmt->fetch(PDO::FETCH_ASSOC);
 }
 
@@ -133,9 +123,9 @@ $produtos = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <td> <?= $produto["quantidade"] ?> </td>
                 <td>
                     <!-- EDITAR -->
-                    <a href="index.php?editar=<?php $produto['id'] ?>">Editar</a>
+                    <a href="db1.php?editar=<?php $produto['id'] ?>">Editar</a>
                     <!-- EXCLUIR -->
-                    <form method="POST" action="index.php" style="display:inline;">
+                    <form method="POST" action="db1.php" style="display:inline;">
                         <input type="hidden" name="id" value="<?php $produto['id'] ?>">
                         <button type="submit" name="excluir" onclick="return confirm ('Desjea excluir este produto?')">Excluir</button>
                     </form>
