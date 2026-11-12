@@ -145,10 +145,10 @@ echo "debug19";
                 <td> <?= $produto["quantidade"] ?> </td>
                 <td>
                     <!-- EDITAR -->
-                    <a href="db1.php?editar=<?php $produto['id'] ?>">Editar</a>
+                    <a href="db1.php?editar=<?= $produto['id'] ?>">Editar</a>
                     <!-- EXCLUIR -->
                     <form method="POST" action="db1.php" style="display:inline;">
-                        <input type="hidden" name="id" value="<?php $produto['id'] ?>">
+                        <input type="hidden" name="id" value="<?= $produto['id'] ?>">
                         <button type="submit" name="excluir" onclick="return confirm ('Desjea excluir este produto?')">Excluir</button>
                     </form>
                 </td>
