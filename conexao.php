@@ -6,7 +6,7 @@
 //host = 'localhost'
 
 $host = 'localhost';
-$db = 'jose755_db1';
+$db = 'jose755_db2';
 $user = 'jose755';
 $pass = '755!@#';
 $charset = 'utf8mb4';
