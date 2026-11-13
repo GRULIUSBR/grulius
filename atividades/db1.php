@@ -96,16 +96,18 @@ echo "debug19";
 </head>
 
 <body>
-    <h1>Sistema de Cadastro de produtos</h1>
-    <h2>
-        <?php
-        if ($produtoEditar) {
-            echo "EDITAR PRODUTO";
-        } else {
-            echo "CADASTRAR PRODUTOS";
-        }
-        ?>
-    </h2>
+    <div class="cabeza">
+        <h1 class="cabezatext1">Sistema de Cadastro de produtos</h1>
+        <h2 class="cabezatext2">
+            <?php
+            if ($produtoEditar) {
+                echo "EDITAR PRODUTO";
+            } else {
+                echo "CADASTRAR PRODUTOS";
+            }
+            ?>
+        </h2>
+    </div>
 
     <form method="POST">
         <?php if ($produtoEditar) { ?>
@@ -122,7 +124,7 @@ echo "debug19";
         <?php if ($produtoEditar) { ?>
             <button type="submit" name="atualizar">Atualizar Produto</button>
         <?php } else { ?>
-            <button type="submit" name="cadastrar">Cadastrar Produto</button>
+            <button type="submit" name="cadastrar" class="cadastrarbuton">Cadastrar Produto</button>
         <?php } ?>
     </form>
     <hr>

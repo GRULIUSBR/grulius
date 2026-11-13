@@ -11,3 +11,23 @@ body{
     background-color: #b0e8ec;
     color: blue;
 }
+
+.cabeza{
+    padding: 25px 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.cabezatext1{
+    font-size: 45px;
+}
+
+.cabezatext2{
+    font-size: 35px;
+}
+
+.cadastrarbuton{
+    width: 200px;
+    height: 125px;
+    background-color: blue;
+}
