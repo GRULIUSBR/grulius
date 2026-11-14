@@ -1,4 +1,9 @@
 <?php
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 require_once "../conexao.php";
 
 //listartodososprodutos
@@ -18,14 +23,16 @@ $produtos = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <link rel="stylesheet" href="style.css">
 </head>
 
+
+
+<body>
+
 <header>
 <nav>
     <a href="listagem.php">LISTAGEM</a>
     <a href="cadastro.php">PRODUTOS</a>
 </nav>
 </header>
-
-<body>
 
     <h1>LISTA DE PRODUTOS</h1>
 

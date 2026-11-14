@@ -1,5 +1,9 @@
 <?php
 
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 require_once "../conexao.php";
 
 //1cadastrar
@@ -62,6 +66,10 @@ if (isset($_GET["editar"])) {
     <link rel="stylesheet" href="style.css">
 </head>
 
+
+
+<body>
+
 <header>
 <nav>
     <a href="listagem.php">LISTAGEM</a>
@@ -69,7 +77,6 @@ if (isset($_GET["editar"])) {
 </nav>
 </header>
 
-<body>
 <form method="POST">
         <?php if ($produtoEditar) { ?>
             <input type="hidden" name="id" value="<?= $produtoEditar['id'] ?>">
