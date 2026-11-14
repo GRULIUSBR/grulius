@@ -27,7 +27,7 @@ $pdo->exec($sql);
 $sql = "CREATE TABLE IF NOT EXISTS produtos (
 id INT PRIMARY KEY AUTO_INCREMENT,
 nome VARCHAR(150) NOT NULL,
-categoria_id INT,
+categoria_id INT NOT NULL,
 preco DECIMAL(10,2) NOT NULL,
 quantidade INT NOT NULL,
 estoque_minimo INT NOT NULL,

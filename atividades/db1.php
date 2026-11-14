@@ -21,19 +21,9 @@ if (isset($_POST["cadastrar"])) {
     $preco = $_POST["preco"];
     $quantidade = $_POST["quantidade"];
 
-    echo "debug3";
-
     $sql = "INSERT INTO produtos (nome, preco, quantidade) VALUES ('$nome', $preco, $quantidade)";
-
-    echo "debug4";
-
     $stmt = $pdo->prepare($sql);
-
-    echo "debug5";
-
     $stmt->execute();
-
-    echo "debug6";
 }
 //3-atualizar produto
 if (isset($_POST["atualizar"])) {
@@ -41,14 +31,14 @@ if (isset($_POST["atualizar"])) {
     $nome = $_POST["nome"];
     $preco = $_POST["preco"];
     $quantidade = $_POST["quantidade"];
-    echo "debug7";
+    
     $sql = "UPDATE produtos SET nome = '$nome', preco = $preco, quantidade = $quantidade WHERE id = $id";
-    echo "debug8";
+   
     $stmt = $pdo->prepare($sql);
-    echo "debug8";
+   
     $stmt->execute();
 }
-echo "debug9";
+
 //4-excluir
 if (isset($_POST["excluir"])) {
     $id = $_POST["id"];
