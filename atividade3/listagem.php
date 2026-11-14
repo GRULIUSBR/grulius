@@ -20,8 +20,8 @@ $produtos = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 <header>
 <nav>
-    <a href="listagem.php"></a>
-    <a href="cadastro.php"></a>
+    <a href="listagem.php">LISTAGEM</a>
+    <a href="cadastro.php">PRODUTOS</a>
 </nav>
 </header>
 
@@ -46,10 +46,10 @@ $produtos = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <!-- td table data crea una celula de datos en la tabla -->
                 <td> <?= $produto["id"] ?> </td>
                 <td> <?= htmlspecialchars($produto["nome"]) ?> </td>
-                <td> <?= $produto["categoria"] ?> </td>
+                <td> <?= $produto["categorias_id"] ?> </td>
                 <td>R$ <?= number_format($produto["preco"], 2, ",", ".") ?> </td>
                 <td> <?= $produto["quantidade"] ?> </td>
-                <td> <?= $produto["quantidadeMin"] ?> </td>
+                <td> <?= $produto["estoque_minimo"] ?> </td>
 
                 <td>
                     <!-- EDITAR -->
