@@ -1,5 +1,9 @@
 <?php
 
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 require_once "../conexao.php";
 
 $sql = "CREATE TABLE IF NOT EXISTS categorias (
@@ -31,7 +35,7 @@ categoria_id INT NOT NULL,
 preco DECIMAL(10,2) NOT NULL,
 quantidade INT NOT NULL,
 estoque_minimo INT NOT NULL,
-FOREIGN KEY (categoria_id) REFERENCES categoria(id))";
+FOREIGN KEY (categoria_id) REFERENCES categorias(id))";
 $pdo->exec($sql);
 
 //cadastrar produtos pela primeira vez :-(
