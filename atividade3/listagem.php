@@ -18,6 +18,13 @@ $produtos = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <link rel="stylesheet" href="style.css">
 </head>
 
+<header>
+<nav>
+    <a href="listagem.php"></a>
+    <a href="cadastro.php"></a>
+</nav>
+</header>
+
 <body>
 
     <h1>LISTA DE PRODUTOS</h1>

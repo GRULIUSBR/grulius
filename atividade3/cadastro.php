@@ -62,6 +62,13 @@ if (isset($_GET["editar"])) {
     <link rel="stylesheet" href="style.css">
 </head>
 
+<header>
+<nav>
+    <a href="listagem.php"></a>
+    <a href="cadastro.php"></a>
+</nav>
+</header>
+
 <body>
 <form method="POST">
         <?php if ($produtoEditar) { ?>
