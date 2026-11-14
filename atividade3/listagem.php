@@ -35,10 +35,10 @@ $produtos = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <!-- th table header crea una celula de cabeçalho en la tabla -->
             <th>ID</th>
             <th>nome</th>
-            <th>categoria</th>
+            <th>categoria_id</th>
             <th>preco</th>
             <th>quantidade</th>
-            <th>quantidadeMin</th>
+            <th>estoque_minimo</th>
 
         </tr>
         <?php foreach ($produtos as $produto) { ?>
@@ -46,7 +46,7 @@ $produtos = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <!-- td table data crea una celula de datos en la tabla -->
                 <td> <?= $produto["id"] ?> </td>
                 <td> <?= htmlspecialchars($produto["nome"]) ?> </td>
-                <td> <?= $produto["categorias_id"] ?> </td>
+                <td> <?= $produto["categoria_id"] ?> </td>
                 <td>R$ <?= number_format($produto["preco"], 2, ",", ".") ?> </td>
                 <td> <?= $produto["quantidade"] ?> </td>
                 <td> <?= $produto["estoque_minimo"] ?> </td>

@@ -31,7 +31,7 @@ categoria_id INT NOT NULL,
 preco DECIMAL(10,2) NOT NULL,
 quantidade INT NOT NULL,
 estoque_minimo INT NOT NULL,
-FOREIGN KEY (categoria_id) REFERENCES categorias(id))";
+FOREIGN KEY (categoria_id) REFERENCES categoria(id))";
 $pdo->exec($sql);
 
 //cadastrar produtos pela primeira vez :-(
