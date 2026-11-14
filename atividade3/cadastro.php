@@ -64,8 +64,8 @@ if (isset($_GET["editar"])) {
 
 <header>
 <nav>
-    <a href="listagem.php"></a>
-    <a href="cadastro.php"></a>
+    <a href="listagem.php">LISTAGEM</a>
+    <a href="cadastro.php">PRODUTOS</a>
 </nav>
 </header>
 
