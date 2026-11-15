@@ -18,6 +18,7 @@ require_once "../conexao.php";
 
     <header>
         <nav>
+            <a href="paginaini.php">INICIO</a>
             <a href="listagem.php">LISTAGEM</a>
             <a href="cadastro.php">PRODUTOS</a>
         </nav>

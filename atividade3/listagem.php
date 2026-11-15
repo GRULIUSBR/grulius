@@ -29,6 +29,7 @@ $produtos = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 <header>
 <nav>
+    <a href="paginaini.php">INICIO</a>
     <a href="listagem.php">LISTAGEM</a>
     <a href="cadastro.php">PRODUTOS</a>
 </nav>
