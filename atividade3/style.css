@@ -138,18 +138,4 @@ td form {
     background: transparent;
 }
 
-@media (max-width: 700px) {
-    body {
-        padding: 20px 12px;
-    }
 
-    table {
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
-    }
-
-    form {
-        padding: 16px;
-    }
-}

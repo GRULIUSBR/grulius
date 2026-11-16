@@ -67,12 +67,3 @@ nav a:focus {
     color: #70e4ff;
 }
 
-@media (max-width: 480px) {
-    body {
-        padding: 24px 16px;
-    }
-
-    nav a {
-        flex: 1 1 100%;
-    }
-}
