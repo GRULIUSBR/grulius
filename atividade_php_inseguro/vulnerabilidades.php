@@ -6,9 +6,9 @@ error_reporting(E_ALL);
 session_start();
 
 $host = '127.0.0.1';
-$banco = 'xxxxxxx';
-$usuario = 'xxxxxxx';
-$senha = 'xxxxxxx';
+$banco = 'jose755_db3';
+$usuario = 'jose755';
+$senha = '755!@#';
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$banco;charset=utf8mb4", $usuario, $senha);
