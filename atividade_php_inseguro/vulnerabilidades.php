@@ -5,14 +5,24 @@ ini_set('display_errors', 1);
 error_reporting(E_ALL);
 session_start();
 
-$host = '127.0.0.1';
+$host = 'localhost';
 $banco = 'jose755_db3';
 $usuario = 'jose755';
 $senha = '755!@#';
+$charset = 'utf8mb4';
 
 try {
-    $pdo = new PDO("mysql:host=$host;dbname=$banco;charset=utf8mb4", $usuario, $senha);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    $pdo = new PDO(
+        "mysql:host=$host;dbname=$banco;charset=$charset",
+        $usuario,
+        $senha
+    );
+
+    $pdo->setAttribute(
+        PDO::ATTR_ERRMODE,
+        PDO::ERRMODE_EXCEPTION
+    );
 } catch (PDOException $e) {
     die('Falha no banco: ' . $e->getMessage());
 }
