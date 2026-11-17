@@ -1,5 +1,6 @@
 <?php
 // Objetivo: localizar, explicar e corrigir vulnerabilidades.
+require_once "../conexao.php";
 
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
@@ -30,11 +31,14 @@ try {
 $mensagem = $_GET['msg'] ?? '';
 $acao = $_POST['acao'] ?? $_GET['acao'] ?? '';
 
+//cadastrar???
 if ($acao === 'login') {
     $email = $_POST['email'] ?? '';
     $password = $_POST['senha'] ?? '';
+
     $sql = "SELECT * FROM usuarios WHERE email = '$email' AND senha = '$password'";
     $encontrado = $pdo->query($sql)->fetch(PDO::FETCH_ASSOC);
+
     if ($encontrado) {
         $_SESSION['usuario'] = $encontrado['nome'];
         $_SESSION['perfil'] = $encontrado['perfil'];
@@ -56,8 +60,10 @@ if ($acao === 'cadastrar') {
     $preco = $_POST['preco'] ?? '';
     $estoque = $_POST['estoque'] ?? '';
     $categoria = $_POST['categoria'] ?? '';
+
     $sql = "INSERT INTO produtos (nome, descricao, preco, estoque, categoria) VALUES (':nome', ':descricao', ':preco', ':estoque', ':categoria')";
-    $pdo->exec($sql);
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute();
     $mensagem = "Produto $nome cadastrado!";
 }
 
@@ -69,13 +75,16 @@ if ($acao === 'atualizar') {
     $estoque = $_POST['estoque'] ?? '';
     $categoria = $_POST['categoria'] ?? '';
     $sql = "UPDATE produtos SET nome='$nome', descricao='$descricao', preco='$preco', estoque='$estoque', categoria='$categoria' WHERE id=$id";
-    $pdo->exec($sql);
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute();
     $mensagem = 'Produto atualizado.';
 }
 
 if ($acao === 'excluir') {
     $id = $_GET['id'] ?? '';
-    $pdo->exec("DELETE FROM produtos WHERE id=$id");
+    $sql = "DELETE FROM produtos WHERE id = $id";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute();
     $mensagem = 'Produto excluído.';
 }
 
