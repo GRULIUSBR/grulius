@@ -82,7 +82,7 @@ if ($acao === 'atualizar') {
 
 if ($acao === 'excluir') {
     $id = $_GET['id'] ?? '';
-    $sql = "DELETE FROM produtos WHERE id = :id";
+    $sql = "DELETE FROM produtos WHERE id = $id";
     $stmt = $pdo->prepare($sql);
     $stmt->execute();
     $mensagem = 'Produto excluído.';
