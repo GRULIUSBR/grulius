@@ -68,11 +68,11 @@ echo "debug16";
 //6-listar todos os produtos
 
 $sql = "SELECT * FROM produtos ORDER BY id ASC";
-echo "debug17";
+
 $stmt = $pdo->query($sql);
-echo "debug18";
+
 $produtos = $stmt->fetchAll(PDO::FETCH_ASSOC);
-echo "debug19";
+
 ?>
 
 <!DOCTYPE html>

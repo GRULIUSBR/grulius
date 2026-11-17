@@ -97,8 +97,9 @@ if ($categoriaFiltro !== '') {
     $sqlLista = " AND categoria = '$categoriaFiltro'";
 }
 
-$sqlLista = " ORDER BY $ordem";
-$produtos = $pdo->query($sqlLista)->fetchAll(PDO::FETCH_ASSOC);
+$sqlLista = "SELECT * FROM produtos ORDER BY $ordem";
+$stmt = $pdo->query($sqlLista);
+$produtos = $stmt->fetchAll(PDO::FETCH_ASSOC);
 $editar = null;
 
 if (isset($_GET['editar'])) {
