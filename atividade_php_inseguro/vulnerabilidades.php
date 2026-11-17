@@ -74,7 +74,7 @@ if ($acao === 'atualizar') {
     $preco = $_POST['preco'] ?? '';
     $estoque = $_POST['estoque'] ?? '';
     $categoria = $_POST['categoria'] ?? '';
-    $sql = "UPDATE produtos SET nome='$nome', descricao='$descricao', preco='$preco', estoque='$estoque', categoria='$categoria' WHERE id=$id";
+    $sql = "UPDATE produtos SET nome=':nome', descricao=':descricao', preco=':preco', estoque=':estoque', categoria='$categoria' WHERE id=:id";
     $stmt = $pdo->prepare($sql);
     $stmt->execute();
     $mensagem = 'Produto atualizado.';
@@ -82,7 +82,7 @@ if ($acao === 'atualizar') {
 
 if ($acao === 'excluir') {
     $id = $_GET['id'] ?? '';
-    $sql = "DELETE FROM produtos WHERE id = $id";
+    $sql = "DELETE FROM produtos WHERE id = :id";
     $stmt = $pdo->prepare($sql);
     $stmt->execute();
     $mensagem = 'Produto excluído.';
@@ -94,7 +94,7 @@ $ordem = $_GET['ordem'] ?? 'id';
 $sqlLista = "SELECT * FROM produtos WHERE (nome LIKE '%$busca%' OR descricao LIKE '%$busca%')";
 
 if ($categoriaFiltro !== '') {
-    $sqlLista = " AND categoria = '$categoriaFiltro'";
+    $sqlLista = " AND categoria = ':categoriaFiltro'";
 }
 
 $sqlLista = "SELECT * FROM produtos ORDER BY $ordem";
@@ -158,10 +158,15 @@ $total = $pdo->query('SELECT COUNT(*) FROM produtos')->fetchColumn();
 
                 <input type="hidden" name="acao" value="<?= $editar ? 'atualizar' : 'cadastrar' ?>">
                 <?php if ($editar): ?><input type="hidden" name="id" value="<?= $editar['id'] ?>"><?php endif; ?>
+
                 <label>Nome <input name="nome" value="<?= $editar['nome'] ?? '' ?>"></label>
+
                 <label>Categoria <input name="categoria" value="<?= $editar['categoria'] ?? '' ?>"></label>
+
                 <label>Preço (R$) <input name="preco" value="<?= $editar['preco'] ?? '' ?>"></label>
+
                 <label>Estoque <input name="estoque" value="<?= $editar['estoque'] ?? '' ?>"></label>
+                
                 <label class="largura">Descrição <textarea name="descricao"><?= $editar['descricao'] ?? '' ?></textarea></label>
 
                 <div><button><?= $editar ? 'Salvar alterações' : 'Cadastrar' ?></button> <a href="index.php">Limpar</a></div>
