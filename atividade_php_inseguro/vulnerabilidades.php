@@ -165,13 +165,13 @@ $total = $pdo->query('SELECT COUNT(*) FROM produtos')->fetchColumn();
                 <input type="hidden" name="acao" value="<?= $editar ? 'atualizar' : 'cadastrar' ?>">
                 <?php if ($editar): ?><input type="hidden" name="id" value="<?= $editar['id'] ?>"><?php endif; ?>
 
-                <label>Nome <input name="nome" value="<?= $editar['nome'] ?? '' ?>"></label>
+                <label>Nome <input type="text" name="nome" value="<?= $editar['nome'] ?? '' ?>"></label>
 
-                <label>Categoria <input name="categoria" value="<?= $editar['categoria'] ?? '' ?>"></label>
+                <label>Categoria <input type="text" name="categoria" value="<?= $editar['categoria'] ?? '' ?>"></label>
 
-                <label>Preço (R$) <input name="preco" value="<?= $editar['preco'] ?? '' ?>"></label>
+                <label>Preço (R$) <input type="number" name="preco" value="<?= $editar['preco'] ?? '' ?>"></label>
 
-                <label>Estoque <input name="estoque" value="<?= $editar['estoque'] ?? '' ?>"></label>
+                <label>Estoque <input type="number" name="estoque" value="<?= $editar['estoque'] ?? '' ?>"></label>
                 
                 <label class="largura">Descrição <textarea name="descricao"><?= $editar['descricao'] ?? '' ?></textarea></label>
 
@@ -182,8 +182,8 @@ $total = $pdo->query('SELECT COUNT(*) FROM produtos')->fetchColumn();
         <section class="painel">
             <h2>Produtos cadastrados (<?= $total ?>)</h2>
             <form method="get" class="filtros">
-                <input name="busca" placeholder="Buscar nome ou descrição" value="<?= $busca ?>">
-                <input name="categoria" placeholder="Filtrar categoria" value="<?= $categoriaFiltro ?>">
+                <input type="text" name="busca" placeholder="Buscar nome ou descrição" value="<?= $busca ?>">
+                <input type="text" name="categoria" placeholder="Filtrar categoria" value="<?= $categoriaFiltro ?>">
                 <select name="ordem">
                     <option value="id">Código</option>
                     <option value="nome">Nome</option>
@@ -209,10 +209,10 @@ $total = $pdo->query('SELECT COUNT(*) FROM produtos')->fetchColumn();
                         <?php foreach ($produtos as $produto): ?>
                             <tr>
                                 <td><?= $produto['id'] ?></td>
-                                <td><?= $produto['nome'] ?></td>
-                                <td><?= $produto['descricao'] ?></td>
-                                <td><?= $produto['categoria'] ?></td>
-                                <td>R$ <?= $produto['preco'] ?></td>
+                                <td><?= htmlspecialchars($produto['nome']) ?></td>
+                                <td><?= htmlspecialchars($produto['descricao']) ?></td>
+                                <td><?= htmlspecialchars($produto['categoria']) ?></td>
+                                <td>R$ <?= number_format($produto['preco'], 2, ",", ".")  ?></td>
                                 <td><?= $produto['estoque'] ?></td>
                                 <td><a href="?editar=<?= $produto['id'] ?>">Editar</a> <a href="?acao=excluir&id=<?= $produto['id'] ?>">Excluir</a></td>
                             </tr>
