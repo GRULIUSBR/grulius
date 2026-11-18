@@ -153,8 +153,8 @@ $total = $pdo->query('SELECT COUNT(*) FROM produtos')->fetchColumn();
             <?php else: ?>
 
                 <form method="post"><input type="hidden" name="acao" value="login">
-                    <label>E-mail <input name="email" placeholder="email@exemplo.local"></label>
-                    <label>Senha <input name="senha" type="text" placeholder="Senha"></label>
+                    <label>E-mail <input name="email" placeholder="email@exemplo.local" required></label>
+                    <label>Senha <input name="senha" type="text" placeholder="Senha" required></label>
                     <button>Entrar</button>
                 </form>
 
@@ -170,13 +170,13 @@ $total = $pdo->query('SELECT COUNT(*) FROM produtos')->fetchColumn();
                 <input type="hidden" name="acao" value="<?= $editar ? 'atualizar' : 'cadastrar' ?>">
                 <?php if ($editar): ?><input type="hidden" name="id" value="<?= $editar['id'] ?>"><?php endif; ?>
 
-                <label>Nome <input type="text" name="nome" value="<?= $editar['nome'] ?? '' ?>"></label>
+                <label>Nome <input type="text" name="nome" required value="<?= $editar['nome'] ?? '' ?>"></label>
 
-                <label>Categoria <input type="text" name="categoria" value="<?= $editar['categoria'] ?? '' ?>"></label>
+                <label>Categoria <input type="text" name="categoria" required value="<?= $editar['categoria'] ?? '' ?>"></label>
 
-                <label>Preço (R$) <input type="number" name="preco" value="<?= $editar['preco'] ?? '' ?>"></label>
+                <label>Preço (R$) <input type="number" name="preco" required value="<?= $editar['preco'] ?? '' ?>"></label>
 
-                <label>Estoque <input type="number" name="estoque" value="<?= $editar['estoque'] ?? '' ?>"></label>
+                <label>Estoque <input type="number" name="estoque" required value="<?= $editar['estoque'] ?? '' ?>"></label>
                 
                 <label class="largura">Descrição <textarea name="descricao"><?= $editar['descricao'] ?? '' ?></textarea></label>
 
