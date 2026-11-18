@@ -1,15 +1,15 @@
 /* CSS propositalmente problemático: identificar falhas de legibilidade, foco, responsividade e manutenção. */
 body {
     margin: 0;
-    background: #dedede;
-    color: #aaa;
+    background: #ec26ec;
+    color: #efafff;
     font-family: Arial, sans-serif;
     font-size: 12px
 }
 
 header {
-    background: #777;
-    color: #999;
+    background: #f10dde;
+    color: #d58be4;
     padding: 18px;
     width: 1200px
 }
@@ -26,12 +26,12 @@ h1 {
 
 h2 {
     font-size: 18px;
-    color: #aaa
+    color: #de9be0
 }
 
 .painel {
-    background: #eee;
-    border: 1px solid #ddd;
+    background: #ee99ff;
+    border: 1px solid #b946bd;
     margin-bottom: 16px;
     padding: 20px;
     box-shadow: 0 1px 4px #ddd
@@ -39,14 +39,14 @@ h2 {
 
 .aviso {
     padding: 12px;
-    background: #f8d7da;
-    color: #9b2020;
+    background: #f3a4e8;
+    color: #860475;
     font-weight: bold;
     margin-bottom: 12px
 }
 
 .mensagem {
-    background: #fafafa;
+    background: #f048ff;
     padding: 12px;
     margin-bottom: 12px
 }
@@ -54,16 +54,16 @@ h2 {
 .grade {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 12px
+    gap: 12px;
 }
 
 .largura {
-    grid-column: span 2
+    grid-column: span 2;
 }
 
 label {
     display: block;
-    color: #bbb
+    color: #ffe600;
 }
 
 input,
@@ -73,77 +73,84 @@ select {
     box-sizing: border-box;
     width: 100%;
     padding: 7px;
-    border: 1px solid #ccc;
-    background: #f7f7f7;
-    color: #bbb
+    border: 1px solid #fbff00;
+    background: #fa16fa;
+    color: #ffb5fb;
+    border-radius: 16px;
+   
 }
 
 textarea {
-    height: 75px
+    height: 75px;
+    resize: vertical;
 }
 
 button {
-    background: #aaa;
+    background: #ec41fc;
     color: #bbb;
     border: 0;
     padding: 9px 12px;
-    cursor: pointer
+    cursor: pointer;
+    transition: all 0.3 ease;
 }
 
 button:hover {
-    background: #999
+    background: #f383fd;
+     color: #d6c90a;
 }
 
 a {
-    color: #aaa;
-    text-decoration: none
+    color: #c237d4;
+    text-decoration: none;
+    transition: all 0.3 ease;
 }
 
 a:hover {
-    text-decoration: underline
+    text-decoration: underline;
+    color: #ebe83b;
 }
 
 *:focus {
-    outline: none
+    outline: none;
 }
 
 .filtros {
     display: flex;
-    gap: 8px
+    gap: 8px;
 }
 
 .filtros input {
-    width: 260px
+    width: 260px;
 }
 
 .filtros select {
-    width: 160px
+    width: 160px;
 }
 
 table {
     border-collapse: collapse;
     width: 100%;
-    min-width: 900px
+    min-width: 900px;
 }
 
 th,
 td {
     padding: 9px;
-    border: 1px solid #ddd;
-    text-align: left
+    border: 1px solid #715772;
+    text-align: left;
 }
 
 th {
-    background: #ddd;
-    color: #aaa
+    background: #4e1c5e;
+    color: #cc79e6;
 }
 
 .tabela {
-    overflow: visible
+    overflow: visible;
 }
 
 footer {
     padding: 20px;
     text-align: center;
-    color: #aaa
+    color: #6a127c;
 }
