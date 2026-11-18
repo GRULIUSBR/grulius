@@ -63,7 +63,12 @@ if ($acao === 'cadastrar') {
 
     $sql = "INSERT INTO produtos (nome, descricao, preco, estoque, categoria) VALUES (':nome', ':descricao', :preco, :estoque, ':categoria')";
     $stmt = $pdo->prepare($sql);
-    $stmt->execute();
+    $stmt->execute([
+        'nome' => $nome,
+        'descricao' => $descricao,
+        'preco' => $preco,
+        'estoque' => $estoque,
+        'categoria' => $categoria]);
     $mensagem = "Produto $nome cadastrado!";
 }
 
