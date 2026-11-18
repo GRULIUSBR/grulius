@@ -61,7 +61,7 @@ if ($acao === 'cadastrar') {
     $estoque = $_POST['estoque'] ?? '';
     $categoria = $_POST['categoria'] ?? '';
 
-    $sql = "INSERT INTO produtos (nome, descricao, preco, estoque, categoria) VALUES (':nome', ':descricao', ':preco', ':estoque', ':categoria')";
+    $sql = "INSERT INTO produtos (nome, descricao, preco, estoque, categoria) VALUES (':nome', ':descricao', :preco, :estoque, ':categoria')";
     $stmt = $pdo->prepare($sql);
     $stmt->execute();
     $mensagem = "Produto $nome cadastrado!";
