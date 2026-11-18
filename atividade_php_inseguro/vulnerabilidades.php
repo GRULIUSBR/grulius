@@ -64,11 +64,11 @@ if ($acao === 'cadastrar') {
     $sql = "INSERT INTO produtos (nome, descricao, preco, estoque, categoria) VALUES (':nome', ':descricao', :preco, :estoque, ':categoria')";
     $stmt = $pdo->prepare($sql);
     $stmt->execute([
-        'nome' => $nome,
-        'descricao' => $descricao,
-        'preco' => $preco,
-        'estoque' => $estoque,
-        'categoria' => $categoria]);
+        "nome" => $nome,
+        "descricao" => $descricao,
+        "preco" => $preco,
+        "estoque" => $estoque,
+        "categoria" => $categoria]);
     $mensagem = "Produto $nome cadastrado!";
 }
 
@@ -82,12 +82,12 @@ if ($acao === 'atualizar') {
     $sql = "UPDATE produtos SET nome=':nome', descricao=':descricao', preco=:preco, estoque=:estoque, categoria=':categoria' WHERE id=:id"; //placeholder
     $stmt = $pdo->prepare($sql);
     $stmt->execute([
-    'nome' => $nome,
-    'descricao' => $descricao,
-    'preco' => $preco,
-    'estoque' => $estoque,
-    'categoria' => $categoria,    
-    'id' => $id]);
+    "nome" => $nome,
+    "descricao" => $descricao,
+    "preco" => $preco,
+    "estoque" => $estoque,
+    "categoria" => $categoria,    
+    "id" => $id]);
     $mensagem = 'Produto atualizado.';
 }
 
