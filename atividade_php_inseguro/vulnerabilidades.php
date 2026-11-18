@@ -74,7 +74,7 @@ if ($acao === 'atualizar') {
     $preco = $_POST['preco'] ?? '';
     $estoque = $_POST['estoque'] ?? '';
     $categoria = $_POST['categoria'] ?? '';
-    $sql = "UPDATE produtos SET nome=:nome, descricao=:descricao, preco=:preco, estoque=:estoque, categoria='$categoria' WHERE id=:id"; //placeholder
+    $sql = "UPDATE produtos SET nome=:nome, descricao=:descricao, preco=:preco, estoque=:estoque, categoria=':categoria' WHERE id=:id"; //placeholder
     $stmt = $pdo->prepare($sql);
     $stmt->execute(['id' => $id]);
     $mensagem = 'Produto atualizado.';
