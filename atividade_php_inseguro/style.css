@@ -2,14 +2,14 @@
 body {
     margin: 0;
     background: #ec26ec;
-    color: #efafff;
+    color:#4e1c5e;
     font-family: Arial, sans-serif;
     font-size: 12px
 }
 
 header {
     background: #f10dde;
-    color: #d58be4;
+    color:#4e1c5e;
     padding: 18px;
     width: 1200px
 }
@@ -26,7 +26,7 @@ h1 {
 
 h2 {
     font-size: 18px;
-    color: #de9be0
+    color: #4e1c5e;
 }
 
 .painel {
@@ -75,7 +75,7 @@ select {
     padding: 7px;
     border: 1px solid #fbff00;
     background: #fa16fa;
-    color: #ffb5fb;
+    color:#4e1c5e;
     border-radius: 16px;
    
 }
@@ -87,7 +87,7 @@ textarea {
 
 button {
     background: #ec41fc;
-    color: #bbb;
+    color: #4e1c5e;
     border: 0;
     padding: 9px 12px;
     cursor: pointer;
