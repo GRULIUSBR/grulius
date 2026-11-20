@@ -1,28 +1,71 @@
-CREATE TABLE IF NOT EXISTS usuarios (
-id INT AUTO_INCREMENT PRIMARY KEY,
-nome VARCHAR(120) NOT NULL,
-email VARCHAR(150) NOT NULL,
-senha VARCHAR(150) NOT NULL,
-perfil VARCHAR(30) NOT NULL);--
+CREATE TABLE
+    IF NOT EXISTS usuarios (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        nome VARCHAR(120) NOT NULL,
+        --c -> colocar unique
+        email VARCHAR(150) NOT NULL,
+        --c -> aumentar os carateres pra 255, pq as senhas sao armazenadas em codigo q possue muito mais caratere (hashes) e not null
+        senha VARCHAR(255) NOT NULL,
+        --c -> colocar default 'operador' e not null
+        perfil VARCHAR(30) NOT NULL
+    );
 
-CREATE TABLE IF NOT EXISTS produtos (
-id INT AUTO_INCREMENT PRIMARY KEY,
-nome VARCHAR(150) NOT NULL,
-descricao TEXT,
-preco DECIMAL(10,2) NOT NULL,
-estoque INT NOT NULL,
-categoria VARCHAR(80) NOT NULL,
-criado_em DATETIME DEFAULT CURRENT_TIMESTAMP);
+CREATE TABLE
+    IF NOT EXISTS produtos (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        nome VARCHAR(150) NOT NULL,
+        descricao TEXT,
+        preco DECIMAL(10, 2) NOT NULL,
+        estoque INT NOT NULL,
+        categoria VARCHAR(80) NOT NULL,
+        criado_em DATETIME DEFAULT CURRENT_TIMESTAMP
+    );
 
-INSERT INTO usuarios (nome, email, senha, perfil)
+INSERT INTO
+    usuarios (nome, email, senha, perfil)
 VALUES
-('Administrador','admin@exemplo.local','admin123','admin'),
-('Operador','operador@exemplo.local','123456','operador'),
-('Aluno', 'alunojose@eu.local', '78910', 'aluno');
+    (
+        'Administrador',
+        'admin@exemplo.local',
+        'admin123',
+        'admin'
+    ),
+    (
+        'Operador',
+        'operador@exemplo.local',
+        '123456',
+        'operador'
+    ),
+    ('Aluno', 'alunojose@eu.local', '78910', 'aluno');
 
-INSERT INTO produtos (nome, descricao, preco, estoque, categoria)
+INSERT INTO
+    produtos (nome, descricao, preco, estoque, categoria)
 VALUES
-('Mouse USB','Mouse para escritório',35.90,12,'Periféricos'),
-('Teclado','Teclado básico',59.90,7,'Periféricos'),
-('Monitor','Monitor de laboratório',699.00,3,'Monitores'),
-('Procesador_Qualcomm855','ProcesadorBom',799.00,10,'Procesadores');
+    (
+        'Mouse USB',
+        'Mouse para escritório',
+        35.90,
+        12,
+        'Periféricos'
+    ),
+    (
+        'Teclado',
+        'Teclado básico',
+        59.90,
+        7,
+        'Periféricos'
+    ),
+    (
+        'Monitor',
+        'Monitor de laboratório',
+        699.00,
+        3,
+        'Monitores'
+    ),
+    (
+        'Procesador_Qualcomm855',
+        'ProcesadorBom',
+        799.00,
+        10,
+        'Procesadores'
+    );

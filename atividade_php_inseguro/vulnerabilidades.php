@@ -2,8 +2,16 @@
 // Objetivo: localizar, explicar e corrigir vulnerabilidades.
 require_once "../conexao.php";
 
-ini_set('display_errors', 1);
+// ini set colocar 0 nao mostrar erro interno pra cualquier usuariio---------- 
+ini_set('display_errors', 0);
+
+//ini set log errors, '1' registrar los logs num archivo interno o qual o usuario padrao nao possui acesso
+ini_set('log_errors', '1');
+
+//define quais tipos de erro o php deve registrar, EALL = todos os erros
 error_reporting(E_ALL);
+
+
 session_start();
 
 $host = 'localhost';
@@ -25,19 +33,31 @@ try {
         PDO::ERRMODE_EXCEPTION
     );
 } catch (PDOException $e) {
-    die('Falha no banco: ' . $e->getMessage());
+    error_log($e->getMessage());
+    http_response_code(500);
+    exit('Erro interno de conexão.');
 }
 
 $mensagem = $_GET['msg'] ?? '';
+
+
+if($_SERVER["REQUEST_METHOD"] == "POST") {
 $acao = $_POST['acao'] ?? $_GET['acao'] ?? '';
+}
 
 //cadastrar???
 if ($acao === 'login') {
     $email = $_POST['email'] ?? '';
     $password = $_POST['senha'] ?? '';
 
-    $sql = "SELECT * FROM usuarios WHERE email = '$email' AND senha = '$password'";
+    $sql = "SELECT * FROM usuarios WHERE email = :email AND senha = :password";
     $encontrado = $pdo->query($sql)->fetch(PDO::FETCH_ASSOC);
+
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute([
+    'email' => $email,
+    'senha' => $password
+    ]);
 
     if ($encontrado) {
         $_SESSION['usuario'] = $encontrado['nome'];
@@ -102,13 +122,17 @@ if ($acao === 'excluir') {
 $busca = $_GET['busca'] ?? '';
 $categoriaFiltro = $_GET['categoria'] ?? '';
 $ordem = $_GET['ordem'] ?? 'id';
-$sqlLista = "SELECT * FROM produtos WHERE (nome LIKE '%$busca%' OR descricao LIKE '%$busca%')";
+$sqlLista = "SELECT * FROM produtos WHERE (nome LIKE '%:buscaNome%' OR descricao LIKE '%:buscaDescricao%')";
+$parametros = [
+    'buscaNome' => "%$busca%",
+    'buscaDescricao' => "%$busca%"
+];
 
 if ($categoriaFiltro !== '') {
     $sqlLista = " AND categoria = ':categoriaFiltro'";
 }
 
-$sqlLista = "SELECT * FROM produtos ORDER BY $ordem";
+$sqlLista = "SELECT * FROM produtos ORDER BY :ordem";
 $stmt = $pdo->query($sqlLista);
 $produtos = $stmt->fetchAll(PDO::FETCH_ASSOC);
 $editar = null;
@@ -117,7 +141,16 @@ if (isset($_GET['editar'])) {
     $editar = $pdo->query('SELECT * FROM produtos WHERE id=' . $_GET['editar'])->fetch(PDO::FETCH_ASSOC);
 }
 
-$total = $pdo->query('SELECT COUNT(*) FROM produtos')->fetchColumn();
+$total = $pdo->query (
+    'SELECT COUNT(*) FROM produtos'
+)->fetchColumn();
+
+
+//entquotes = é uma 'constante' que indica que tanto as aspas simples quanto as aspas duplas devem ser convertridas em entidades html.
+//utf8 ç´~];]~;]´]çççççççççç
+function escapar($valor) {
+    return htmlspecialchars($valor, ENT_QUOTES, 'UTF-8');
+}
 
 ?>
 
