@@ -1,0 +1,55 @@
+--josé--
+
+CREATE TABLE IF NOT EXISTS funcionarios (
+id INT AUTO_INCREMENT PRIMARY KEY,
+funcionario_nome VARCHAR(167) NOT NULL,
+especialidade_id INT NOT NULL,
+
+FOREIGN KEY especialidade_id REFERENCES especialidades(id)
+
+);
+
+INSERT INTO funcionarios (funcionario_nome, especialidade_id)
+VALUES
+('André', 1),
+('Luca', 2),
+('José', 3),
+('Daniel', 4),
+('Sebastian', 5),
+('Eduardo', 6),
+('Danilo', 7),
+('João', 8),
+('Mohammed', 9);
+
+INSERT INTO funcionarios (funcionario_nome, especialidade_id)
+VALUES
+('Felipe', 1),
+('Brian', 2),
+('Wesley', 3),
+('Diney', 4),
+('Pedro', 5),
+('Miguel', 6),
+('Viktor', 7),
+('Alexandre', 8),
+('Paulo', 9);
+
+--josé--
+
+CREATE TABLE IF NOT EXISTS especialidades (
+id INT AUTO_INCREMENT PRIMARY KEY,
+especialidade VARCHAR(110) NOT NULL,
+descricao TEXT
+);
+
+
+INSERT INTO especialidades (especialidade, descricao)
+VALUES 
+('clinico geral', 'é o profissional polivalente. Faz revisões basicas, troca de oleo, correias, filtros, freios e suspensão simples'),
+('retificador', 'especialista em mecanica pesada. Sabe desmontar motores por completo, fazer medições de precisão, ajustar folgas e montar cabeçotes e blocos'),
+('diagnosticador', 'domina o uso de scanner automotivo, osciloscopio, leitura de diagramas eletricos e analise de gases para achar falhas intermitentes sem ficar trocando peças por tentativa e erro'),
+('autoeletrico', 'focado exclusivamente na parte eletrica: alternadores, motores de partida, chicotes, curtos-circuitos, fusiveis e iluminação'),
+('cambista', 'focado em caixas de câmbio manuais, automatizadas ou automaticas(que exigem conhecimento em hidraulica e eletronica de mecatronica)'),
+('alinhador', 'especialista em geometria veicular (cambagem, caster, convergencia) e diagnostico fino de ruidos e folgas na suspensão e direção'),
+('tecnico em ar-condicionado', 'especializado em climatização automotiva, manuseio de gases refrigerantes, testes de pressão e reparo de compressores'),
+('funileiro-pintor_automotivo', 'profissional da estetica estrutural.'),
+('auxiliar', 'profissional em inicio de carreira que auxilia na desmontagem basica, limpeza de peças, organização de ferramentas e serviços rapidos');
